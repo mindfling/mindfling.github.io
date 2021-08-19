@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+     background: #635854;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* text-align: center; */
+}
+.navbar-item {
+    margin: 9px 40px;
+    text-align: center;
+}
+.navbar-link {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+
