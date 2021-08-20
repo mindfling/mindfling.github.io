@@ -77,3 +77,13 @@ body {
     text-align: right;
     color: #FFFFFF;
 }
+
+
+.home-image path {
+    opacity: 0;
+}
+
+.home-image path:hover {
+    opacity: 1;
+    cursor: pointer;
+}
