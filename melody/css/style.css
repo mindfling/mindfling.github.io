@@ -26,7 +26,7 @@ body {
     box-sizing: border-box;
 }
 
-.navbar {
+.header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,12 @@ body {
 .navbar-item {
     margin: 9px 40px;
     text-align: center;
+}
+.navbar-item:first-child {
+    margin-left: 0;
+}
+.navbar-item:last-child {
+    margin-right: 0;
 }
 
 .navbar-link {
@@ -183,4 +189,58 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    height: 171px;
+    background: #D7D7D7;;
+    padding: 12px 0;
+    border-top: 4px solid #3596F5;
+    box-sizing: border-box;
+}
+.footer .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    margin: 0 auto;
+}
+.navbar-footer-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer .navbar-contacts {
+    margin-left: 37px;
+    margin-right: 59px;
+}
+.footer .navbar-contacts .navbar-text,
+.footer .navbar-contacts .navbar-phone {
+    color: #635854;
+    text-align-last: left;
+}
+.footer .navbar-social {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer .navbar-social .social-item {
+    margin: 0 7px;
+}
+.footer .navbar-menu .navbar-link{
+    color: #635854;
 }

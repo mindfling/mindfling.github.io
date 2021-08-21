@@ -16,13 +16,13 @@
 
 <body>
     <header class="header">
-        <div class="navbar">
+        <div class="navbar header-container">
             <a class="logo" href="./index.html">
                 <img src="img/logo.svg" alt="logo" />
             </a>
             <nav class="navbar-nav">
                 <ul class="navbar-menu">
-                    <li class="navbar-item"><a href="#" class="navbar-link">Подобрать<br>квартиру</a></li>
+                    <li class="navbar-item active-item"><a href="#" class="navbar-link">Подобрать<br>квартиру</a></li>
                     <li class="navbar-item"><a href="#" class="navbar-link">Забронировать<br>квартиру</a></li>
                     <li class="navbar-item"><a href="#" class="navbar-link">Ход<br>строительства</a></li>
                     <li class="navbar-item"><a href="#" class="navbar-link">Проектная<br>декларация</a></li>
@@ -41,14 +41,8 @@
 
     <main class="main">
         <div class="img main-image">
-            <svg 
-                class="home-image"
-                width="734" 
-                height="640" 
-                viewBox="0 0 734 640" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg class="home-image" width="734" height="640" viewBox="0 0 734 640" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                 <rect width="734" height="640" fill="url(#pattern0)" />
                 <defs>
@@ -109,6 +103,37 @@
             <button class="button button-primary" type="button">Смотреть квартиры на этаже</button>
         </div>
     </main>
+
+
+    <footer class="footer">
+        <div class="navbar footer-navbar footer-container">
+
+            <div class="navbar-footer-left">
+                <a href="#" class="footer-logo-link">
+                    <img src="img/logo-footer.png" alt="footer logo" class="logo">
+                </a>
+                <div class="navbar-contacts">
+                    <span class="navbar-text">Закажите звонок</span>
+                    <a href="tel:+79991234567" class="navbar-phone">8 (843) 123-45-67</a>
+                </div>
+                <ul class="navbar-social">
+                    <li class="social-item"><a href="#" class="item-link"><img src="img/facebook.svg" alt="fb" class="social-img fb-social"></a></li>
+                    <li class="social-item"><a href="#" class="item-link"><img src="img/instagram.svg" alt="insta" class="social-img inst-social"></a></li>
+                    <li class="social-item"><a href="#" class="item-link"><img src="img/twitter.svg" alt="tw" class="social-img tw-social"></a></li>
+                    <li class="social-item"><a href="#" class="item-link"><img src="img/youtube.svg" alt="yt" class="social-img yt-social"></a></li>
+                </ul>
+            </div>
+
+            <ul class="navbar-menu navbar-footer-right">
+                <li class="navbar-item"><a href="#" class="navbar-link">Политика конфиденциальности</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Публичная оферта</a></li>
+                <li class="navbar-item"><a href="#" class="navbar-link">Контакты</a></li>
+            </ul>
+
+        </div>
+        <!-- /.navbar -->
+
+    </footer>
 
 </body>
 
