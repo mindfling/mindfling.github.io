@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Bebas Neue";
+    src: local("BebasNeueRegular"), url("../fonts/BebasNeueRegular.woff2") format("woff2"),
+        url("../fonts/BebasNeueRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 * {
     box-sizing: border-box;
 }
@@ -79,6 +90,13 @@ body {
 }
 
 
+.main {
+    display: flex;
+    max-width: 1280px;
+    margin: 64px auto 99px;
+}
+
+
 .home-image path {
     opacity: 0;
 }
@@ -86,4 +104,83 @@ body {
 .home-image path:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+
+
+.choose {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 68px 122px;
+}
+
+.main-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+}
+
+.counter-up {
+    display: flex;
+    background: url(../img/up.svg);
+    width: 32px;
+    height: 20px;
+}
+.counter-down {
+    display: flex;
+    background: url(../img/down.svg);
+    width: 32px;
+    height: 20px;
+}
+.counter {
+    display: flex;
+    font-family: "Bebas Neue", "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #635854;
+}
+
+
+
+button {
+    cursor: pointer;
+}
+
+.up-floor-btn,
+.down-floor-btn,
+button {
+    border: none;
+}
+
+.main .button-primary {
+    padding: 16px 36px;
+    background: #3596F5;
+    border-radius: 6px;
+    border: 1px #3596F5 solid;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+.counter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
