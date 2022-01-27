@@ -1,4 +1,5 @@
 /* project GO flat schema style.css */
+@import url('fonts.css');
 
 @import url('normalize.css');
 @import url('global.css');
@@ -6,5 +7,6 @@
 @import url('banner/banner.css');
 @import url('halls/halls.css');
 @import url('about/about.css');
+@import url('faq/faq.css');
 @import url('contacts/contacts.css');
 @import url('contacts/social.css');

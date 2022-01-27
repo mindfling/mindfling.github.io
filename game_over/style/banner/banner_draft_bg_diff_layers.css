@@ -1,0 +1,107 @@
+/* BANNER */
+
+.banner {
+  font-family: Arial, sans-serif;
+  display: block;
+  padding-top: 143px;
+  padding-bottom: 50px;
+}
+
+.banner__container {
+  position: relative;
+  display: block;
+  width: 1180px;
+  height: 862px;
+  /* background: url(img/GAME_OVER_stroke_text.svg) repeat-y 50% 35px; */
+  /* background: url(img/banner_man_vr.png) no-repeat 100% 100%, url(img/GAME_OVER_stroke_text.svg) repeat-y 40px 0px;   */
+  background:
+          /* на фоне мужчина в очках vr */
+            url(img/banner_man_vr.png) no-repeat 100% 100%,
+          /* далее буквы на фоне ярче по цвету */
+            url(img/GAME_OVER_stroke_text-orig.svg) no-repeat 0px 183px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 333px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 483px, 
+            url(img/GAME_OVER_copy_dark_inside_DarkViolet.svg) no-repeat 0px 633px, 
+            url(img/GAME_OVER_very_bright_CD06FF_magenta.svg) no-repeat 0px 783px;
+
+            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 181px,  */
+            /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 183px,  */
+            /* url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 183px,  */
+            /* url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 331px,  */
+            /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 483px,  */
+            /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 784px; */
+            
+            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 333px,  */
+            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 483px,  */
+            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 634px,  */
+            /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 784px; */
+            /* 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 183px,  
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 331px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 482px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 619px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 765px;
+            */
+            /* 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 181px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 10px 327px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 20px 473px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 30px 619px, 
+            url(img/GAME_OVER_stroke_text.svg) no-repeat 35px 765px;
+            */
+}
+
+/* * усложненное задание *
+.banner__container::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 762px;
+  content: '';
+  background: url(img/banner_man_vr.png) no-repeat right top;  
+} */
+
+.banner__description {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: left;
+  margin-left: 204px;
+}
+
+.banner__title {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 196px;
+  text-align: left;
+  line-height: 200px;
+  letter-spacing: -17px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #1B1A1B;
+  margin-left: -6px;
+  /* 
+  изначальные настройки 
+  font-family: "Arial Black", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 200px;
+  text-align: left;
+  line-height: 200px;
+  letter-spacing: -0.1em;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #1B1A1B;
+  */
+}
+
+
+
+

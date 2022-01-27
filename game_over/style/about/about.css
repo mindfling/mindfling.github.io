@@ -7,8 +7,24 @@
 }
 
 .about__container {
+  display: inline-block;
   min-height: 701px;
 }
+
+
+.about__pictures {
+  display: block;
+  width: 612px;
+  float: left;
+  line-height: 0;
+}
+.about__image {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
 
 .about__title {
   font-weight: 700;
@@ -23,6 +39,14 @@
   width: 500px;
   text-align: left;
   margin-bottom: 40px;
+
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
 }
 
 .about__blockquote-block {

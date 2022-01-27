@@ -1,0 +1,70 @@
+/* файл стилей блока FAQ */
+.faq {
+  display: block;
+}
+
+.faq__subtitle {
+font-family: Arial;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 50px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;  
+margin-bottom: 40px;
+}
+
+.faq__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* простой список вопросов */
+
+.faq__item {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: left;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+}
+.faq__item:last-child {
+  margin-bottom: 0;
+}
+
+/* глуп нечет 2n+1 */
+.faq__item:nth-child(odd) {
+  background-color: #fff;
+  color: #1c1a1a;
+}
+
+/* парный 2n */
+.faq__item:nth-child(even) {
+  background-color: #440f51;
+  color: #fff;
+}
+
+
+.faq__item::after {
+  position: absolute;
+  top: 19px;
+  right: 70px;
+  display: block;
+  float: right;
+  width: 46px;
+  height: 46px;
+  content: "";
+}
+
+.faq__item:nth-child(odd):after {
+  background-image: url('img/open_violet.svg');
+}
+
+.faq__item:nth-child(even):after {
+  background-image: url('img/open_white.svg');
+}
+
