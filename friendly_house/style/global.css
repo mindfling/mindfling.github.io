@@ -114,7 +114,13 @@ section {
 */
 .container {
   /* width: 1180px; */
-  max-width: 1240px; /* 30 + 1180 + 30 */
+  /* 30 + 1180 + 30 */
+  max-width: 1240px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+::selection {
+  color: #fefefe;
+  background-color: #ff8800;
 }

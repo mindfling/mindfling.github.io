@@ -7,7 +7,8 @@
 
 .about__container {
   /* padding-right: 728px; */
-  max-width: 460px;
+  /* todo width narrow about__container */
+  max-width: 482px;
 }
 
 .about__page-title {

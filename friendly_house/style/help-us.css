@@ -52,11 +52,28 @@
   font-weight: 500;
 }
 
+.help-us__article {
+  display: block;
+  margin-left: 58px;
+}
+
+/* todo * narrow */
+.help-us__article_narrow {
+  max-width: 435px;
+}
+/* todo * wide */
+.help-us__article_wide {
+  max-width: 572px;
+}
+
 .help-us__item {
   display: block;
   position: relative;
   list-style: none;
   padding-left: 30px;
+}
+
+.help-us__item:not(:last-child) {
   margin-bottom: 140px;
 }
 
@@ -64,14 +81,15 @@
   margin-bottom: 0;
 }
 
+/* todo эти убрать */
 .help-us__item:nth-of-type(odd) {
-  padding-right: 657px;
+  /* padding-right: 657px; */
 }
-
 .help-us__item:nth-of-type(even) {
-  padding-right: 520px;
+  /* padding-right: 520px; */
 }
 
+/* * кастомная нумерация списков */
 .help-us__item:before {
   position: absolute;
   display: block;
@@ -83,8 +101,4 @@
   line-height: 37px;
   width: 29px;
   height: 43px;
-}
-
-.help-us__article {
-  margin-left: 58px;
 }

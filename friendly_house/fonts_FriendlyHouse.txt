@@ -1,2 +1,2 @@
-MethEd m2l10 BEM
+MethEd m2l11 BEM with modal
 
