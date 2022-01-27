@@ -1,0 +1,38 @@
+/* social links */
+
+.social {
+  display: block;
+  text-align: left;
+  list-style: none;
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 26px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: inherit;
+  width: 50px;
+  height: 50px;
+}
+
+.social__link_fb {
+  background: url(img/inst.svg) no-repeat center;
+}
+
+.social__link_inst {
+  background: url(img/vk.svg) no-repeat center;
+}
+
+.social__link_tg {
+  background: url(img/fb.svg) no-repeat center;
+}
+
+.social__link_vk {
+  background: url(img/tg.svg) no-repeat center;
+}

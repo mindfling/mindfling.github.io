@@ -5,48 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style/normalize.css">
-  <link rel="stylesheet" href="style/global.css">
+  <!-- <link rel="stylesheet" href="style/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="style/global.css"> -->
+  <!-- <link rel="stylesheet" href="style/style.css"> -->
   <link rel="stylesheet" href="style/style.css">
 
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <title>GAME OVER - GO m2l09 global normalize</title>
+  <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico" />
+  <link rel="icon" type="image/png" href="icon/favicon.png" />
+  <title>GAME OVER - GO m2l10 bem go</title>
 </head>
-<body>
+<body class="page">
 
-  <section class="banner site-banner">
-    <div class="container">
-      <h1 class="site-title">GAME OVER</h1>
-      <p class="site-description">Новый формат игр и отдыха</p>
+  <section class="banner">
+    <div class="container banner__container">
+      <h1 class="banner__title">GAME OVER</h1>
+      <p class="banner__description">Новый формат игр и отдыха</p>
     </div>
   </section>
 
   <section class="halls">
-    <div class="container">
-      <h2 id="halls-title" class="halls-title">Наши залы</h2>
-      <ol class="halls-list">
-        <li class="halls-item hall-80s-vibes"><p>80's vibes</p></li>
-        <li class="halls-item hall-star-wars"><p>Star wars</p></li>
-        <li class="halls-item hall-wild-west"><p>Wild west</p></li>
-        <li class="halls-item hall-neon-style"><p>Neon style</p></li>
+    <div class="container halls__container">
+      <h2 class="halls__title">Наши залы</h2>
+      <ol class="halls__list">
+        <li class="halls__item halls__item_80s-vibes">
+          <p class="halls__text">80's vibes</p>
+        </li>
+        <li class="halls__item halls__item_star-wars halls-item"><p class="halls__text">Star wars</p></li>
+        <li class="halls__item halls__item_wild-west halls-item"><p class="halls__text">Wild west</p></li>
+        <li class="halls__item halls__item_neon-style halls-item"><p class="halls__text">Neon style</p></li>
       </ol>
     </div>
   </section>
 
   <section class="about">
-    <div class="container">
-      <h2 class="about-title">О нас</h2>
-      <p class="about-text">
+    <div class="container about__container">
+      <h2 class="about__title">О нас</h2>
+      <p class="about__text">
         Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности <wbr>в центральной части города.
       </p>
-      <p class="about-text">
+      <p class="about__text">
         Каждый день мы стараемся создавать <br> для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
       </p>
-      <blockquote class="blockquote">
-        <p class="blockquote-text">GAME OVER &mdash; это место незабываемых впечатлений</p>
-        <cite class="blockquote-author">
+      <blockquote class="about__blockquote-block blockquote">
+        <p class="about__blockquote-text">GAME OVER &mdash; это место незабываемых впечатлений</p>
+        <cite class="about__blockquote-author">
           Аркадий Абакшин, создатель игровой территории GAME OVER
         </cite>
       </blockquote>
@@ -54,25 +57,27 @@
   </section>
   
   <section class="contacts">
-    <div class="container">
-      <h2 id="contact" class="contacts-title">Контакты</h2>
-      <div class="contacts-text">
-        <p class="contacts-address">г.&nbsp;Москва<br>ул.&nbsp;Аквамарина,&nbsp;16</p>
-        <p class="contacts-tel"><a href="tel:8(950)930-28-93">8&nbsp;(950)&nbsp;930&nbsp;-&nbsp;28&nbsp;-&nbsp;93</a></p>
-        <p class="contacts-email"><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+    <div class="container contacts__container">
+      <h2 class="contacts__title">Контакты</h2>
+      
+      <div class="contacts__info">
+        <p class="contacts__address">г.&nbsp;Москва<br>ул.&nbsp;Аквамарина,&nbsp;16</p>
+        <p class="contacts__tel"><a href="tel:8(950)930-28-93">8&nbsp;(950)&nbsp;930&nbsp;-&nbsp;28&nbsp;-&nbsp;93</a></p>
+        <p class="contacts__email"><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
       </div>
-      <ul class="social-list">
-        <li class="social-item">
-          <a class="social-link social-inst" href="https://www.instagram.com" target="_blank"></a>
+
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link social__link_inst" href="https://www.instagram.com" target="_blank"></a>
         </li>
-        <li class="social-item">
-          <a class="social-link social-vk" href="https://vk.com/" target="_blank"></a>
+        <li class="social__item social-item">
+          <a class="social__link social__link_vk" href="https://vk.com/" target="_blank"></a>
         </li>
-        <li class="social-item">
-          <a class="social-link social-fb" href="https://fb.com/" target="_blank"></a>
+        <li class="social__item social-item">
+          <a class="social__link social__link_fb" href="https://fb.com/" target="_blank"></a>
         </li>
-        <li class="social-item">
-          <a class="social-link social-tg" href="https://t.me" target="_blank"></a>
+        <li class="social__item social-item">
+          <a class="social__link social__link_tg" href="https://t.me" target="_blank"></a>
         </li>
       </ul>
     </div>

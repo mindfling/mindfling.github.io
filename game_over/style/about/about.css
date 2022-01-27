@@ -1,0 +1,100 @@
+/* ABOUT */
+
+.about {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 45px;
+}
+
+.about__container {
+  min-height: 701px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.about__text {
+  width: 500px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.about__blockquote-block {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 455px;
+  padding-left: 30px;
+}
+
+.about__blockquote-text {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
+
+/* кавычки для цитат */
+.about__blockquote-text::before,
+.about__blockquote-text::after {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #6c0287;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.about__blockquote-text::before {
+  content: "“";
+  position: absolute;
+  top: -10px;
+  left: -45px;
+}
+
+.about__blockquote-text::after {
+  content: "”";
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+}
+
+.about__blockquote-author {
+  position: relative;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: left;
+  padding-left: 177px;
+}
+
+.about__blockquote-author::before {
+  position: absolute;
+  top: 2px;
+  left: 78px;
+  display: block;
+  content: "";
+  background: url(img/author-foto.png) no-repeat 50% 50%;
+  background-size: contain;
+  border-radius: 50%;
+  border: 0;
+  width: 80px;
+  height: 80px;
+}
