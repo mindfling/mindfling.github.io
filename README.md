@@ -8,13 +8,16 @@ Hello! This is GitHub Pages for
 <!-- - 💞️ I’m looking to collaborate on ... -->
 <!-- - 📫 How to reach me here ... -->
 
+
+*Pages are here:*
+- my first simple page https://mindfling.github.io/404/
+
+- my [iPhone13 code](https://github.com/mindfling/mindfling.github.io/tree/main/iphone13) 
+  learning project page [iPhone13] https://mindfling.github.io/iphone13
+
+
+
 <!---
 mindfling/mindfling is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-
-
-Pages are here:
-- my first simple page https://mindfling.github.io/404/
-
-- my (iPhone13)[https://github.com/mindfling/mindfling.github.io/tree/main/iphone13] learning project https://mindfling.github.io/iphone13
