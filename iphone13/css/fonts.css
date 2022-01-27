@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "SF UI Text";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("SF UI Text"),
+       /* Если не получилось, загрузит woff2 */
+       url("../fonts/SFUIText-Light.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("../fonts/SFUIText-Light.woff") format("woff");
+  /* normal */
+  font-style: normal;
+  /* regular */
+  font-weight: 300;
+  /* чтобы не дергался */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("SF UI Text"),
+       /* Если не получилось, загрузит woff2 */
+       url("../fonts/SFUIText-Regular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("../fonts/SFUIText-Regular.woff") format("woff");
+  /* normal */
+  font-style: normal;
+  /* regular */
+  font-weight: 400;
+  /* чтобы не дергался */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF UI Text";
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("SF UI Text"),
+       /* Если не получилось, загрузит woff2 */
+       url("../fonts/SFUIText-Medium.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("../fonts/SFUIText-Medium.woff") format("woff");
+  /* normal */
+  font-style: normal;
+  /* regular */
+  font-weight: 500;
+  /* чтобы не дергался */
+  font-display: swap;
+}
+

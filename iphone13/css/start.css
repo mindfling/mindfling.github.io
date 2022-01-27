@@ -1,0 +1,72 @@
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+
+    font-family: 'SF UI Text', Arial, sans-serif;
+    /* указать шрифт под проект*/
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0); /*цвет под ваш проект*/
+    background-color: #fefefe; /* цвет под ваш проект */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+/*
+  Доступно скрываю элементы
+*/
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}

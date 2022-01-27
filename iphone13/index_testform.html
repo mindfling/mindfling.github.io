@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone</title>
+</head>
+<body>
+
+
+<!-- Block HEADER BEGIN -->
+<header class="header">
+  <div class="container">
+    <div class="header__container">
+      <img src="img/apple.svg" alt="Apple logo" class="header__logo">
+      <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#" class="navigation__link">Оформить предзаказ</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Доставка</a></li>
+        <li class="navigation__item"><a href="#" class="navigation__link">Официальный сайт Apple</a></li>
+      </ul>
+    </nav>
+  </div><!-- header__container -->
+  </div>
+</header>
+<!-- Block HEADER END -->
+
+
+<main class="main">
+  
+  <!-- Block offer BANNER BEGIN -->
+  <section class="main__section offer">
+    <div class="container">
+      <div class="offer__container">
+        <h1 class="offer__main-title">iPhone 13</h1>
+
+        <h2 class="offer__title">Ближе чем можно представить</h2>
+
+        <p class="offer__price">От 79 000 Р</p>
+
+        <button class="offer__btn btn btn-primary" type="button">Оформить предзаказ</button>
+      </div>
+    </div>
+  </section>
+  <!-- Block offer BANNER END -->
+
+
+  <!-- Block features ABOUT BEGIN -->
+  <section class="main__section features">
+    <div class="container">
+      
+      <h2 class="features__title">iPhone 13. Ничего лишнего</h2>
+
+      <ul class="features__list">
+        <li class="features__item card">
+          <img src="img/camera.jpg" alt="Новый модуль камер" class="card__picture">
+          <h3 class="card__title">Камера</h3>
+          <p class="card__description">Система камер PRO</p>
+        </li>
+        <li class="features__item card">
+          <img src="" alt="" class="card__picture">
+          <h3 class="card__title"></h3>
+          <p class="card__description"></p>
+        </li>
+        <li class="features__item card">
+          <img src="" alt="" class="card__picture">
+          <h3 class="card__title"></h3>
+          <p class="card__description"></p>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+  <!-- Block features ABOUT END -->
+
+
+
+  <!-- Block order ORDER BEGIN -->
+  <section class="main__section order">
+    <div class="container">
+      <h2 class="order__title">Оформить предзаказ</h2>
+
+      <!-- форма отправки -->
+      <form action="#" class="order__form form">
+
+        <fieldset class="form__box">
+          <legend class="form__title-box">Персональные данные</legend>
+
+          <label for="fullName" class="form__label">ФИО</label>
+          <input type="text" class="form__input" id="fullName" name="fullName">
+
+          <label for="phone" class="form__label">Телефон</label>
+          <input type="text" class="form__input" id="phone" name="phone">
+
+          <label for="email" class="form__label">E-mail</label>
+          <input type="email" class="form__input" id="email" name="email">
+        </fieldset>
+
+        <fieldset class="form__box">
+          <legend class="form__title-box">Адрес доставки</legend>
+
+          <label for="city" class="form__label">Город</label>
+          <input type="text" class="form__input" id="city" name="city">
+
+          <label for="zipCode" class="form__label">Индекс</label>
+          <input type="number" class="form__input" id="zipCode" name="zipCode">
+
+          <label for="address" class="form__label">Адрес</label>
+          <input type="text" class="form__input" id="address" name="address">
+        </fieldset>
+        
+        <fieldset class="form__box">
+          <legend class="form__title-box">Выбор модели</legend>
+
+          <label for="model" class="form__label">Модель</label>
+          <select name="model" id="model" class="form__select">
+            <option value="iPone13">iPhone 13</option>
+            <option value="iPone13mini">iPhone 13 mini</option>
+            <option value="iPone13Pro">iPhone 13 Pro</option>
+            <option value="iPone13ProMax">iPhone 13 Pro Max</option>
+          </select>
+
+          <label for="color" class="form__label">Цвет</label>
+          <select name="color" id="color" class="form__select">
+            <option value="Pearl">Pearl перламутровый</option>
+            <option value="Graphite">Графит</option>
+            <option value="Sunset Gold">Золотой закат</option>
+            <option value="Orange">Orange оранжевый</option>
+            <option value="Mint">Mint мятно-зеленый</option>
+            <option value="Navi Blue">Navi Blue Глубоководный синий</option>
+          </select>
+        </fieldset>
+        
+        <fieldset class="form__box">
+          <legend class="form__title-box">Аксессуары</legend>
+
+          <label class="form__label checkbox">
+            <input type="checkbox" name="accessories" id="case">Чехол
+          </label>
+
+          <label class="form__label checkbox">
+            <input type="checkbox" name="accessories" id="AirPods">Наушники AirPods
+          </label>
+
+          <label class="form__label checkbox">
+            <input type="checkbox" name="accessories" id="glass">Защитное стекло
+          </label>
+
+          <label class="form__label checkbox">
+            <input type="checkbox" name="accessories" id="MagSafe">Зарядное устройство MagSafe
+          </label>
+        </fieldset>
+
+        <button class="form__submit btn btn-primary" type="submit">Оформить</button>
+      </form>
+    </div>
+  </section>
+  <!-- Block order ORDER END -->
+  
+</main>
+
+
+<footer class="footer">
+  <div class="container">
+
+  </div>
+</footer>
+
+<!-- Section FOOTER BEGIN -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="copyright left">
+      © iPhone 13 Promo, 2021
+    </div>
+    <div class="author right">
+      Design by Anastasia Ilina
+      <a href="mailto:" class="author-email email">
+        ilina9825@gmail.com
+      </a>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

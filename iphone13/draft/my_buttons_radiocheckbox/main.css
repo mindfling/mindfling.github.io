@@ -1,0 +1,78 @@
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: 'Roboto';
+
+    background-color: #ffd1cc;
+    background-image: linear-gradient(62deg, #ffd1cc 26%, #ffd67a 71%);
+  }
+  ::selection {
+    color: rgb(255, 255, 255);
+    background-color: #e6b946;
+
+  }
+  .wrapper {
+    /* display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto; */
+    margin-top: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #daa520;
+    min-width: 580px;
+    min-height: 250px;
+    background-color: #fff;
+    color: rgb(34, 34, 34);
+    margin: auto;
+    padding: 20px 10px;
+  }
+  .container p span {
+    color: orange;
+    font-weight: bold;
+    cursor: default;
+  }
+
+  label {
+    display: inline-block;
+    border: 1px solid rgb(140, 218, 23);
+    width: max-content;
+    height: max-content;
+    /* padding: 12px 10px; */
+    margin: 10px 15px;
+    user-select: none;
+    cursor: pointer;
+    overflow: visible;
+  }
+  label span {
+    padding: 5px 5px;
+    /* background-color: rgb(214, 214, 214); */
+    font-size: 12px;
+    line-height: 24px;
+  }
+  label:hover {
+    border: 1px solid brown;
+  }
+
+  input[type="checkbox"]:checked + span,
+  input[type="radio"]:checked + span {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 153, 0);
+  }
+  input[type="radio"] {
+    display: none;
+    visibility: hidden;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
