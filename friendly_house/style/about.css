@@ -1,0 +1,48 @@
+/* *ABOUT*  */
+
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about__container {
+  /* padding-right: 728px; */
+  max-width: 460px;
+}
+
+.about__page-title {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  text-align: left;
+  color: #282626;
+  margin-bottom: 33px;
+}
+
+.about__text {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.about__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about__text_italic {
+  font-family: inherit;
+  font-style: italic;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.about__text_strong {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-style: inherit;
+  font-size: inherit;
+  font-weight: 500;
+}
+

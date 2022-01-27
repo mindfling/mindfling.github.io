@@ -4,48 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- предзагрузка шрифтов -->
   <link rel="preload" href="fonts/Comfortaa-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HelveticaNeueCyr-Roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <!-- загружаем стили -->
-  <link rel="stylesheet" href="style.css">
-  <title>Friendly House - О приюте About Our shelter m2l06</title>
+
+  <!-- главный файл стилей -->
+  <link rel="stylesheet" href="style/style.css">
+  <title>Friendly House - О приюте About Our shelter BEM Module2 Lesson10 FH</title>
 </head>
-<body>
-  
+<body class="page">
     
   <section class="about">
     <div class="container">
-      <h2 class="title">О приюте</h2>
-      <p>Приют <i>"Friendly House"</i> - это целый комплекс для бездомных и брошенных животных.</p>
-      <p>В приюте работает сплочённая команда, которая занимается помощью бездомным животным в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.</p>
+      <div class="about__container">
+        <h2 class="about__page-title">О приюте</h2>
+        <p class="about__text">Приют <i class="about__text about__text_italic">"Friendly House"</i> - это целый комплекс для бездомных и брошенных животных.</p>
+        <p class="about__text">В приюте работает сплочённая команда, которая занимается помощью бездомным животным в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.</p>
+      </div><!-- /.about__container -->
     </div>
-  </section>
+  </section><!-- about -->
 
   <section class="help-us">
     <div class="container">
-      <h2 class="title-question">Как ты можешь нам помочь?</h2>
-      <ol class="help-list">
-        <li class="help-item">
-          <article>
-            <h3 class="help-subtitle">Финансово</h3>
-            <p>Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+      <h2 class="help-us__question">Как ты можешь нам помочь?</h2>
+      <ol class="help-us__list">
+        <li class="help-us__item">
+          <article class="help-us__article">
+            <h3 class="help-us__subtitle">Финансово</h3>
+            <p class="help-us__text">Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
           </article>
         </li>
-        <li class="help-item">
-          <article>
-            <h3 class="help-subtitle">Стать волонером</h3>
-            <p>Наш приют <i>"Friendly House"</i> привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.</p>
-            <p>Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+        <li class="help-us__item">
+          <article class="help-us__article">
+            <h3 class="help-us__subtitle">Стать волонером</h3>
+            <p class="help-us__text">Наш приют <i class="help-us__text help-us__text_italic">"Friendly House"</i> привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.</p>
+            <p class="help-us__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
           </article>
         </li>
-        <li class="help-item">
-          <article>
-            <h3 class="help-subtitle">Стать опекуном</h3>
-            <p><strong>Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!</strong></p>
-            <p>Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по каким-либо причинам.</p>
+        <li class="help-us__item">
+          <article class="help-us__article">
+            <h3 class="help-us__subtitle">Стать опекуном</h3>
+            <p class="help-us__text"><strong class="help-us__text help-us__text_strong">Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!</strong></p>
+            <p class="help-us__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по каким-либо причинам.</p>
           </article>
         </li>
       </ol>

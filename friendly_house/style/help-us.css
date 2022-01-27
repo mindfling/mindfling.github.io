@@ -1,0 +1,90 @@
+/* *HELP-US* */
+.help-us {
+  padding-top: 107px;
+  padding-bottom: 140px;
+}
+
+.help-us__question {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+  color: #ff8a00;
+  margin-bottom: 130px;
+}
+
+.help-us__list {
+  list-style-type: decimal;
+  counter-reset: count;
+  list-style: inside;
+}
+
+.help-us__subtitle {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.help-us__text {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.help-us__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.help-us__text_italic {
+  font-style: italic;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.help-us__text_strong {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.help-us__item {
+  display: block;
+  position: relative;
+  list-style: none;
+  padding-left: 30px;
+  margin-bottom: 140px;
+}
+
+.help-us__item:last-child {
+  margin-bottom: 0;
+}
+
+.help-us__item:nth-of-type(odd) {
+  padding-right: 657px;
+}
+
+.help-us__item:nth-of-type(even) {
+  padding-right: 520px;
+}
+
+.help-us__item:before {
+  position: absolute;
+  display: block;
+  counter-increment: count;
+  content: counter(count);
+  color: #ff8a00;
+  font-size: 50px;
+  text-align: left;
+  line-height: 37px;
+  width: 29px;
+  height: 43px;
+}
+
+.help-us__article {
+  margin-left: 58px;
+}
