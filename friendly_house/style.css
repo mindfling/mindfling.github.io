@@ -1,6 +1,45 @@
+/* Comfortaa-Regular regular 400 */
+@font-face {
+  font-family: "Comfortaa";
+  src:  local("Comfortaa Regular"),
+        url(fonts/Comfortaa-Regular.woff2) format("woff2"),
+        url(fonts/Comfortaa-Regular.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* HelveticaNeueCyr-Light light 300 */
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src:  local("HelveticaNeueCyr Light"),
+        url(fonts/HelveticaNeueCyr-Light.woff2) format("woff2"),
+        url(fonts/HelveticaNeueCyr-Light.woff) format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* HelveticaNeueCyr-Roman normal 400 */
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src:  local("HelveticaNeueCyr Roman"),
+        url(fonts/HelveticaNeueCyr-Roman.woff2) format("woff2"),
+        url(fonts/HelveticaNeueCyr-Roman.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* HelveticaNeueCyr-Medium medium 500 */
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src:  local("HelveticaNeueCyr Medium"),
+        url(fonts/HelveticaNeueCyr-Medium.woff2) format("woff2"),
+        url(fonts/HelveticaNeueCyr-Medium.woff) format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
-  /* сбрасываем отступы в самом начале */
   margin: 0;
   padding: 0;
 }
@@ -9,7 +48,6 @@ body {
   display: block;
   background-color: #F2F0F1;
   color: #282626;
-  /* подключаем системные шрифты */
   font-family: -apple-system,
     BlinkMacSystemFont, 
     'Segoe UI', 
@@ -37,15 +75,27 @@ section {
 }
 
 .title {
+  font-family: "Comfortaa", sans-serif;
   font-size: 50px;
-  font-weight: normal;
+  font-weight: 400; /* normal regular */
+  text-align: left;
   color: #282626;
   margin-bottom: 33px;
 }
 
+.title-question {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 52px;
+  font-weight: 400;
+  text-align: center;
+  color: #FF8A00;
+  margin-bottom: 130px;
+}
+
 p {
+  font-family: "HelveticaNeueCyr", sans-serif;
   font-size: 20px;
-  font-weight: lighter;
+  font-weight: 300;
   text-align: left;
   line-height: 1.6;
 }
@@ -55,12 +105,10 @@ p:not(:last-child) {
   /* у последнего абзаца нет отступа снизу */
 }
 
-.title-question {
-  font-size: 58px;
-  font-weight: normal;
-  color: #FF8A00;
-  text-align: center;
-  margin-bottom: 130px;
+strong {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .about {
@@ -69,7 +117,7 @@ p:not(:last-child) {
 }
 
 .about .container {
-  padding-right: 733px;
+  padding-right: 728px;
 }
 
 .help-us {
@@ -84,9 +132,14 @@ ol {
 }
 
 .help-subtitle {
+  font-family: "HelveticaNeueCyr", sans-serif;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 30px;
+}
+
+li:nth-of-type(even) .help-subtitle {
+  margin-bottom: 80px;
 }
 
 li {
@@ -97,6 +150,7 @@ li {
   margin-bottom: 140px;
 }
 
+/* нет отступа у последнего элемента */
 li:last-child {
   margin-bottom: 0;
 }
@@ -108,7 +162,7 @@ li:nth-of-type(odd) {
 
 /* чётные */
 li:nth-of-type(even) {
-  padding-right: 521px;
+  padding-right: 520px;
 }
 
 /* цифры кастомные маркеры списка */
@@ -128,3 +182,4 @@ li:before {
 article {
   margin-left: 58px;
 }
+
