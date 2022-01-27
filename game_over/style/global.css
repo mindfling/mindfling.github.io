@@ -116,3 +116,12 @@ section {
   /* 1440px */
   width: 100%;
 }
+
+
+/* ВЫДЕЛЕНИЕ ТЕКСТА */
+::selection {
+  color: #fff;
+  /* background-color: #CD06FF; */
+  background-color: #6C0287;
+  /* background-color: #440F51; */
+}

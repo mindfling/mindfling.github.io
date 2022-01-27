@@ -10,14 +10,22 @@
 .banner__container {
   position: relative;
   display: block;
-  width: 1180px;
-  height: 862px;
+  min-width: 1180px;
+  min-height: 862px;
+  /* * gradiental text GameOver *
   background: url(img/banner_man_vr.png) no-repeat 100% 100%,
             url(img/GAME_OVER_stroke_text-orig.svg) no-repeat 0px 183px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 333px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 483px, 
             url(img/GAME_OVER_copy_dark_inside_DarkViolet.svg) no-repeat 0px 633px, 
             url(img/GAME_OVER_very_bright_CD06FF_magenta.svg) no-repeat 0px 783px;
+            */
+  background: url(img/banner_man_vr.png) no-repeat 100% 100%,
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 185px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 335px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 485px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 635px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 785px;
 }
 
 .banner__description {
@@ -32,16 +40,16 @@
   font-family: "Arial Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 196px;
+  font-size: 200px;
   text-align: left;
   line-height: 200px;
-  letter-spacing: -17px;
+  letter-spacing: -19px;
   color: #FFFFFF;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #1B1A1B;
-  margin-left: -6px;
+  margin-left: -10px;
 }
 
 /* * усложненное задание man_in_vr выше фона *

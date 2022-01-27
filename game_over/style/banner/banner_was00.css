@@ -15,26 +15,17 @@
   /* background: url(img/GAME_OVER_stroke_text.svg) repeat-y 50% 35px; */
   /* background: url(img/banner_man_vr.png) no-repeat 100% 100%, url(img/GAME_OVER_stroke_text.svg) repeat-y 40px 0px;   */
   background:
-          /* на фоне мужчина в очках vr */
-            url(img/banner_man_vr.png) no-repeat 100% 100%,
-          /* далее буквы на фоне ярче по цвету */
-            url(img/GAME_OVER_stroke_text-orig.svg) no-repeat 0px 183px, 
-            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 333px, 
-            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 483px, 
-            url(img/GAME_OVER_copy_dark_inside_DarkViolet.svg) no-repeat 0px 633px, 
-            url(img/GAME_OVER_very_bright_CD06FF_magenta.svg) no-repeat 0px 783px;
-
-            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 181px,  */
+            url(img/banner_man_vr.png) no-repeat 100% 100%, 
+            url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 181px, 
             /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 183px,  */
             /* url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 183px,  */
+            url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 333px, 
             /* url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 331px,  */
+            url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 483px, 
             /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 483px,  */
-            /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 784px; */
-            
-            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 333px,  */
-            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 483px,  */
-            /* url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 634px,  */
-            /* url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 784px; */
+            url(img/GAME_OVER_copy_dark_inside.svg) no-repeat 0px 634px, 
+            url(img/GAME_OVER_copy_bright.svg) no-repeat 0px 784px;
+
             /* 
             url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 183px,  
             url(img/GAME_OVER_stroke_text.svg) no-repeat 0px 331px, 
@@ -51,7 +42,7 @@
             */
 }
 
-/* * усложненное задание *
+/* 
 .banner__container::after {
   position: absolute;
   bottom: 0;
@@ -68,25 +59,11 @@
   font-size: 28px;
   line-height: 50px;
   text-align: left;
-  margin-left: 204px;
+  margin-left: 207px;
 }
 
 .banner__title {
-  font-family: "Arial Black", Arial, sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 196px;
-  text-align: left;
-  line-height: 200px;
-  letter-spacing: -17px;
-  color: #FFFFFF;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 15px #1B1A1B;
-  margin-left: -6px;
-  /* 
-  изначальные настройки 
+  /* Самый жирный шрифт для заголовка 
   font-family: "Arial Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -100,6 +77,21 @@
   text-transform: uppercase;
   text-shadow: 1px 1px 15px #1B1A1B;
   */
+
+  /* Самый жирный шрифт для заголовка */
+  font-family: "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 195px;
+  text-align: left;
+  line-height: 200px;
+  letter-spacing: -16px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #1B1A1B;
+  margin-left: -4px;
 }
 
 
