@@ -1,0 +1,118 @@
+/* Global CSS Styles by Mask Leskin */
+
+html {
+  box-sizing: border-box;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: block;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  /* стандартный шрифт без засечек */
+  font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  /* темный сайт */
+  color: #fff;
+  background-color: #1b1a1b;
+  /* светлый сайт 
+  color: #000; 
+  background-color: #fff; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+fieldset,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* специальный класс для скрытого блока 
+   скрыть но оставить в DOM-дереве */
+.visually-hidden {
+  display: block;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+}
+
+/*
+Пример контейнера
+Если контейнер 1080px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+.container {
+  /* width: 1180px; */
+  max-width: 1240px; /* 30 + 1180 + 30 */
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/*
+У секции добавляю вертикальные паддинги,
+это половина от расстояния между блоками
+*/
+section {
+  padding: 50px 0;
+  display: block;
+  /* 1440px */
+  width: 100%;
+}
