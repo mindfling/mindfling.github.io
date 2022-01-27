@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- фавиконки -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
     <link rel="icon" type="image/png" href="img/logo.png" />
 
-    <link rel="stylesheet" href="style.css">
+    <!-- main index styles главный файл стилей -->
+    <link rel="stylesheet" href="index.css">
 
-    <title>MethEd GO - m2l01</title>
+    <title>MethEd GO - m2l02</title>
   </head>
   <body>
 
     <div class="wrapper">
       <header>
         <img src="img/logo.svg" alt="Лого GO" width="120" height="66" />
-
         <h2>Меню</h2>
         <ul>
           <li><a href="#rooms">Залы</a></li>
@@ -82,15 +83,104 @@
         </ol>
       </section>
 
+
+      <section>
+        <h2 id="booking">ЗАБРОНИРОВАТЬ ЗАЛ ПРОСТО</h2>
+
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking-form">
+          <fieldset>
+            <legend>Выбери зал</legend>
+
+            <label>
+              <input type="radio" name="select-hall" value="option-80s-vibes" required />
+              <span>80&rsquo;s vibes</span>
+            </label>
+            <label>
+              <input type="radio" name="select-hall" value="option-star-wars" required />
+              <span>Star wars</span>
+            </label>
+            <label>
+              <input type="radio" name="select-hall" value="option-wild-west" required />
+              <span>Wild west</span>
+            </label>
+            <label>
+              <input type="radio" name="select-hall" value="option-neon-style" required />
+              <span>Neon style</span>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Собери набор развелечений</legend>
+            <fieldset aria-required="true">
+              <legend>Приставка</legend>
+              <label><input type="radio" name="video-game" value="video-play-station-5" required/>PlayStation 5</label>
+              <label><input type="radio" name="video-game" value="video-sega-mega-drive" required/>Sega Mega Drive</label>
+              <label><input type="radio" name="video-game" value="video-x-box-one-s" required/>X-box One S</label>
+              <label><input type="radio" name="video-game" value="video-dendy" required/>Dendy</label>
+            </fieldset>
+            <fieldset aria-required="true">
+              <!-- check this field required with js -->
+              <legend>Настольные игры</legend>
+              <label><input type="checkbox" name="table-game" value="table-Jenga" />Jenga</label>
+              <label><input type="checkbox" name="table-game" value="table-Monopoly" />Monopoly</label>
+              <label><input type="checkbox" name="table-game" value="table-Munchkin" />Манчкин</label>
+              <label><input type="checkbox" name="table-game" value="table-Alias" />Alias</label>
+            </fieldset>
+            <fieldset aria-required="true">
+              <!-- check this field required with js -->
+              <legend>Дополнительно</legend>
+              <label><input type="checkbox" name="optional" value="optional-karaoke" />Караоке</label>
+              <label><input type="checkbox" name="optional" value="optional-vr" />VR</label>
+            </fieldset>
+          </fieldset>
+ 
+          <fieldset>
+            <legend>Выбери дату и время</legend>
+
+            <div>
+              <div>
+                <label for="booking-choose-date">Дата</label>
+                <input type="date" name="choose-date" id="booking-choose-date" placeholder="Дата" required />
+
+                <label for="booking-choose-time">Время</label>
+                <input type="time" name="choose-time" id="booking-choose-time" placeholder="Время" required />
+              </div>
+              <div>
+                <label for="booking-people-amount">Количество человек</label>
+                <input type="number" name="people-amount" id="booking-people-amount" placeholder="Сколько человек" required />
+              </div>
+            </div>
+
+            <div>
+              <label for="booking-user-name">Имя</label>
+              <input type="text" name="user-name" id="booking-user-name" required />
+
+              <label for="booking-user-surname">Фамилия</label>
+              <input type="text" name="user-surname" id="booking-user-surname" required />
+            </div>
+
+            <div>
+              <label for="booking-user-tel">Телефона</label>
+              <input type="tel" name="user-tel" id="booking-user-tel" required />
+              
+              <label for="booking-user-email">E-mail</label>
+              <input type="email" name="user-email" id="booking-user-email" required />
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Забронировать</button>
+          </div>
+        </form>
+      </section>
+
       <section>
         <h2 id="about">О нас</h2>
         <p>
-          Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной
-          части города.
+          Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.
         </p>
         <p>
-          Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
-          разработками со всего мира.
+          Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
         </p>
         <blockquote>
           <p><b>GAME OVER</b> &ndash; это место незабываемых впечатлений</p>
@@ -100,40 +190,41 @@
 
       <section>
         <h2>Отзывы посетителей</h2>
-        
         <ul>
           <li>
-            <figure>
+            <div>
               <img src="img/maks.jpg" alt="Макс" />
-              <figcaption>Макс Самойлов</figcaption>
-            </figure>
-            <p>
-              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR-очки это просто бомба, никогда еще
-              я не был в таком полном игровом погружении. Сервис на вытоте!
-            </p>
+              <p>Макс Самойлов</p>
+            </div>
+            <p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR-очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на вытоте!</p>
           </li>
 
           <li>
-            <figure>
+            <div>
               <img src="img/oksana.jpg" alt="Оксана" />
-              <figcaption>Оксана Григорьва</figcaption>
-            </figure>
-            <p>
-              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше
-              нет подобных заведений
-            </p>
+              <p>Оксана Григорьва</p>
+            </div>
+            <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
           </li>
 
           <li>
-            <figure>
+            <div>
               <img src="img/nikita.jpg" alt="Никита" />
-              <figcaption>Никита Ященко</figcaption>
-            </figure>
-            <p>
-              Немного подвисала игра в VR очках, а так вес норм. Крутое оформление в стиле звездных войн, попал в
-              атмосферу космоса
-            </p>
+              <p>Никита Ященко</p>
+            </div>
+            <p>Немного подвисала игра в VR очках, а так вес норм. Крутое оформление в стиле звездных войн, попал в атмосферу космоса</p>
           </li>
+        </ul>
+      </section>
+
+      <section class="faq">
+        <h2 class="faq-subtitle">Частые вопросы</h2>
+        <ul class="faq-list">
+          <li class="faq-item">Можно ли забронировать комнату онлайн?</li>
+          <li class="faq-item">Могут ли мне вернуть деньги за бронь?</li>
+          <li class="faq-item">Какая комната самая популярная?</li>
+          <li class="faq-item">Как получить VIP карту?</li>
+          <li class="faq-item">Какая комната самая популярная?</li>
         </ul>
       </section>
 
@@ -181,81 +272,8 @@
         </form>
       </section>
 
-      <section>
-        <h2 id="booking">Забронировать</h2>
 
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking-form">
-          <fieldset>
-            <label for="booking-select-hall">Выбрать зал</label>
-            <select name="select-hall" id="booking-select-hall">
-              <option value="option-80s-vibes">80&rsquo;s vibes</option>
-              <option value="option-star-wars">Star wars</option>
-              <option value="option-wild-west">Wild west</option>
-              <option value="option-neon-style">Neon style</option>
-            </select>
-          </fieldset>
 
-          <fieldset>
-            <legend>Собери набор развелечений</legend>
-            <fieldset aria-required="true">
-              <legend>Приставка</legend>
-              <label><input type="radio" name="video-game" value="play-station-5" required/>PlayStation 5</label>
-              <label><input type="radio" name="video-game" value="sega-mega-drive" required/>Sega Mega Drive</label>
-              <label><input type="radio" name="video-game" value="x-box-one-s" required/>X-box One S</label>
-              <label><input type="radio" name="video-game" value="dendy" required/>Dendy</label>
-            </fieldset>
-            <fieldset aria-required="true">
-              <!-- check this field requered with js -->
-              <legend>Настольные игры</legend>
-              <label><input type="checkbox" name="table-game" value="Jenga" required/>Jenga</label>
-              <label><input type="checkbox" name="table-game" value="Monopoly" required/>Monopoly</label>
-              <label><input type="checkbox" name="table-game" value="Munchkin" required/>Манчкин</label>
-              <label><input type="checkbox" name="table-game" value="Alias" required/>Alias</label>
-            </fieldset>
-            <fieldset aria-required="true">
-              <!-- check this field requered with js -->
-              <legend>Дополнительно</legend>
-              <label><input type="checkbox" name="optional" value="optional-karaoke" required/>Караоке</label>
-              <label><input type="checkbox" name="optional" value="optional-vr" required/>VR (Очки виртуальной реальности)</label>
-            </fieldset>
-          </fieldset>
-
-          <fieldset>
-            <legend>Выбери дату и время</legend>
-            <div>
-              <label for="booking-choose-date">Дата <span>&ast;</span></label>
-              <input type="date" name="choose-date" id="booking-choose-date" required />
-
-              <label for="booking-choose-time">Время <span>&ast;</span></label>
-              <input type="time" name="choose-time" id="booking-choose-time" required />
-            </div>
-            <div>
-              <label for="booking-people-amount">Количество человек <span>&ast;</span></label>
-              <input type="number" name="people-amount" id="booking-people-amount" required />
-            </div>
-            <div>
-              <label for="booking-user-name">Имя <span>&ast;</span></label>
-              <input type="text" name="user-name" id="booking-user-name" required />
-
-              <label for="booking-user-surname">Фамилия <span>&ast;</span></label>
-              <input type="text" name="user-surname" id="booking-user-surname" required />
-            </div>
-            <div>
-              <label for="booking-user-tel">Номер телефона <span>&ast;</span></label>
-              <input type="tel" name="user-tel" id="booking-user-tel" required />
-
-              <input type="checkbox" name="check-fullage" id="booking-check-fullage" required/>
-              <label for="booking-check-fullage">Я старше 18 лет</label>
-            </div>
-          </fieldset>
-
-          <div>
-            <button type="submit">Забронировать</button>
-            <input type="checkbox" name="privacy-agree" id="booking-privacy-agree" required/>
-            <label for="booking-privacy-agree">Согласен на обработку персональных данных</label>
-          </div>
-        </form>
-      </section>
     </div>
 
   </body>

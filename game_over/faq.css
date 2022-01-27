@@ -1,0 +1,48 @@
+/* файл стилей блока FAQ */
+
+.faq-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* простой список вопросов */
+
+.faq-item {
+  position: relative;
+  background-color: #fff;
+  color: #1c1a1a;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+}
+
+.faq-item:nth-child(even) {
+  background-color: #440f51;
+  color: #fff;
+}
+
+
+/* усложненный с картинками */
+
+.faq-item::after {
+  position: absolute;
+  top: 19px;
+  right: 70px;
+  display: block;
+  float: right;
+  width: 46px;
+  height: 46px;
+  content: "";
+}
+
+.faq-item:nth-child(odd):after {
+  background-image: url(./img/open-purple.svg);
+}
+
+.faq-item:nth-child(even):after {
+  background-image: url(./img/open.svg);
+}
+

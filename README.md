@@ -8,14 +8,21 @@ Hello! This is GitHub Pages for
 - 💞️ I’m looking to collaborate on ...
 <!-- - 📫 How to reach me here ... -->
 
-*Pages are here:*
-- Friendly House project code [github.com/mindfling/mindfling.github.io/tree/main/friendly_house](https://github.com/mindfling/mindfling.github.io/tree/main/friendly_house)
-- Friendly House git page [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
-
 - my first simple page mindfling.github.io/[404](https://mindfling.github.io/404)
 
 - my [iPhone13 code](https://github.com/mindfling/mindfling.github.io/tree/main/iphone13) 
 - learning project page [iPhone13](https://mindfling.github.io/iphone13)
+
+
+*Friendly House:*
+- Friendly House project code [github.com/mindfling/mindfling.github.io/tree/main/friendly_house](https://github.com/mindfling/mindfling.github.io/tree/main/friendly_house)
+- Friendly House git page [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
+
+
+*Game Over:*
+- Game Over project code [github.com/mindfling/mindfling.github.io/tree/main/game_over](https://github.com/mindfling/mindfling.github.io/tree/main/game_over)
+- Game Over git page [mindfling.github.io/game_over](https://mindfling.github.io/game_over)
+
 
 
 <!---
