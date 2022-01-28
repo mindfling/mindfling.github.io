@@ -6,7 +6,6 @@
   min-height: 896px;
   background-color: #fff;
   padding: 167px 0;
-  /*! border: 1px solid; */
   text-align: center;
 }
 
@@ -23,6 +22,7 @@
 
 .callback__contacts {
   display: block;
+  padding-left: 11px;
   margin-bottom: 60px;
 }
 
@@ -60,6 +60,17 @@
 
 .callback__contact-item_email::before {
   background: url("img/email-envelope.svg");
+}
+
+.callback__contact-link {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  opacity: 1;
+}
+
+.callback__contact-link:hover {
+  opacity: 0.8;
 }
 
 .form__fieldset {

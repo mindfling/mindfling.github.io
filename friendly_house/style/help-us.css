@@ -82,12 +82,14 @@
 }
 
 /* todo эти убрать */
+/*
 .help-us__item:nth-of-type(odd) {
-  /* padding-right: 657px; */
+   padding-right: 657px; 
 }
 .help-us__item:nth-of-type(even) {
-  /* padding-right: 520px; */
+   padding-right: 520px; 
 }
+*/
 
 /* * кастомная нумерация списков */
 .help-us__item:before {
