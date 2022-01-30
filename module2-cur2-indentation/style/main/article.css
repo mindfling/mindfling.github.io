@@ -8,12 +8,12 @@
 
 .article__image {
   display: block;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .article__image_center {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   /* margin: 0 auto; */
 }
 

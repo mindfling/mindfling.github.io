@@ -112,8 +112,6 @@
 }
 
 
-
-
 /* *ARTICLE* */
 .article {
 }
@@ -135,9 +133,14 @@
   display: block;
 }
 .article__image_center {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0 auto;
 }
+.article__image_center:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .article__image_left {
   display: block;
   float: left;
@@ -146,9 +149,14 @@
   display: block;
   float: right;
 }
+
 .article__row {
   display: flow-root;
 }
+.article__row:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .article__text {
 }
 .article__text_border {

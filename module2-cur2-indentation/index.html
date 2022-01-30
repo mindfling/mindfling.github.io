@@ -28,38 +28,33 @@
         поговорим о фундаментальных основах работы с отступами в вёрстке.
       </p>
     </div>
-  </header><!-- ? .header -->
+  </header><!-- .header -->
 
+
+  <section class="synopsis synopsis_footer">
+    <div class="synopsis__container container">
+      <h2 class="synopsis__title">Содержание:</h2>
+      <!-- synopsis__navigation Упорядоченный список навигации по содержанию страницы -->
+      <nav class="synopsis__navigation synopsis">
+        <ol class="synopsis__list synopsis__list_ordered">
+          <li class="synopsis__list-item">
+            <a href="#article_first" class="synopsis__link">Отступ задается от предыдущего элемента к следующему</a>
+          </li>
+          <li class="synopsis__list-item">
+            <a href="#article_second" class="synopsis__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
+          </li>
+          <li class="synopsis__list-item">
+            <a href="#article_third" class="synopsis__link">Для последнего элемента группы отступ обнуляется</a>
+          </li>
+        </ol>
+      </nav><!-- synopsis__navigation -->
+    </div>
+  </section><!-- synopsis -->
 
 
   <main class="main">
 
-    <section class="synopsis">
-      <div class="synopsis__container container">
-        <h2 class="synopsis__title">Содержание:</h2>
-
-        <!-- Упорядоченный список навигации по содержанию страницы -->
-        <nav class="synopsis__navigation synopsis">
-          <ol class="synopsis__list synopsis__list_ordered">
-            <li class="synopsis__list-item">
-              <a href="#article_first" class="synopsis__link">Отступ задается от предыдущего элемента к следующему</a>
-            </li>
-            <li class="synopsis__list-item">
-              <a href="#article_second" class="synopsis__link">Отступ задается последнему возможному элементу в DOM-дереве</a>
-            </li>
-            <li class="synopsis__list-item">
-              <a href="#article_third" class="synopsis__link">Для последнего элемента группы отступ обнуляется</a>
-            </li>
-          </ol>
-        </nav>
-
-      </div>
-    </section><!-- ? .synopsis -->
-
-
-
     <article class="article article_first" id="article_first">
-
       <div class="container">
         <h2 class="article__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h2>
         <div class="article__row">
@@ -92,24 +87,20 @@
             <p class="article__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств 
               ругих блоков или свойств родителя.</p>
           </div>
-          <img class="article__image article__image_right" src="image/first/image_01.jpg" alt="Кошка на подоконнике padding-top сверху" />
+          <img class="article__image article__image_right" src="image/first/image_02.jpg" alt="Кошка на подоконнике padding-top сверху" />
         </div><!-- .article__row -->
       </div><!-- container -->
+    </article><!--  .article article_first -->
 
-    </article>
-    <!-- ? .article article_first -->
-
-    
 
     <article class="article article_second" id="article_second">
-
       <div class="container">
         <h2 class="article__title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
 
         <p class="article__text">Вообще, <em class="article__text article__text_italic">margin</em> 
           задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
 
-        <img class="article__image article__image_center" src="image/second/image_03.jpg" alt="Пример html кода Красивый бутерброд" />
+        <img class="article__image article__image_center" src="image/second/image_03.jpg" alt="Пример кода Красивый бутерброд" />
         <img class="article__image article__image_center" src="image/second/image_04.jpg" alt="Пример готовой вёрстки Полезные рецепты" />
         
         <p class="article__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
@@ -136,12 +127,8 @@
 
         <p class="article__text">Это необходимо для более простого поиска отступов в будущем &mdash; для вас или того, кто будет верстать после вас. 
           Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
-
       </div>
-    
-    </article>
-    <!-- /.article article_second -->
-
+    </article><!-- .article article_second -->
 
 
     <article class="article article_third" id="article_third">
@@ -151,39 +138,35 @@
         <p class="article__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="article__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
         
-        <img src="image/third/image_08.jpg" alt="Пример готовой верстки рецептов красными стрелками указаны оптступы между блоками" class="article__image article__image_center" />
+        <img class="article__image article__image_center" src="image/third/image_08.jpg" alt="Пример готовой верстки рецептов красными стрелками указаны оптступы между блоками" />
         
-        <p class="article__text">В соответствии со вторым принципом: последний <em class="article__text article__text_italic">margin</em> обнуляется, а нижний отступ задаётся через <em class="article__text article__text_italic">padding</em> для <em class="article__text article__text_italic">section</em>. Я чаще всего задаю <em class="article__text article__text_italic">padding</em> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <em class="article__text article__text_italic">padding-top:50px</em> и <em class="article__text article__text_italic">padding-bottom:50px</em>.</p>
+        <p class="article__text">В соответствии со вторым принципом: последний <em class="article__text article__text_italic">margin</em>
+           обнуляется, а нижний отступ задаётся через <em class="article__text article__text_italic">padding</em> для <em class="article__text article__text_italic">section</em>. 
+           Я чаще всего задаю <em class="article__text article__text_italic">padding</em> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям 
+           <em class="article__text article__text_italic">padding-top:50px</em> и <em class="article__text article__text_italic">padding-bottom:50px</em>.</p>
         
-        <img src="image/third/image_09.jpg" alt="Пример верстки рецептов ........" class="article__image article__image_center" />
-
-        <img src="image/third/image_1011.png" alt="Пример кода верстки рецептов" class="article__image article__image_center">
-        
+        <img class="article__image article__image_center" src="image/third/image_09.jpg" alt="Пример верстки рецептов ........" />
+        <img class="article__image article__image_center" src="image/third/image_1011.png" alt="Пример кода верстки рецептов" />
         
         <p class="article__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
         
-        <img src="image/third/image_12.jpg" alt="Пример верстки блока навигации сайта " class="article__image article__image_center" />
-        <img src="image/third/image_13.jpg" alt="Пример html кода " class="article__image article__image_center" />
-        
+        <img class="article__image article__image_center" src="image/third/image_12.jpg" alt="Пример верстки блока навигации сайта " />
+        <img class="article__image article__image_center" src="image/third/image_13.jpg" alt="Пример html кода " />
         
         <p class="article__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-        <img src="image/third/image_14.jpg" alt="Пример html кода ..... " class="article__image article__image_center" />
+        <img class="article__image article__image_center" src="image/third/image_14.jpg" alt="Пример html кода ..... " />
         
         <p class="article__text">Советую использовать псевдоклассы <em class="article__text article__text_italic">:last-child</em> чаще других, например так:</p>
-        <img src="image/third/image_15.jpg" alt="Пример html кода margin ...... " class="article__image article__image_center" />
-        
+        <img class="article__image article__image_center" src="image/third/image_15.jpg" alt="Пример html кода margin ...... " />
       </div>
-    
-    </article><!-- /.article article_third -->
+    </article><!-- .article article_third -->
 
-  </main><!-- /.main -->
+  </main><!-- .main -->
 
 
   <section class="synopsis synopsis_footer">
     <div class="synopsis__container container">
-
       <h2 class="synopsis__title">Содержание:</h2>
-
       <ul class="synopsis__list synopsis__list_unordered">
         <li class="synopsis__list-item">
           <p class="synopsis__text">отступы задаём от предыдущего элемента к следующему</p> 
@@ -204,11 +187,11 @@
           <p class="synopsis__text">последнему элементу группы отступ всегда обнуляем</p> 
         </li>
       </ul>
-
-      <p class="synopsis__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
-    </div>
-  </section>
-
+      <p class="synopsis__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. 
+        Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. 
+        Но для этого эти принципы необходимо хорошо знать.</p>
+    </div><!-- container -->
+  </section><!-- synopsis -->
 
 
 </body>
