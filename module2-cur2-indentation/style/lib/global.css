@@ -123,3 +123,11 @@ article {
   padding: 0 30px; /* внутренние отступы по бокам 30 */
   margin: 0 auto;  /* выравнивание блока контейнера по центру */
 }
+
+
+/* выделение */
+
+::selection {
+  background-color: #4c4c4c;
+  color: #fff;
+}

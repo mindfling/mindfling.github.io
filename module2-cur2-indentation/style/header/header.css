@@ -7,26 +7,26 @@
 }
 
 .header__container {
-  /* border: 1px solid; */
 }
 
-.header-title {
-  /* font-family: Roboto, sans-serif; */
-  /* font-style: normal; */
-  /* font-weight: 900;
+.header__title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
   font-size: 60px;
-  line-height: 72px;
-  color: #000000;
+  line-height: 120%;
+  /* line-height: 72px; */
+  text-align: left;
+  /* color: #000000; */
   margin-bottom: 30px;
-  text-align: left; */
 }
 
 .header__description {
-  /* font-style: normal;
+  font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 120%;
-  text-align: left; */
+  line-height: 25px;
+  text-align: left;
 }
 
 .header__description:not(:last-child) {
