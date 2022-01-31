@@ -1,0 +1,26 @@
+/* *Roboto Google Font* */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+
+/* *Roboto Local Regular */
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto Regular"),
+        url(../fonts/Roboto-Regular.woff2) format("woff2"),
+        url(../fonts/Roboto-Regular.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+/* *Roboto Local Bold */
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto Bold"),
+        url(../fonts/Roboto-Bold.woff2) format("woff2"),
+        url(../fonts/Roboto-Bold.woff) format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+

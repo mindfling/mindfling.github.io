@@ -1,18 +1,10 @@
-/* ? @import url("normalize.min.css"); */
+@import url(fonts.css);
+
 @import url(lib/normalize.min.css);
 @import url(lib/global.css);
 
-/* ? @import url("fonts.css"); */
-/* ? @import url("global.css"); */
-
-
 @import url(header/header.css);
-
 @import url(synopsis/synopsis.css);
-/* @import url('group2/navigation.css'); */
 @import url(main/main.css);
-
 @import url(main/article.css);
-
-
 

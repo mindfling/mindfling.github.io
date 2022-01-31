@@ -5,12 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- * Roboto Google Fonts * -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+
+  <!-- * Fonts preload * -->
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin>  
+
+  <!-- * стили * -->
   <link rel="stylesheet" href="style/style.css">
+
+  <!-- * favicon * -->
+  <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">  
+  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+
   <title>Module2 Cur2 - Indentation Курсовая работа номер2 на курсе по верстке</title>
-
-  <!-- <link rel="stylesheet" href="style/mystyle.css"> -->
 </head>
-
 <body class="page">
 
   <header class="header">
@@ -85,7 +99,7 @@
             <p class="article__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. 
               Так элемент не будет толкать сам себя.</p>
             <p class="article__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств 
-              ругих блоков или свойств родителя.</p>
+              других блоков или свойств родителя.</p>
           </div>
           <img class="article__image article__image_right" src="image/first/image_02.jpg" alt="Кошка на подоконнике padding-top сверху" />
         </div><!-- .article__row -->
@@ -141,11 +155,11 @@
         <img class="article__image article__image_center" src="image/third/image_08.jpg" alt="Пример готовой верстки рецептов красными стрелками указаны оптступы между блоками" />
         
         <p class="article__text">В соответствии со вторым принципом: последний <em class="article__text article__text_italic">margin</em>
-           обнуляется, а нижний отступ задаётся через <em class="article__text article__text_italic">padding</em> для <em class="article__text article__text_italic">section</em>. 
+           обнуляется, а нижний отступ задаётся через <em class="article__text article__text_italic">padding</em> для 
            Я чаще всего задаю <em class="article__text article__text_italic">padding</em> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям 
            <em class="article__text article__text_italic">padding-top:50px</em> и <em class="article__text article__text_italic">padding-bottom:50px</em>.</p>
         
-        <img class="article__image article__image_center" src="image/third/image_09.jpg" alt="Пример верстки рецептов ........" />
+        <img class="article__image article__image_center" src="image/third/image_09.jpg" alt="Пример верстки рецептов" />
         <img class="article__image article__image_center" src="image/third/image_1011.png" alt="Пример кода верстки рецептов" />
         
         <p class="article__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
