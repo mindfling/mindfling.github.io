@@ -1,12 +1,10 @@
-/* move */
-
+/* Содержание */
+/* Подытожим */
 
 .synopsis__navigation {
   display: block;
   /* padding-left: 24px; */
 }
-
-
 
 .synopsis__container {
   border-radius: 10px;
@@ -14,6 +12,7 @@
   padding-top: 25px;
   padding-bottom: 25px;  
 }
+
 .synopsis__title {
   font-weight: bold;
   font-size: 44px;
@@ -21,23 +20,34 @@
   color: #000000;
   margin-bottom: 20px;
 }
+
 .synopsis__list-item {
   font-size: 20px;
   line-height: 34px;
 }
+
 .synopsis__list_ordered {
   list-style-type: decimal;
   padding-left: 24px;
 }
+
 .synopsis__list_unordered {
   list-style-type: "— ";
   padding-left: 20px;
   margin-bottom: 30px;
 }
 
-.synopsis__link {
+.synopsis__list {
+}
+.synopsis__list::marker {
   color: #02535f;
 }
-.synopsis__link:hover {
+
+.synopsis__link {
+  color: #02535f;
   text-decoration: underline;
+}
+
+.synopsis__link:hover {
+  text-decoration: none;
 }

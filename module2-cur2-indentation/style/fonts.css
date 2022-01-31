@@ -12,7 +12,6 @@
   font-display: swap;
 }
 
-
 /* *Roboto Local Bold */
 @font-face {
   font-family: "Roboto";
@@ -20,6 +19,16 @@
         url(../fonts/Roboto-Bold.woff2) format("woff2"),
         url(../fonts/Roboto-Bold.woff) format("woff");
   font-weight: 700;
+  font-display: swap;
+}
+
+/* *Roboto Local Black */
+@font-face {
+  font-family: "Roboto";
+  src:  local("Roboto Black"),
+        url(../fonts/Roboto-Black.woff2) format("woff2"),
+        url(../fonts/Roboto-Black.woff) format("woff");
+  font-weight: 900;
   font-display: swap;
 }
 
