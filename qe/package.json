@@ -1,0 +1,24 @@
+{
+  "name": "GLO_JS17_Quantum_Electrician",
+  "version": "1.0.0",
+  "description": "GLO Academy JS17 Diploma project Level Light",
+  "main": "webpack.dev.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mindfling/GLO_JS17_Quantum_Electrician.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mindfling/GLO_JS17_Quantum_Electrician/issues"
+  },
+  "homepage": "https://github.com/mindfling/GLO_JS17_Quantum_Electrician#readme",
+  "devDependencies": {
+    "webpack": "^5.34.0",
+    "webpack-cli": "^4.6.0"
+  }
+}
