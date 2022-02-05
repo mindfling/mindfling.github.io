@@ -1,0 +1,101 @@
+/* *BANNER* */
+.banner {
+  
+  /* border: 1px solid orange; */
+}
+.banner__advantage {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 150px;
+  
+  /* border: 1px solid red; */
+}
+.banner__button {
+}
+.banner__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  
+  background-image: url(img/banner_man_vr.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 45%;
+  
+  /* border: 1px solid orangered; */
+}
+.banner__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 50px;
+  color: #ffffff;
+  margin-top: 2px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.banner__halls {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  margin-right: 40px;
+  color: #ffffff;
+  /* border: 1px solid lawngreen; */
+}
+
+.banner__halls-number_bold {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 141px;
+  color: #cd06ff;
+}
+.banner__new {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #ffffff;
+  /* border: 1px solid green; */
+}
+.banner__new-text_bold {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 106px;
+  font-variant: small-caps;
+  color: #cd06ff;
+}
+
+.banner__title {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button {
+}
+.button_bg_violet {
+}
+.section {
+}

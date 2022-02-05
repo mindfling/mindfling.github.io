@@ -1,0 +1,51 @@
+/* * Arial Black */
+@font-face {
+	font-family: "Arial Black";
+	src: url(../fonts/arial-black.woff) format("woff"), /* Modern Browsers */
+		   url(../fonts/arial-black.woff2) format("woff2"); /* Modern Browsers */
+	font-weight: 900;
+	font-style: normal;
+  font-display: swap;
+}
+
+
+/* Comfortaa-Regular regular 400 */
+@font-face {
+  font-family: "Comfortaa";
+  src:  local("Comfortaa Regular"),
+        url(../fonts/Comfortaa-Regular.woff2) format("woff2"),
+        url(../fonts/Comfortaa-Regular.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* HelveticaNeueCyr-Light light 300 */
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src:  local("HelveticaNeueCyr Light"),
+        url(../fonts/HelveticaNeueCyr-Light.woff2) format("woff2"),
+        url(../fonts/HelveticaNeueCyr-Light.woff) format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+/* HelveticaNeueCyr-Roman normal 400 */
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src:  local("HelveticaNeueCyr Roman"),
+        url(../fonts/HelveticaNeueCyr-Roman.woff2) format("woff2"),
+        url(../fonts/HelveticaNeueCyr-Roman.woff) format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* HelveticaNeueCyr-Medium medium 500 */
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src:  local("HelveticaNeueCyr Medium"),
+        url(../fonts/HelveticaNeueCyr-Medium.woff2) format("woff2"),
+        url(../fonts/HelveticaNeueCyr-Medium.woff) format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+

@@ -1,0 +1,31 @@
+/* *NAVIGATION* */
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  display: flex;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.navigation__link:hover {
+  color: rgb(225, 225, 225);
+}
+
+.navigation__menu {
+  display: flex;
+}
+
+.navigation__menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 

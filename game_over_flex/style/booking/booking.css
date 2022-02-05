@@ -1,0 +1,149 @@
+/* todo ВАЖНЫЕ ССЫЛКИ */
+/* Верстка форм https://yoksel.github.io/bad-practices/forms-markup/ */
+/* Стилизуем формы при помощи CSS  https://techrocks.ru/2020/03/25/how-to-style-forms-with-css/ */
+/* https://ru.w3docs.com/uchebnik-html/html-teg-legend.html */
+
+
+.booking {
+  display: flex;
+  padding: 80px 0 50px 0;
+  width: 100%;
+  min-height: 1114px;
+  background: #440f51;
+}
+.booking__container {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid limegreen; */
+}
+
+
+.booking__fieldset {
+  display: flex;
+  border: 1px solid transparent;
+}
+.booking__fieldset_horizontal {
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid lawngreen; * ! DEBUG */
+
+}
+.booking__fieldset_vertical {
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  /* border: 1px solid orange; * ! DEBUG */
+}
+
+
+.booking__hall {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-between; */
+  /* padding-bottom: 60px; */
+  margin-bottom: 60px;
+  width: 100%;
+  height: 123px;
+  align-items: end;
+}
+.booking__game {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 287px;
+  /* border: 1px solid magenta; * ! DEBUG */
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+.booking__video-game,
+.booking__desktop-game,
+.booking__additional-game {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 280px;
+  align-items: start;
+  justify-content: start;
+  row-gap: 20px;
+  padding-top: 24px;
+  font-size: 22px;
+}
+.booking__date {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 228px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.booking__template,
+.booking__user,
+.booking__contacts {
+  display: flex;
+  flex-basis: 280px;
+}
+
+
+
+.booking__radio-label {
+  display: flex;
+  position: relative;
+}
+.booking__radio-label_hall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 55px;
+  border-radius: 8px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.booking__radio-select-hall {
+  display: block;
+  position: absolute;
+  left: 0;
+  display: none; /* ? можно ли так ? */
+}
+
+.booking__legend {
+  display: flex;
+  margin: auto;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.booking__label {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;  
+}
+.booking__chill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  height: 200px;
+}
+
+.booking__submit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
