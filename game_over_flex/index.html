@@ -5,25 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- предзагрузка шрифтов -->
+  <link rel="preload" href="fonts/arial-black.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/arial-black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- загружаем стили -->
   <link rel="stylesheet" href="style/style.css">
-  <link rel="stylesheet" href="style/button.css">
+  <!-- <link rel="stylesheet" href="style/style.css"> -->
+  <!-- <link rel="stylesheet" href="style/button.css"> -->
+  <!-- <link rel="stylesheet" href="style/header/header.css"> -->
+  <!-- <link rel="stylesheet" href="style/header/navigation.css"> -->
+  <!-- <link rel="stylesheet" href="style/banner/banner.css"> -->
+  <!-- <link rel="stylesheet" href="style/features/features.css"> -->
+  <!-- <link rel="stylesheet" href="style/booking/booking.css"> -->
+  <!-- <link rel="stylesheet" href="style/about/about.css"> -->
+  <!-- <link rel="stylesheet" href="style/feedback/feedback.css"> -->
+  <!-- <link rel="stylesheet" href="style/faq/faq.css"> -->
+  <!-- <link rel="stylesheet" href="style/contacts/contacts.css"> -->
+  <!-- <link rel="stylesheet" href="style/contacts/social.css"> -->
+  <!-- <link rel="stylesheet" href="style/footer/footer.css"> -->
 
-  <link rel="stylesheet" href="style/header/header.css">
-  <link rel="stylesheet" href="style/header/navigation.css">
-  <link rel="stylesheet" href="style/banner/banner.css">
-  <link rel="stylesheet" href="style/features/features.css">
+  <!-- фавиконка -->
+  <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
+  <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico" />
+  <link rel="icon" type="image/png" href="icon/favicon.png" />
 
-  <link rel="stylesheet" href="style/booking/booking.css">
-
-  <link rel="stylesheet" href="style/about/about.css">
-  <link rel="stylesheet" href="style/feedback/feedback.css">
-  <link rel="stylesheet" href="style/faq/faq.css">
-
-  <link rel="stylesheet" href="style/contacts/contacts.css">
-  <link rel="stylesheet" href="style/contacts/social.css">
-  <link rel="stylesheet" href="style/footer/footer.css">
-
-  <title>Module3 L01 - GameOverProject</title>
+  <title>Module3 M03L01 - GameOverProject Flex</title>
 </head>
 <body>
 
@@ -66,12 +73,10 @@
         <div class="banner__halls">
           <span class="banner__halls-number_bold">4</span>
           Тематических <br>зала
-          <!-- <p class="banner__halls-description">Тематических <br>зала</p> -->
         </div>
         <div class="banner__new">
           <span class="banner__new-text_bold">new</span>
           Новейшая <br>аппаратура
-          <!-- <p class="banner__new-description">Новейшая <br>аппаратура</p> -->
         </div>
       </div>
       <button class="banner__button button button_bg_violet" type="button">Забронировать</button>
@@ -174,7 +179,6 @@
           <span>Neon style</span>
         </label>
       </fieldset>
-
 
       <!-- todo booking__game -->
       <fieldset class="booking__game booking__fieldset booking__fieldset_horizontal">

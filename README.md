@@ -1,6 +1,7 @@
 ### Hello! This is GitHub Pages for
 ## [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
 ## [mindfling.github.io/game_over](https://mindfling.github.io/game_over)
+## [mindfling.github.io/game_over_flex](https://mindfling.github.io/game_over_flex)
 ## [mindfling.github.io/module2-cur2-indentation](https://mindfling.github.io/module2-cur2-indentation/)
 # mindfling.github.io
 
@@ -12,17 +13,22 @@
 
 
 
-*Friendly House:*
+**Friendly House:**
 - Friendly House project code [github.com/mindfling/mindfling.github.io/tree/main/friendly_house](https://github.com/mindfling/mindfling.github.io/tree/main/friendly_house)
 - Friendly House git page [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
 
 
-*Game Over:*
+**Game Over:**
 - Game Over project code [github.com/mindfling/mindfling.github.io/tree/main/game_over](https://github.com/mindfling/mindfling.github.io/tree/main/game_over)
 - Game Over git page [mindfling.github.io/game_over](https://mindfling.github.io/game_over)
 
 
-*Module2 Course2 Project Indentation*
+***Game Over Flex project Module3:***
+- GameOver project code [github.com/mindfling/mindfling.github.io/tree/main/game_over_flex](https://github.com/mindfling/mindfling.github.io/tree/main/game_over_flex)
+- GameOver gitpage [mindfling.github.io/game_over_flex](https://mindfling.github.io/game_over_flex)
+
+
+**Module2 Course2 Project Indentation**
 - Course2 project code [github.com/mindfling/mindfling.github.io/tree/main/module2-cur2-indentation](https://github.com/mindfling/mindfling.github.io/tree/main/module2-cur2-indentation)
 - Course2 gitpage [mindfling.github.io/module2-cur2-indentation](https://mindfling.github.io/module2-cur2-indentation)
 

@@ -1,18 +1,19 @@
 /* style module03 l01 */
 
-@import url(fonts.css);
+@import "fonts.css";
+@import "normalize.css";
+@import "global.css";
+@import "button.css";
 
-@import url(normalize.css);
-@import url(global.css);
-
-/* @import url(header/header.css); */
-/* @import url(banner/banner.css); */
-/* @import url(features/features.css); */
-@import url(halls/halls.css);
-/* @import url(booking/booking.css); */
-/* @import url(about/about.css); */
-/* @import url(feedback/feedback.css); */
-/* @import url(contacts/contacts.css); */
-/* @import url(contacts/social.css); */
-/* @import url(footer/footer.css); */
-
+@import "header/header.css";
+@import "header/navigation.css";
+@import "banner/banner.css";
+@import "features/features.css";
+@import "halls/halls.css";
+@import "booking/booking.css";
+@import "about/about.css";
+@import "feedback/feedback.css";
+@import "faq/faq.css";
+@import "contacts/contacts.css";
+@import "contacts/social.css";
+@import "footer/footer.css";
