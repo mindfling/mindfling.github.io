@@ -1,57 +1,19 @@
- 
+ /* *feedback * flex* */
 .feedback {
-  display: block;
-  /* float: left; */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px 0;
 }
-
-.feedback__author {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #FFFFFF;  
-}
-
 .feedback__container {
-  display: block;
-  /* float: left; */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
 }
 
-.feedback__image {
-  display: block;
-  width: 280px;
-  height: 280px;
-  /* border: 1px groove greenyellow; */
-  border-radius: 50%;
-  margin-bottom: 11px;
-}
-
-.feedback__item {
-  display: block;
-  float: left;
-  /* padding: 0 100px; */
-  text-align: left;
-}
-
-.feedback__item:not(:last-child) {
-  margin-bottom: 50px;
-}
-
-.feedback__item:last-child {
-  margin-bottom: 0;
-}
-
-.feedback__list {
-  display: block;
-  float: left;
-  padding: 0 95px;
-  /* padding: 1px 96px 1px 98px; */
-}
 
 .feedback__title {
   font-weight: 700;
@@ -59,22 +21,59 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
-.feedback__text {
-  display: inline-block
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  color: #FFFFFF;  
-  padding: 52px 0;
+
+.feedback__list {
+  display: flex;
+  width: 980px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
   text-align: left;
 }
 
+
 .feedback__user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 11px;
+}
+
+.feedback__image {
   display: block;
-  float: left;
-  margin-right: 20px;
+  width: 280px;
+  height: 280px;
+}
+.feedback__image_rounded {
+  border-radius: 50%;
+}
+
+.feedback__author {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+}
+
+.feedback__text {
+  display: flex;
+  align-self: center; /* ? */
+  max-width: 680px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;  
 }
