@@ -22,26 +22,22 @@
   display: flex;
   border: 1px solid transparent;
 }
+
 .booking__fieldset_horizontal {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  /* border: 1px solid lawngreen; * ! DEBUG */
-
 }
+
 .booking__fieldset_vertical {
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  /* border: 1px solid orange; * ! DEBUG */
 }
 
 
 .booking__hall {
   display: flex;
-  /* flex-direction: row; */
-  /* justify-content: space-between; */
-  /* padding-bottom: 60px; */
   margin-bottom: 60px;
   width: 100%;
   height: 123px;
@@ -49,10 +45,9 @@
 }
 .booking__game {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   min-height: 287px;
-  /* border: 1px solid magenta; * ! DEBUG */
   padding-top: 40px;
   margin-bottom: 60px;
 }
@@ -70,7 +65,7 @@
 }
 .booking__date {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   min-height: 228px;
   padding-top: 40px;
@@ -97,8 +92,6 @@
   width: 250px;
   height: 55px;
   border-radius: 8px;
-  font-family: Arial;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 40px;
@@ -121,11 +114,13 @@
   color: #000000;
   cursor: pointer;
 }
+
+/* текст при наведении */
 .booking__text-select-hall:hover {
   color: #fff;
   background-color: darkmagenta;
 }
-/* .booking__radio-select-hall:checked + span{ */
+/* + рядом стоящий элемент текст при выборе чек */
 .booking__radio-select-hall:checked + .booking__text-select-hall {
   color: #fff;
   background-color: darkmagenta;
@@ -135,45 +130,51 @@
   display: block;
   position: absolute;
   left: 0;
-  display: none; /* ? можно ли так ? */
+  /* ? display: none;  ? можно ли так ? */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .booking__legend {
   display: flex;
-  margin: auto;
-  font-family: Arial;
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  text-align: center;
   color: #ffffff;
 }
+/* todo left */
+.booking__legend_align_left {
+  text-align: left;
+}
+/* todo center */
+.booking__legend_align_center {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .booking__label {
-  font-family: Arial;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;  
 }
 
-
 .booking__game-label {
   display: flex;
-  gap: 12px;
+  column-gap: 12px;
   justify-content: start;
   align-items: center;
-  font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 25px;
 
   color: #FFFFFF;
-  padding-left: 10px;
 }
 
+/* radio box*/
 .booking__radio-video-game,
+/* checkbox */
 .booking__checkbox-table-game,
 .booking__checkbox-optional-game {
   width: 27px;
@@ -181,15 +182,12 @@
 }
 
 
-
-.booking__submit-container {
+.booking__submit-button {
   display: flex;
-  flex-direction: row;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  width: 300px;
 }
-
-
 
 
 /*
@@ -237,6 +235,9 @@
   font-size: 18px;
   line-height: 28px;
   color: #211E1E;  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .booking__select_date {
@@ -269,13 +270,12 @@
 }
 
 .booking__input {
-  width: 280px;
   height: 52px;
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 0;
   padding: 12px 20px;
-
+  
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -284,16 +284,39 @@
 }
 
 .booking__input_name {
+  width: 280px;
   margin-bottom: 14px;
 }
 .booking__input_surname {
+  width: 280px;
   padding: 12px 20px;
 }
 .booking__input_tel {
+  width: 300px;
   margin-bottom: 14px;
 }
 .booking__input_email {
+  width: 300px;
   padding: 12px 20px;
 }
 
 
+.booking__inner {
+  width: 980px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.booking__inner_submit {
+  justify-content: end;
+  align-items: center;
+}
+
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
