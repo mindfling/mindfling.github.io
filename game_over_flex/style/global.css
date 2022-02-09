@@ -132,14 +132,12 @@ blockquote {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 
-/* ВЫДЕЛЕНИЕ ТЕКСТА */
+/* * ВЫДЕЛЕНИЕ ТЕКСТА */
 ::selection {
   color: #fff;
-  /* background-color: #CD06FF; */
   background-color: #6C0287;
-  /* background-color: #440F51; */
 }

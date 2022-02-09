@@ -3,16 +3,16 @@
   display: block;
 }
 
-.faq__subtitle {
-font-family: Arial;
-font-style: normal;
-font-weight: bold;
-font-size: 40px;
-line-height: 50px;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;  
-margin-bottom: 40px;
+.faq__title {
+  /* font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;   */
+  margin-bottom: 40px;
 }
 
 .faq__list {

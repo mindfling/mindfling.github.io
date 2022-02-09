@@ -17,6 +17,10 @@
   /* border: 1px solid limegreen; */
 }
 
+.booking__title {
+  margin-bottom: 40px;
+}
+
 
 .booking__fieldset {
   display: flex;

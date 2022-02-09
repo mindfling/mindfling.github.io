@@ -17,12 +17,12 @@
 }
 
 .contacts__title {
-  font-weight: 700;
+  /* font-weight: 700;
   font-size: 40px;
   line-height: 50px;
   text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 60px;
+  text-transform: uppercase; */
+  margin-bottom: 40px;
 }
 
 .contacts__content {

@@ -4,56 +4,6 @@
   display: block;
   padding-top: 50px;
   padding-bottom: 45px;
-  /* border: 1px solid magenta; */
-}
-
-.about__container {
-  /* padding: 0; */
-  min-height: 701px;
-  /* border: 1px solid violet; */
-}
-
-.about {
-}
-.about__blockquote-author {
-}
-.about__blockquote-block {
-}
-.about__blockquote-text {
-}
-.about__container {
-}
-.about__content {
-}
-.about__image {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.about__pictures {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 600px;
-}
-.about__text {
-}
-.about__text-content {
-}
-.about__title {
-}
-.blockquote {
-}
-.page__title {
-}
-
-.about__content {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* border: 1px solid orange; */
 }
 
 .about__title {
@@ -62,16 +12,74 @@
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 60px;
-}
-
-.about__text {
-  width: 500px;
-  text-align: left;
   margin-bottom: 40px;
 }
 
-.about__blockquote-block {
+.about__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 701px;
+}
+
+.about__pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 600px;
+}
+.about__image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about__big-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 600px;
+  min-height: 596px;
+  background: url(img/about-big-illustration.png) no-repeat center;
+  background-size: cover;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 80px;
+  /* border: 1px solid orange; */
+}
+
+.about__info {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 48px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 28px;
+  /* text-align: left; */
+}
+.about__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: left;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.about__blockquote {
   position: relative;
   display: block;
   margin: 0;
