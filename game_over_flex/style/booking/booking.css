@@ -25,6 +25,7 @@
 .booking__fieldset_horizontal {
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   /* border: 1px solid lawngreen; * ! DEBUG */
 
 }
@@ -57,10 +58,10 @@
 }
 .booking__video-game,
 .booking__desktop-game,
-.booking__additional-game {
+.booking__optional-game {
   display: flex;
   flex-direction: column;
-  flex-basis: 280px;
+  flex-basis: 285px;
   align-items: start;
   justify-content: start;
   row-gap: 20px;
@@ -92,6 +93,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
   width: 250px;
   height: 55px;
   border-radius: 8px;
@@ -105,6 +107,28 @@
   background: #ffffff;
   color: #000000;
   cursor: pointer;
+}
+
+.booking__text-select-hall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 55px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+.booking__text-select-hall:hover {
+  color: #fff;
+  background-color: darkmagenta;
+}
+/* .booking__radio-select-hall:checked + span{ */
+.booking__radio-select-hall:checked + .booking__text-select-hall {
+  color: #fff;
+  background-color: darkmagenta;
 }
 
 .booking__radio-select-hall {
@@ -133,13 +157,30 @@
   line-height: 16px;
   color: #FFFFFF;  
 }
-.booking__chill {
+
+
+.booking__game-label {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: start;
-  height: 200px;
+  gap: 12px;
+  justify-content: start;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+
+  color: #FFFFFF;
+  padding-left: 10px;
 }
+
+.booking__radio-video-game,
+.booking__checkbox-table-game,
+.booking__checkbox-optional-game {
+  width: 27px;
+  height: 27px;
+}
+
+
 
 .booking__submit-container {
   display: flex;
@@ -147,3 +188,112 @@
   justify-content: end;
   align-items: center;
 }
+
+
+
+
+/*
+.booking__tesx {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 70px;
+  background: violet;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.booking__tesx::before {
+  display: block;
+  position: absolute;
+  right: 10px;
+  bottom: calc(50% - 20px/2);
+  width: 0px;
+  height: 0px;
+  content: "";
+  background: transparent;
+
+  border: 15px solid transparent;
+  border-top: 20px solid dimgray;
+  border-bottom: 0 solid;
+  transition: all 300ms ease-in-out;
+}
+.booking__tesx:hover::before {
+  border-top-color: black;
+  transform: rotateX(180deg) rotateY(180deg);
+}*/
+
+
+
+
+/* * */
+.booking__select {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: 12px 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;  
+}
+
+.booking__select_date {
+  width: 134px;
+  height: 52px;
+}
+
+.booking__select_time {
+  width: 134px;
+  height: 52px;
+}
+.booking__fieldset_date-time {
+  margin-bottom: 12px;
+}
+.booking__select_people {
+  width: 300px;
+  height: 52px;
+}
+
+
+
+.booking__fieldset {
+  display: flex;
+  /* border: 1px solid violet; */
+}
+.booking__fieldset_date-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking__input {
+  width: 280px;
+  height: 52px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: 12px 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+}
+
+.booking__input_name {
+  margin-bottom: 14px;
+}
+.booking__input_surname {
+  padding: 12px 20px;
+}
+.booking__input_tel {
+  margin-bottom: 14px;
+}
+.booking__input_email {
+  padding: 12px 20px;
+}
+
+

@@ -11,19 +11,6 @@
 
   <!-- загружаем стили -->
   <link rel="stylesheet" href="style/style.css">
-  <!-- <link rel="stylesheet" href="style/style.css"> -->
-  <!-- <link rel="stylesheet" href="style/button.css"> -->
-  <!-- <link rel="stylesheet" href="style/header/header.css"> -->
-  <!-- <link rel="stylesheet" href="style/header/navigation.css"> -->
-  <!-- <link rel="stylesheet" href="style/banner/banner.css"> -->
-  <!-- <link rel="stylesheet" href="style/features/features.css"> -->
-  <!-- <link rel="stylesheet" href="style/booking/booking.css"> -->
-  <!-- <link rel="stylesheet" href="style/about/about.css"> -->
-  <!-- <link rel="stylesheet" href="style/feedback/feedback.css"> -->
-  <!-- <link rel="stylesheet" href="style/faq/faq.css"> -->
-  <!-- <link rel="stylesheet" href="style/contacts/contacts.css"> -->
-  <!-- <link rel="stylesheet" href="style/contacts/social.css"> -->
-  <!-- <link rel="stylesheet" href="style/footer/footer.css"> -->
 
   <!-- фавиконка -->
   <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
@@ -136,7 +123,7 @@
 
 
   <!-- * HALLS BEGIN -->
-  <section class="halls" id="halls section">
+  <section class="halls" id="halls_section">
     <div class="halls__container container">
       <h2 class="halls__title page__title">Наши залы</h2>
       <ol class="halls__list">
@@ -156,7 +143,7 @@
     <div class="booking__container container">
 
     <h2 class="booking__title page__title">Забронировать Зал Просто</h2>
-    <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking-form">
+    <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="booking_form">
       
 
       <!-- todo booking__hall -->
@@ -164,19 +151,19 @@
         <legend class="booking__legend booking__legend_hall">Выбери зал</legend>
         <label class="booking__radio-label booking__radio-label_hall">
           <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-80s-vibes" required />
-          <span>80&rsquo;s vibes</span>
+          <span class="booking__text-select-hall">80&rsquo;s vibes</span>
         </label>
         <label class="booking__radio-label booking__radio-label_hall">
           <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-star-wars" required />
-          <span>Star wars</span>
+          <span class="booking__text-select-hall">Star wars</span>
         </label>
         <label class="booking__radio-label booking__radio-label_hall">
           <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-wild-west" required />
-          <span>Wild west</span>
+          <span class="booking__text-select-hall">Wild west</span>
         </label>
         <label class="booking__radio-label booking__radio-label_hall">
           <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-neon-style" required />
-          <span>Neon style</span>
+          <span class="booking__text-select-hall">Neon style</span>
         </label>
       </fieldset>
 
@@ -186,25 +173,54 @@
         
         <fieldset class="booking__fieldset booking__fieldset_vertical booking__video-game" aria-required="true">
           <legend class="booking__legend">Приставка:</legend>
-          <label><input type="radio" name="video-game" value="video-play-station-5" required/>PlayStation 5</label>
-          <label><input type="radio" name="video-game" value="video-sega-mega-drive" required/>Sega Mega Drive</label>
-          <label><input type="radio" name="video-game" value="video-x-box-one-s" required/>X-box One S</label>
-          <label><input type="radio" name="video-game" value="video-dendy" required/>Dendy</label>
+          <label class="booking__game-label">
+            <input class="booking__radio-video-game" type="radio" name="video-game" value="video-play-station-5" required/>
+            PlayStation 5
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__radio-video-game" type="radio" name="video-game" value="video-sega-mega-drive" required/>
+            Sega Mega Drive
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__radio-video-game" type="radio" name="video-game" value="video-x-box-one-s" required/>
+            X-box One S
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__radio-video-game" type="radio" name="video-game" value="video-dendy" required/>
+            Dendy
+          </label>
         </fieldset>
         
         <fieldset class="booking__fieldset booking__fieldset_vertical booking__desktop-game" aria-required="true">
-          <!-- check this field required with js -->
           <legend class="booking__legend">Настольные игры:</legend>
-          <label><input type="checkbox" name="table-game" value="table-Jenga" />Jenga</label>
-          <label><input type="checkbox" name="table-game" value="table-Monopoly" />Monopoly</label>
-          <label><input type="checkbox" name="table-game" value="table-Munchkin" />Манчкин</label>
-          <label><input type="checkbox" name="table-game" value="table-Alias" />Alias</label>
+          <label class="booking__game-label">
+            <input class="booking__checkbox-table-game" type="checkbox" name="table-game" value="table-Jenga" />
+            Jenga
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__checkbox-table-game" type="checkbox" name="table-game" value="table-Monopoly" />
+            Monopoly
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__checkbox-table-game" type="checkbox" name="table-game" value="table-Munchkin" />
+            Манчкин
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__checkbox-table-game" type="checkbox" name="table-game" value="table-Alias" />
+            Alias
+          </label>
         </fieldset>
         
-        <fieldset class="booking__fieldset booking__fieldset_vertical booking__additional-game" aria-required="true">
+        <fieldset class="booking__fieldset booking__fieldset_vertical booking__optional-game" aria-required="true">
           <legend class="booking__legend">Дополнительно:</legend>
-          <label><input type="checkbox" name="optional" value="optional-karaoke" />Караоке</label>
-          <label><input type="checkbox" name="optional" value="optional-vr" />VR</label>
+          <label class="booking__game-label">
+            <input class="booking__checkbox-optional-game" type="checkbox" name="optional" value="optional-karaoke" />
+            Караоке
+          </label>
+          <label class="booking__game-label">
+            <input class="booking__checkbox-optional-game" type="checkbox" name="optional" value="optional-vr" />
+            VR
+          </label>
         </fieldset>
       </fieldset>
 
@@ -214,37 +230,67 @@
 
         <!-- todo date time people_amount -->
         <fieldset class="booking__template booking__fieldset booking__fieldset_vertical">
-          <fieldset class="booking__fieldset booking__fieldset_horizontal">
-            <label for="booking-choose-date">Дата</label>
-            <input type="date" name="choose-date" id="booking-choose-date" placeholder="Дата" required />
-
-            <label for="booking-choose-time">Время</label>
-            <input type="time" name="choose-time" id="booking-choose-time" placeholder="Время" required />
+          <fieldset class="booking__fieldset booking__fieldset_horizontal booking__fieldset_date-time">
+            <fieldset class="booking__fieldset booking__fieldset_vertical">
+              <label class="booking__label" for="booking-choose-date">Дата</label>
+              <!-- <input type="date" name="choose-date" id="booking_choose-date" placeholder="Дата" required /> -->
+              <select class="booking__select booking__select_date" name="choose-date" id="booking_choose-date" >
+                <option class="booking__option-date" value="0">Дата</option>
+                <option class="booking__option-date" value="01012022">01.01.2022</option>
+                <option class="booking__option-date" value="02012022">02.01.2022</option>
+                <option class="booking__option-date" value="03012022">03.01.2022</option>
+                <option class="booking__option-date" value="04012022">04.01.2022</option>
+                <option class="booking__option-date" value="05012022">05.01.2022</option>
+                <option class="booking__option-date" value="06012022">06.01.2022</option>
+                <option class="booking__option-date" value="07012022">07.01.2022</option>
+              </select>
+            </fieldset>
+            <fieldset class="booking__fieldset booking__fieldset_vertical">
+              <label class="booking__label" for="booking-choose-time">Время</label>
+              <!-- <input type="time" name="choose-time" id="booking_choose-time" placeholder="Время" required /> -->
+              <select class="booking__select booking__select_time" name="choose-time" id="booking_choose-time" required>
+                <option class="booking__option-date" value="0">Время</option>
+                <option class="booking__option-date" value="1">10:00</option>
+                <option class="booking__option-date" value="2">11:00</option>
+                <option class="booking__option-date" value="3">12:00</option>
+                <option class="booking__option-date" value="4">13:00</option>
+              </select>
+            </fieldset>
           </fieldset>
+
           <fieldset class="booking__fieldset booking__fieldset_vertical">
-            <label for="booking-people-amount">Количество человек</label>
-            <input type="number" name="people-amount" id="booking-people-amount" placeholder="Сколько человек" required />
+            <label class="booking__label" for="booking-people-amount">Количество человек</label>
+            <!-- <input type="number" name="people-amount" id="booking_people-amount" placeholder="Сколько человек" required /> -->
+            <select class="booking__select booking__select_people" name="people-amount" id="booking_people-amount" required>
+              <option class="booking__option-people" value="0">Сколько человек</option>
+              <option class="booking__option-people" value="1">one</option>
+              <option class="booking__option-people" value="2">two</option>
+              <option class="booking__option-people" value="3">three</option>
+              <option class="booking__option-people" value="4">many</option>
+            </select>
           </fieldset>
         </fieldset>
 
         <!-- todo name surname -->
         <fieldset class="booking__user booking__fieldset booking__fieldset_vertical">
           <label class="booking__label booking__label_name" for="booking-user-name">Имя</label>
-          <input class="booking__input-name" type="text" name="user-name" id="booking-user-name" required />
+          <input class="booking__input booking__input_name" type="text" name="user-name" id="booking_user-name" placeholder="Имя" required />
 
           <label class="booking__label booking__label_surname" for="booking-user-surname">Фамилия</label>
-          <input class="booking__input-surname" type="text" name="user-surname" id="booking-user-surname" required />
+          <input class="booking__input booking__input_surname" type="text" name="user-surname" id="booking_user-surname" placeholder="Фамилия" required />
         </fieldset>
 
         <!-- todo tel email -->
         <fieldset class="booking__contacts booking__fieldset booking__fieldset_vertical">
-          <label class="booking__label booking__label_tel" for="booking-user-tel">Телефона</label>
-          <input class="booking__input-tel" type="tel" name="user-tel" id="booking-user-tel" required />
+          <label class="booking__label booking__label_tel" for="booking-user-tel">Телефон</label>
+          <input class="booking__input booking__input_tel" type="tel" name="user-tel" id="booking_user-tel" placeholder="Телефон" required/>
           
           <label class="booking__label booking__label_email" for="booking-user-email">E-mail</label>
-          <input class="booking__input-email" type="email" name="user-email" id="booking-user-email" required />
+          <input class="booking__input booking__input_email" type="email" name="user-email" id="booking_user-email" placeholder="E-mail" required />
         </fieldset>
       </fieldset>
+
+      <!-- !DEBUG <div class="booking__tesx"></div> -->
 
       <div class="booking__submit-container">
         <button class="booking__submit-button button button_bg_white" type="submit">Забронировать</button>
@@ -341,7 +387,7 @@
 
 
 <!-- * CONTACTS BEGIN -->
-<section class="contacts" id="contacts section">
+<section class="contacts" id="contacts_section">
   <div class="contacts__container container">
     <h2 class="contacts__title">Контакты</h2>
 
