@@ -1,8 +1,3 @@
-/* todo ВАЖНЫЕ ССЫЛКИ */
-/* Верстка форм https://yoksel.github.io/bad-practices/forms-markup/ */
-/* Стилизуем формы при помощи CSS  https://techrocks.ru/2020/03/25/how-to-style-forms-with-css/ */
-/* https://ru.w3docs.com/uchebnik-html/html-teg-legend.html */
-
 
 .booking {
   display: flex;
@@ -11,6 +6,7 @@
   min-height: 1114px;
   background: #440f51;
 }
+
 .booking__container {
   display: flex;
   flex-direction: column;
@@ -24,7 +20,8 @@
 
 .booking__fieldset {
   display: flex;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
+  border: none;
 }
 
 .booking__fieldset_horizontal {
@@ -42,10 +39,11 @@
 
 .booking__hall {
   display: flex;
-  margin-bottom: 60px;
   width: 100%;
   height: 123px;
   align-items: end;
+  padding-top: 40px;
+  margin-bottom: 60px;
 }
 .booking__game {
   display: flex;
@@ -128,7 +126,7 @@
   display: block;
   position: absolute;
   left: 0;
-  /* ? display: none;  ? можно ли так ? */
+  /* ! прячем стандартные радио инпуты */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -170,24 +168,22 @@
   color: #FFFFFF;
 }
 
-/* radio box*/
-.booking__radio-video-game,
-/* checkbox */
-.booking__checkbox-table-game,
-.booking__checkbox-optional-game {
+
+.booking__radio-video-game, /* radio box*/
+.booking__checkbox-table-game,     /* checkbox */
+.booking__checkbox-optional-game { /* checkbox */
   width: 27px;
   height: 27px;
 }
 
-
 .booking__submit-button {
   display: flex;
+  align-self: flex-end;
   justify-content: center;
   align-items: center;
   width: 300px;
 }
  
-
 
 /* * */
 .booking__select {
@@ -215,19 +211,12 @@
   width: 134px;
   height: 52px;
 }
-.booking__fieldset_date-time {
-  /* margin-bottom: 12px; */
-}
+
 .booking__select_people {
   width: 300px;
   height: 52px;
 }
 
-
-.booking__fieldset {
-  display: flex;
-  /* border: 1px solid violet; */
-}
 .booking__fieldset_date-time {
   display: flex;
   justify-content: space-between;
@@ -245,7 +234,6 @@
   line-height: 28px;
   color: #211E1E;
 }
-
 
 .booking__input::-webkit-input-placeholder,
 .booking__input::-moz-placeholder,
@@ -289,7 +277,6 @@
   justify-content: start;
   align-items: center;
 }
-
 
 
 .booking__template,
