@@ -23,7 +23,7 @@
 
 
   <!-- * HEADER BEGIN -->
-  <header class="header section">
+<header class="header section">
     <div class="header__container container">
       <img class="header__logo logo" src="style/header/img-logo/logo_letter_white.svg" alt="GO logo" width="120" height="66">
       <nav class="header__navigation navigation">
@@ -134,7 +134,7 @@
   <!-- * HALLS END -->
 
 
-  <!-- * BOOKING BEGIN -->
+  <!-- !!! BOOKING BEGIN -->
   <section class="booking" id="booking_section">
     <div class="booking__container container">
       <h2 class="booking__title page__title">Забронировать Зал Просто</h2>
@@ -142,8 +142,10 @@
 
 
         <!-- todo booking__hall -->
-        <fieldset class="booking__hall booking__fieldset booking__fieldset_horizontal">
+        <fieldset class="booking__hall">
           <legend class="booking__legend booking__legend_align_center booking__legend_hall">Выбери зал</legend>
+
+          <!-- TODO booking__hall-radio-wrapper -->
           <label class="booking__radio-label booking__radio-label_hall">
             <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-80s-vibes" required />
             <span class="booking__text-select-hall">80&rsquo;s vibes</span>
@@ -163,13 +165,13 @@
         </fieldset>
 
 
+        <div class="booking__inner">
         <!-- todo booking__game -->
-        <fieldset class="booking__game booking__fieldset booking__fieldset_horizontal">
+        <fieldset class="booking__game">
           <legend class="booking__legend booking__legend_align_center">Собери набор развелечений</legend>
           
-          <div class="booking__inner">
             <!-- video-game -->
-            <fieldset class="booking__fieldset booking__fieldset_vertical booking__video-game" aria-required="true">
+            <fieldset class="booking__video-game" aria-required="true">
               <legend class="booking__legend booking__legend_align_left">Приставка:</legend>
               <label class="booking__game-label">
                 <input class="booking__radio-video-game" type="radio" name="video-game" value="video-play-station-5" required/>
@@ -189,7 +191,7 @@
               </label>
             </fieldset>
             <!-- table-game -->
-            <fieldset class="booking__fieldset booking__fieldset_vertical booking__desktop-game" aria-required="true">
+            <fieldset class="booking__desktop-game" aria-required="true">
               <legend class="booking__legend">Настольные игры:</legend>
               <label class="booking__game-label">
                 <input class="booking__checkbox-table-game" type="checkbox" name="table-game" value="table-Jenga" />
@@ -209,7 +211,7 @@
               </label>
             </fieldset>
             <!-- optional-game -->
-            <fieldset class="booking__fieldset booking__fieldset_vertical booking__optional-game" aria-required="true">
+            <fieldset class="booking__optional-game" aria-required="true">
               <legend class="booking__legend">Дополнительно:</legend>
               <label class="booking__game-label">
                 <input class="booking__checkbox-optional-game" type="checkbox" name="optional" value="optional-karaoke" />
@@ -220,15 +222,12 @@
                 VR
               </label>
             </fieldset>
-          </div>
+          </fieldset>
+            
 
-        </fieldset>
-
-
-        <!-- todo booking date time people and person -->
-        <fieldset class="booking__date booking__fieldset booking__fieldset_horizontal">
-          <legend class="booking__legend booking__legend_align_center">Выбери дату и время</legend>
-          <div class="booking__inner">      
+          <!-- todo booking date time people and person -->
+          <fieldset class="booking__date">
+            <legend class="booking__legend booking__legend_align_center">Выбери дату и время</legend>
 
             <!-- todo date time people_amount -->
             <fieldset class="booking__template booking__fieldset booking__fieldset_vertical">
@@ -281,7 +280,6 @@
                 </select>
               </fieldset>
             </fieldset>
-
             <!-- todo -- user -- name surname -->
             <fieldset class="booking__user booking__fieldset booking__fieldset_vertical">
               <fieldset class="booking__name booking__fieldset booking__fieldset_vertical">
@@ -294,7 +292,6 @@
                 <input class="booking__input booking__input_surname" type="text" name="user-surname" id="booking_user-surname" placeholder="Фамилия" required />
               </fieldset>
             </fieldset>
-
             <!-- todo -- contacts -- tel email -->
             <fieldset class="booking__contacts booking__fieldset booking__fieldset_vertical">
               <fieldset class="booking__tel booking__fieldset booking__fieldset_vertical">
@@ -307,23 +304,26 @@
                 <input class="booking__input booking__input_email" type="email" name="user-email" id="booking_user-email" placeholder="E-mail" required />
               </fieldset>
             </fieldset>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <!-- <div class="booking__inner booking__inner_submit"> -->
+          
+          <!-- <div class="booking__inner booking__inner_submit"> -->
           <button class="booking__submit-button button button_bg_white" type="submit">Забронировать</button>
-        <!-- </div> -->
-        
+          <!-- </div> -->
+            
+        </div><!-- booking__inner -->        
       </form>
     </div>
   </section>
   <!-- * BOOKING END -->
 
-  <!-- *ABOUT BEGIN ->
+
+  <!-- ABOUT BEGIN ->
   <section class="about" id="about_section">
     <div class="about__container container">
       <h2 class="about__title page__title">О нас</h2>
       <div class="about__content">
+        НЕСКОЛЬКО КОНТЕНТНЫХ КАРТИНОК
         <div class="about__pictures">
           <img src="style/about/img/about-girl-view-in-vr_300-206.jpg" alt="" class="about__image" width="300" height="206">
           <img src="style/about/img/about-bawling-game_300-206.jpg" alt="" class="about__image" width="300" height="206">
@@ -352,7 +352,6 @@
   </section>
   <!- *ABOUT END -->
 
-  <!-- TODO -->
   <!-- *ABOUT BEGIN ONE ILLUSTRATION* -->
   <section class="about" id="about_section">
     <div class="about__container container">

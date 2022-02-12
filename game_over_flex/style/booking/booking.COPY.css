@@ -1,4 +1,3 @@
-/* *BOOKING* */
 
 .booking {
   display: flex;
@@ -11,73 +10,48 @@
 .booking__container {
   display: flex;
   flex-direction: column;
+  /* border: 1px solid limegreen; */
 }
 
 .booking__title {
   margin-bottom: 40px;
 }
 
-.booking__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  /* border: 1px solid orange; */
-}
-
-
+/* TODO FROM HERE */
 .booking__fieldset {
-  display: flex;
-  border: none;
+  /* border: 1px solid transparent; */
+  /* border: none; */
 }
 .booking__fieldset_horizontal {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 .booking__fieldset_vertical {
+  display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
 }
 
 
-/* *BOOKING__HALL* */
 .booking__hall {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   height: 123px;
   align-items: end;
   padding-top: 40px;
   margin-bottom: 60px;
-  border: none;
 }
-/* *BOOKING__GAME*/
 .booking__game {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   min-height: 287px;
   padding-top: 40px;
   margin-bottom: 60px;
-  border: none;
 }
-/* *BOOKING__DATE*/
-.booking__date {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  min-height: 228px;
-  padding-top: 40px;
-  margin-bottom: 40px;
-  border: none;
-}
-
-
 .booking__video-game,
 .booking__desktop-game,
 .booking__optional-game {
@@ -89,8 +63,16 @@
   row-gap: 20px;
   padding-top: 24px;
   font-size: 22px;
-  border: none;
 }
+.booking__date {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 228px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
 
 
 .booking__radio-label {
@@ -143,7 +125,7 @@
   display: block;
   position: absolute;
   left: 0;
-  /* * прячем стандартные радио инпуты */
+  /* ! прячем стандартные радио инпуты */
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -181,6 +163,7 @@
   font-weight: normal;
   font-size: 22px;
   line-height: 25px;
+
   color: #FFFFFF;
 }
 
@@ -277,15 +260,20 @@
 .booking__inner {
   width: 980px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  /* border: 1px solid lawngreen; */
+}
+
+.booking__inner_submit {
+  justify-content: end;
+  align-items: center;
 }
 
 
-/* *выравнивание кнопки ЗАБРОНИРОВАТЬ */
-.booking__inner_submit {
-  justify-content: end;
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
 }
 
