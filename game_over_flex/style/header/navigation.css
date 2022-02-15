@@ -13,10 +13,22 @@
   text-transform: uppercase;
   color: #ffffff;
   padding: 0 20px;
+  transition: color 200ms ease-out;
 }
 
 .navigation__link:hover {
-  color: rgb(225, 225, 225);
+  outline: none;
+  color: #d0d0d0;
+}
+
+.navigation__link:focus {
+  outline: 1px solid #CD06FF;
+  color: #d0d0d0;
+}
+
+.navigation__link:active {
+  outline: 1px solid #CD06FF;
+  color: #d0d0d0;
 }
 
 .navigation__menu {

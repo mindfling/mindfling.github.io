@@ -17,59 +17,61 @@
   <link rel="shortcut icon" type="image/x-icon" href="icon/favicon.ico" />
   <link rel="icon" type="image/png" href="icon/favicon.png" />
 
-  <title>Module3 M03L01 - GameOverProject Flex</title>
+  <title>Module3 M03L02 - GameOverProject Flex</title>
 </head>
 <body>
 
 
-  <!-- * HEADER BEGIN -->
+<!-- * HEADER BEGIN -->
 <header class="header section">
-    <div class="header__container container">
-      <img class="header__logo logo" src="style/header/img-logo/logo_letter_white.svg" alt="GO logo" width="120" height="66">
-      <nav class="header__navigation navigation">
-        <ul class="navigation__menu">
-          <li class="navigation__menu-item">
-            <a class="navigation__link" href="#halls_section">Залы</a>
-          </li>
-          <li class="navigation__menu-item">
-            <a class="navigation__link" href="#about_section">О Нас</a>
-          </li>
-          <li class="navigation__menu-item">
-            <a class="navigation__link" href="#booking_section">Бронь</a>
-          </li>
-          <li class="navigation__menu-item">
-            <a class="navigation__link" href="#feedback_section">Отзывы</a>
-          </li>
-          <li class="navigation__menu-item">
-            <a class="navigation__link" href="#contacts_section">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__button button button_outline_violet" type="button">Заказать звонок</button>
-    </div>
-  </header>
-  <!-- * HEADER END -->
+  <div class="header__container container">
+    <img class="header__logo logo" src="style/header/img-logo/logo_letter_white.svg" alt="GO logo" width="120" height="66" title="Logo GameOver Project">
+    <nav class="header__navigation navigation">
+      <ul class="navigation__menu">
+        <li class="navigation__menu-item">
+          <a class="navigation__link" href="#halls_section" title="Наши залы">Залы</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__link" href="#about_section" title="Информация о нас">О Нас</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__link" href="#booking_section" title="Забронировать Заказать развелечения">Бронь</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__link" href="#feedback_section" title="Реальные отзывы наших посетителей">Отзывы</a>
+        </li>
+        <li class="navigation__menu-item">
+          <a class="navigation__link" href="#contacts_section" title="Наши Контакты">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__button button button_outline_violet" type="button" title="Заказать бесплатный звонок">Заказать звонок</button>
+  </div>
+</header>
+<!-- * HEADER END -->
 
 
-  <!-- ** BANNER BEGIN* -->
-  <section class="banner section">
-    <div class="banner__container container">
-      <h1 class="banner__title">Game Over</h1>
-      <p class="banner__description">Новый формат игр и отдыха</p>
-      <div class="banner__advantage">
-        <div class="banner__halls">
-          <span class="banner__halls-number_bold">4</span>
-          Тематических <br>зала
-        </div>
-        <div class="banner__new">
-          <span class="banner__new-text_bold">new</span>
-          Новейшая <br>аппаратура
-        </div>
+<!-- ** BANNER BEGIN* -->
+<section class="banner section">
+  <div class="banner__container container">
+    <h1 class="banner__title">Game Over</h1>
+    <p class="banner__description">Новый формат игр и отдыха</p>
+    <div class="banner__advantage">
+      <div class="banner__halls">
+        <span class="banner__halls-number_bold">4</span>
+        Тематических <br>зала
       </div>
-      <button class="banner__button button button_bg_violet" type="button">Забронировать</button>
+      <div class="banner__new">
+        <span class="banner__new-text_bold">new</span>
+        Новейшая <br>аппаратура
+      </div>
     </div>
-  </section>
-  <!-- *BANNER END* -->
+    <button class="banner__button button button_bg_violet" type="button">Забронировать</button>
+    
+    <button class="header__down-arrow button__down-arrow" type="button" title="Вниз следующий экран"></button>
+  </div>
+</section>
+<!-- *BANNER END* -->
 
 
   <!-- ** FEATURES BEGIN * -->
@@ -146,19 +148,23 @@
           <legend class="booking__legend booking__legend_align_center booking__legend_hall">Выбери зал</legend>
 
           <!-- TODO booking__hall-radio-wrapper -->
-          <label class="booking__radio-label booking__radio-label_hall">
+
+          <label class="booking__radio-label_hall">
             <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-80s-vibes" required />
             <span class="booking__text-select-hall">80&rsquo;s vibes</span>
           </label>
-          <label class="booking__radio-label booking__radio-label_hall">
+
+          <label class="booking__radio-label_hall">
             <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-star-wars" required />
             <span class="booking__text-select-hall">Star wars</span>
           </label>
-          <label class="booking__radio-label booking__radio-label_hall">
+
+          <label class="booking__radio-label_hall">
             <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-wild-west" required />
             <span class="booking__text-select-hall">Wild west</span>
           </label>
-          <label class="booking__radio-label booking__radio-label_hall">
+
+          <label class="booking__radio-label_hall">
             <input class="booking__radio-select-hall" type="radio" name="select-hall" value="option-neon-style" required />
             <span class="booking__text-select-hall">Neon style</span>
           </label>
