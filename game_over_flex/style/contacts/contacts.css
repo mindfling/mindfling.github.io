@@ -3,10 +3,8 @@
 .contacts {
   display: block;
   padding-top: 45px;
-  /* padding-bottom: 198px; */
   padding-bottom: 146px;
   background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
-
   /* border: 1px solid magenta; */
 }
 
@@ -49,37 +47,54 @@
   margin-left: 60px;
 }
 
+.contacts__link:hover {
+  /* background-color: #EADEED; */
+  color: #eadeed;
+}
+.contacts__link:focus {
+  color: #eadeed;
+  outline: 1px solid #CD06FF;  
+}
+
 .contacts__address::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: -60px;
-  background: url(img/location.svg) no-repeat 0 0;
+	display: block;
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: -60px;
+	/* background: url(img/location.svg) no-repeat 0 0; */
+	background-image: url(img/location.svg);
+	background-repeat: no-repeat;
+	background-position: -2px 17px;
+	background-size: 68%;
 }
 
 .contacts__tel::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: -60px;
-  background: url(img/phone-call.svg) no-repeat 0 0;
+	display: block;
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	top: -4px;
+	left: -60px;
+	background-image: url(img/phone-call.svg);
+	background-repeat: no-repeat;
+	background-position: -5px -1px;
+	background-size: 77%;
 }
 
 .contacts__email::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: -60px;
-  background: url(img/envelope.svg) no-repeat 0 0;
+	display: block;
+	position: absolute;
+	content: "";
+	width: 50px;
+	height: 50px;
+	top: 0;
+	left: -60px;
+	background: url(img/envelope.svg) no-repeat 0px -1px;
+	background-size: 63%;
 }
 
 .contacts__address,
@@ -94,6 +109,14 @@
 .contacts__interactive {
   display: flex;
 }
+
+/* ссылки в виде иконок на соцсети */
+.contacts__social {
+  display: flex;
+  width: 280px;
+  height: 50px;
+}
+
 .contacts__map {
   display: flex;
 }

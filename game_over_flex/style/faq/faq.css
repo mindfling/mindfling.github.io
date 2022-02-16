@@ -1,3 +1,4 @@
+/* *FAQu* */
 /* файл стилей блока FAQ */
 .faq {
   display: block;
@@ -23,7 +24,7 @@
 
 
 /* простой список вопросов */
-
+/* todo СДЕЛАТЬ ЧЕРЕЗ FLEX */
 .faq__item {
   position: relative;
   font-weight: 700;
@@ -31,6 +32,8 @@
   text-align: left;
   padding: 30px 70px;
   margin-bottom: 20px;
+
+  cursor: pointer;
 }
 .faq__item:last-child {
   margin-bottom: 0;

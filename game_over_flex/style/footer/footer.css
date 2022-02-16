@@ -1,3 +1,5 @@
+/* *FOOTER* */
+
 .footer {
   /* border: 1px solid green; */
   padding: 20px 0;
@@ -9,6 +11,7 @@
   /* border: 1px solid red; */
 }
 
+/* *copyright information* */
 .copy {
   font-family: Arial;
   font-style: normal;
@@ -30,11 +33,25 @@
   align-items: end;
   /* border: 1px solid lawngreen; */
 }
+
+
+.copy__design-info {
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .copy__design-email {
   font-size: 14px;
   line-height: 16px;
 }
-.copy__design-info {
-  font-size: 14px;
-  line-height: 16px;
+
+.copy__link {
+  cursor: pointer;
+}
+.copy__link:hover {
+  color: #eadeed;
+}
+.copy__link:focus {
+  outline: 1px solid #cd06ff;
+  color: #eadeed;
 }

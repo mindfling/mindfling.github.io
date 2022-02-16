@@ -24,8 +24,8 @@
   color: #ffffff;
   background-color: transparent;
   border: 3px solid #cd06ff;
-  transition: all 200ms ease-out;
   border-radius: 10px;
+  transition: background 200ms ease-out;
 }
 
 .button_outline_violet:hover {
@@ -35,13 +35,16 @@
 
 .button_outline_violet:focus {
   background: #6c0287;
-  border: 3px solid #6c0287;
+  /* border: 3px solid #6c0287; */
+  outline: 3px solid #6c0287;
 }
 
 .button_outline_violet:active {
   background: #640aa3;
-  border: 3px solid #640aa3;
+  /* border: 3px solid #640aa3; */
+  outline: 3px solid #640aa3;
 }
+
 
 /* *banner__button* */
 .button_bg_violet {
@@ -60,9 +63,9 @@
   background: #6c0287;
   border-radius: 10px;
   border: 1px solid #6c0287;
-  box-shadow: 0 0 20px #6c0287;
+  box-shadow: 0 0 20px #6c0287; /* afterglow свечение вокруг кнопки */
   /* filter: blur(20px); фон из фигмы */
-  transition: all 200ms ease-out;
+  transition: background 200ms ease-out;
 }
 
 .button_bg_violet:hover {
@@ -73,6 +76,7 @@
 .button_bg_violet:focus {
   background: #840aa3;
   border: 1px solid #840aa3;
+  outline: 1px solid #840aa3;
 }
 
 .button_bg_violet:active {
@@ -105,15 +109,17 @@
 }
 /* *focus* */
 .button__down-arrow:focus {
-  background: url(img/down-focus.svg) no-repeat center;
+  background: url(img/down.svg) no-repeat center;
   border: 1px solid #cd06ff;
-  /* outline: 1px solid #CD06FF; */
+  outline: 1px solid #cd06ff;
   transform: translateY(-92px);
 }
 /* *active* */
 .button__down-arrow:active {
   background: url(img/down-active.svg) no-repeat center;
   transform: translateY(-96px);
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
 }
 
 
@@ -134,13 +140,16 @@
 .button_bg_white:hover {
   background: #eadeed;
   border: 3px solid #6c0287;
+  outline: 1px solid #6c0287;
 }
 .button_bg_white:focus {
   background: #ffffff;
   border: 3px solid #6c0287;
+  outline: 1px solid #6c0287;
 }
 .button_bg_white:active {
   background: #eadeed;
-  border: 1px solid #eadeed;
+  border: 3px solid #eadeed;
+  outline: 1px solid #eadeed;
 }
 

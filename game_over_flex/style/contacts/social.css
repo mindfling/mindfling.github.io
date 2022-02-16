@@ -2,39 +2,70 @@
 
 .social {
   display: flex;
+
   flex-direction: row;
   justify-content: space-between;
-  /* text-align: left; */
+  gap: 25px;
   list-style: none;
 }
 
+
 .social__item {
   display: flex;
-  /* margin-right: 26px; */
 }
 
-/* .social__item:last-child {
-  margin-right: 0;
-} */
 
 .social__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
 }
 
+
+.social__svg {
+  display: flex;
+  width: 51px;
+  height: 51px;
+  fill: #fff;
+  transition: all 200ms ease-out;
+}
+
+
+/* *hover* */
+.social__link:hover .social__svg {
+  fill: #eadeed;
+}
+
+/* *focus* */
+/* обводка для ссылки */
+.social__link:focus {
+  outline: 1px solid #cd06ff;
+}
+/* заливка картики внутри */
+.social__link:focus .social__svg {
+  fill: #eadeed;
+}
+
+/* *active* */
+.social__link:active .social__svg {
+  fill: #cd06ff;
+}
+
+
+/* 
+* если мы меняем картинку фоном *
 .social__link_fb {
   background: url(img/fb.svg) no-repeat center;
 }
-
 .social__link_inst {
   background: url(img/inst.svg) no-repeat center;
 }
-
 .social__link_tg {
   background: url(img/tg.svg) no-repeat center;
 }
-
 .social__link_vk {
   background: url(img/vk.svg) no-repeat center;
 }
+ */
