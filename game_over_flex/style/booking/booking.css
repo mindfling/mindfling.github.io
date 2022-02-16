@@ -100,9 +100,11 @@
   border-radius: 8px;
   border: 3px solid #ffffff;
   cursor: pointer;
-  -webkit-appearance: none;
+
+  /* -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none; */
+
   transition: all 200ms ease-out;
 }
 
@@ -111,21 +113,21 @@
   color: #000000;
   background: #EADEED;
   border: 3px solid #640AA3;
-  appearance: none;
 }
-.booking__text-select-hall:focus {
+.booking__radio-select-hall:focus + .booking__text-select-hall {
   color: #000000;
   background: #FFFFFF;
   border: 3px solid #640AA3;
-  appearance: none;
+  outline: 3px solid #640AA3;
 }
 
+.booking__radio-select-hall:active + .booking__text-select-hall,
 .booking__radio-select-hall:checked + .booking__text-select-hall {
-  color: #ffffff;
-  /* background: #840AA3; */
-  /* border: 3px solid #840AA3; */
-  background: #640AA3;
-  border: 3px solid #640AA3;
+  color: #000000;
+  background: #EADEED;
+  /* border: 3px solid #EADEED; */
+  /* outline: 1px solid #EADEED; */
+  outline: 3px solid #640AA3;
 }
 
 

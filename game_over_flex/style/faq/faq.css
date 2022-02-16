@@ -23,7 +23,7 @@
 }
 
 
-/* простой список вопросов */
+/* простой список вопросов сделать более универсальный */
 /* todo СДЕЛАТЬ ЧЕРЕЗ FLEX */
 .faq__item {
   position: relative;
@@ -63,11 +63,36 @@
   content: "";
 }
 
+
+
+
 .faq__item:nth-child(odd):after {
   background-image: url('img/open_violet.svg');
+  border-radius: 50%;
 }
-
 .faq__item:nth-child(even):after {
   background-image: url('img/open_white.svg');
+  border-radius: 50%;
 }
+
+
+.faq__item:nth-child(odd):hover:after {
+  background-image: url('img/open_hover_violet.svg');
+}
+.faq__item:nth-child(even):hover:after {
+  background-image: url('img/open_hover_white.svg');
+}
+
+/* active == click */
+.faq__item:nth-child(odd):active:after {
+  background-image: url('img/close_minus_violet.svg');
+}
+.faq__item:nth-child(even):active:after {
+  background-image: url('img/close_minus_white.svg');
+}
+
+
+
+
+
 
