@@ -34,18 +34,28 @@
   /* border: 1px solid yellow; */
 }
 
+
 .features__card-figure {
   display: flex;
   position: relative;
   width: 380px;
   height: 228px;
   flex-direction: column;
+  transition: transform 300ms ease;
+}
+.features__card-figure:hover {
+  transform: scale(110%);
+  cursor: pointer;
 }
 
+
 .features__card-image {
+  display: flex;
   width: 380px;
   height: 228px;
-  display: flex;
+}
+.features__card-image:hover {
+  /* transform: scale(120%); */
 }
 
 .features__card-figcaption {

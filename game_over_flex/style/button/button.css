@@ -22,7 +22,7 @@
   background-color: transparent;
   border: 3px solid #cd06ff;
   border-radius: 10px;
-  /* transition: background-color 200ms ease-out; */
+  transition: background-color 200ms ease-out;
 }
 
 .button_outline_violet:hover {
@@ -30,13 +30,11 @@
   border: 3px solid #6c0287;
   outline: 1px solid #6c0287;
 }
-
 .button_outline_violet:focus {
   background: #6c0287;
   border: 3px solid #6c0287;
   outline: 1px solid #6c0287;
 }
-
 .button_outline_violet:active {
   background: #640aa3;
   border: 3px solid #640aa3;
@@ -59,25 +57,26 @@
   border: 1px solid #6c0287;
   box-shadow: 0 0 20px #6c0287; /* afterglow свечение вокруг кнопки */
   /* filter: blur(20px); фон из фигмы */
-  /* transition: background-color 200ms ease-out; */
+  transition: background-color 200ms ease-out;
 }
 
 .button_bg_violet:hover {
   background: #840aa3;
   border: 3px solid #840aa3;
   outline: 1px solid #840aa3;
+  box-shadow: 0 0 20px #840aa3; /* afterglow свечение вокруг кнопки */
 }
-
 .button_bg_violet:focus {
   background: #840aa3;
   border: 3px solid #840aa3;
   outline: 1px solid #840aa3;
+  box-shadow: 0 0 20px #840aa3; /* afterglow свечение вокруг кнопки */
 }
-
 .button_bg_violet:active {
   background: #640aa3;
   border: 3px solid #640aa3;
   outline: 1px solid #640aa3;
+  box-shadow: 0 0 20px #640aa3; /* afterglow свечение вокруг кнопки */
 }
 
 
@@ -95,9 +94,10 @@
   border: none;
   align-self: center;
   transform: translateY(-90px);
-  /* transition: transform 400ms ease-in; */
+  transition: transform 400ms ease-in;
   cursor: pointer;
 }
+
 /* *hover* */
 .button__down-arrow:hover {
   background-color: #fff;
@@ -131,7 +131,7 @@
 
   background: #ffffff;
   border: 3px solid #ffffff;
-  /* transition: all 200ms ease-out; */
+  transition: all 200ms ease-out;
 }
 
 .button_bg_white:hover {
