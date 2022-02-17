@@ -5,14 +5,16 @@
 }
 
 .faq__title {
-  /* font-family: Arial;
+  /* 
+  font-family: Arial;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;   */
+  color: #FFFFFF;
+  */
   margin-bottom: 40px;
 }
 
@@ -64,18 +66,17 @@
 }
 
 
-
-
+/* * plus */
 .faq__item:nth-child(odd):after {
-  background-image: url('img/open_violet.svg');
+  background-image: url('img/open_plus_violet.svg');
   border-radius: 50%;
 }
 .faq__item:nth-child(even):after {
-  background-image: url('img/open_white.svg');
+  background-image: url('img/open_plus_white.svg');
   border-radius: 50%;
 }
 
-
+/* * hover */
 .faq__item:nth-child(odd):hover:after {
   background-image: url('img/open_hover_violet.svg');
 }
@@ -90,9 +91,4 @@
 .faq__item:nth-child(even):active:after {
   background-image: url('img/close_minus_white.svg');
 }
-
-
-
-
-
 

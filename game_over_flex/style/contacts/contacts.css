@@ -47,6 +47,10 @@
   margin-left: 60px;
 }
 
+.contacts__link {
+  display: inline;
+  /* transition: color 100ms ease-in-out; */
+}
 .contacts__link:hover {
   /* background-color: #EADEED; */
   color: #eadeed;

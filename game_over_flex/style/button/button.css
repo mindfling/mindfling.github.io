@@ -7,7 +7,6 @@
   font-style: normal;
   font-weight: bold;
   text-transform: uppercase;
-
   border-radius: 10px;
 }
 
@@ -15,34 +14,33 @@
 .button_outline_violet {
   width: 280px;
   height: 55px;
-
   padding: 0;
   margin: 0;
-
   font-size: 22px;
   line-height: 30px;
   color: #ffffff;
   background-color: transparent;
   border: 3px solid #cd06ff;
   border-radius: 10px;
-  transition: background 200ms ease-out;
+  /* transition: background-color 200ms ease-out; */
 }
 
 .button_outline_violet:hover {
   background: #6c0287;
   border: 3px solid #6c0287;
+  outline: 1px solid #6c0287;
 }
 
 .button_outline_violet:focus {
   background: #6c0287;
-  /* border: 3px solid #6c0287; */
-  outline: 3px solid #6c0287;
+  border: 3px solid #6c0287;
+  outline: 1px solid #6c0287;
 }
 
 .button_outline_violet:active {
   background: #640aa3;
-  /* border: 3px solid #640aa3; */
-  outline: 3px solid #640aa3;
+  border: 3px solid #640aa3;
+  outline: 1px solid #640aa3;
 }
 
 
@@ -51,38 +49,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 374px;
   height: 80px;
-
   font-size: 26px;
   font-weight: bold;
   line-height: 30px;
   color: #ffffff;
-
   background: #6c0287;
-  border-radius: 10px;
   border: 1px solid #6c0287;
   box-shadow: 0 0 20px #6c0287; /* afterglow свечение вокруг кнопки */
   /* filter: blur(20px); фон из фигмы */
-  transition: background 200ms ease-out;
+  /* transition: background-color 200ms ease-out; */
 }
 
 .button_bg_violet:hover {
   background: #840aa3;
-  border: 1px solid #840aa3;
+  border: 3px solid #840aa3;
+  outline: 1px solid #840aa3;
 }
 
 .button_bg_violet:focus {
   background: #840aa3;
-  border: 1px solid #840aa3;
+  border: 3px solid #840aa3;
   outline: 1px solid #840aa3;
 }
 
 .button_bg_violet:active {
   background: #640aa3;
-  border: 1px solid #640aa3;
+  border: 3px solid #640aa3;
+  outline: 1px solid #640aa3;
 }
+
 
 /* *button__down-arrow* */
 .button__down-arrow {
@@ -98,7 +95,7 @@
   border: none;
   align-self: center;
   transform: translateY(-90px);
-  transition: transform 400ms ease-in;
+  /* transition: transform 400ms ease-in; */
   cursor: pointer;
 }
 /* *hover* */
@@ -134,7 +131,7 @@
 
   background: #ffffff;
   border: 3px solid #ffffff;
-  transition: all 200ms ease-out;
+  /* transition: all 200ms ease-out; */
 }
 
 .button_bg_white:hover {

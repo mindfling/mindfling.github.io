@@ -13,7 +13,7 @@
   text-transform: uppercase;
   color: #ffffff;
   padding: 0 20px;
-  transition: color 200ms ease-out;
+  /* transition: color 200ms ease-out; */
 }
 
 .navigation__link:hover {
