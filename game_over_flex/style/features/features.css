@@ -27,8 +27,8 @@
 
 .features__card-item {
   display: flex;
-  /* margin-right: 20px; */
   /* todo gap */
+  /* margin-right: 20px; */
   /* gap: 10px 50px; */
   /* margin-bottom: 40px; */
   /* border: 1px solid yellow; */
@@ -41,7 +41,7 @@
   width: 380px;
   height: 228px;
   flex-direction: column;
-  transition: transform 300ms ease;
+  transition: transform 400ms ease-in-out;
 }
 .features__card-figure:hover {
   transform: scale(110%);

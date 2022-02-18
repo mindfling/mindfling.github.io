@@ -16,7 +16,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+
+  transition: all 500ms ease;
 }
+
+
+.hall__item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 5500ms ease;
+}
+
 
 .halls__item {
   display: flex;
@@ -24,20 +37,10 @@
   align-items: center;
   width: 580px;
   height: 349px;
-  /* ?почему-то не применяется здесь? */
-  /* background-position: center; */
-  /* background-size: contain; */
+  cursor: default;
 }
 
-.halls__text {
-  display: flex;
-  font-family: Arial, sans-serif;
-  font-weight: 700;
-  font-size: 70px;
-  line-height: 80px;
-  text-transform: uppercase;
-  /* margin: auto; */
-}
+
 
 .halls__item_80s-vibes {
   background: url(img/halls_80s-vibers.jpg) no-repeat center;
@@ -57,4 +60,52 @@
 .halls__item_neon-style {
   background: url(img/halls-neon-styles.jpg) no-repeat center;
   background-size: contain;
+}
+
+
+
+.halls__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+
+
+.hall__item {
+  transition: all 500ms ease;
+}
+
+.halls__item {
+  transition: all 500ms ease;
+}
+
+/* *hover* */
+.halls__text:hover {
+  /* background-color: rgba(87, 0, 87, 0.592); */
+  transition: all 500ms ease;
+}
+
+.halls__text:hover ~ .halls__item {
+  background-size: 120%;
+  transition: all 500ms ease;
+}
+
+.halls__item:hover {
+  /* сам фон */
+  background-size: 100%;
+  transition: all 500ms ease;
 }
