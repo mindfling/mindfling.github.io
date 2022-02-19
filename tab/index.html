@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="nav_style.css">
+    <title>css mag nav</title>
+  </head>
+  <body>
+    <div class="wrapper pages">
+
+      <div class="page page-1" data-page-number="1">
+        <h1 class="title">Страничка 1</h1>
+        <h1 class="title"><ion-icon name="home-outline"></ion-icon></h1>
+      </div>
+
+      <div class="page page-2" data-page-number="2">
+        <h1 class="title">Страничка 2  <br>
+          <ion-icon name="person-outline"></ion-icon>
+        </h1>
+        <p>Радио chill out <a href="https://www.loungefm.com.ua/chill" target="_blank" rel="noopener noreferrer">https://www.loungefm.com.ua/chill</a> следите за новостями в нашем новостном блоге. новые события. новые ссылки. новые новости,...</p>
+      </div>
+
+      <div class="page page-3" data-page-number="3">
+        <h1 class="title">Страничка 3 <br>
+          <ion-icon name="chatbubble-outline"></ion-icon>
+          <ion-icon name="person-outline"></ion-icon>
+        </h1>
+        <h2 class="subtitle">Подзаголовок страницы <br> номер 3</h2>
+      </div>
+
+      <div class="page page-4" data-page-number="4">
+        <h1 class="title">Страничка 4 <ion-icon name="camera-outline"></ion-icon></h1>
+        <img src="vertletter.jpg" alt="" class="capture">
+              </div>
+        
+      <div class="page page-5" data-page-number="5">
+        <h1 class="title">Страничка 5</h1>
+        <!-- <p>Ссылка на обучающие видео <a href="https://youtu.be/ArTVfdHOB-M" target="_blank">здесь</a></p> -->
+        <iframe class="video-frame" width="400" height="250" src="https://www.youtube.com/embed/ArTVfdHOB-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-panel">
+
+        <!-- Меню переключатель кнопочками -->
+        <div class="navigation">
+
+          <ul>
+            <li class="list active button-1"  data-button-number="1">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">Home</span>
+              </a>
+            </li>
+            <li class="list button-2" data-button-number="2">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="person-outline"></ion-icon>
+                </span>
+                <span class="text">Profile</span>
+              </a>
+            </li>
+            <li class="list button-3" data-button-number="3">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="chatbubble-outline"></ion-icon>
+                </span>
+                <span class="text">Messages</span>
+              </a>
+            </li>
+            <li class="list button-4" data-button-number="4">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="camera-outline"></ion-icon>
+                </span>
+                <span class="text">Photos</span>
+              </a>
+            </li>
+            <li class="list button-5" data-button-number="5">
+              <a href="#">
+                <span class="icon">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </span>
+                <span class="text">Settings</span>
+              </a>
+            </li>
+
+            <div class="indicator"></div>
+          </ul>
+
+      </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+    <script src="nav_script.js" defer></script>
+  </body>
+</html>
