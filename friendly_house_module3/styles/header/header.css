@@ -1,0 +1,96 @@
+/* *header* */
+
+.header {
+  /* border: 1px solid magenta; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__container {
+  /* border: 1px solid green; */
+  display: flex;
+  width: 1240px;
+  height: 120px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__burger {
+  /* border: 1px solid red; */
+}
+.header__burger-btn {
+  display: block;
+  width: 40px;
+  height: 22px;
+  background-color: transparent;
+  background: url(img/menu-burger-btn.svg) no-repeat center;
+  background-size: contain;
+  border: none;
+  outline: none;
+}
+.header__burger-btn:hover {
+  /* outline: 1px solid var(--orange-text); */
+  outline: none;
+  opacity: 0.6;
+}
+.header__burger-btn:focus {
+  outline: 1px solid var(--orange-text);
+}
+
+.header__burger-btn_close {
+}
+.header__description {
+}
+.header__logo {
+  /* border: 1px solid orange; */
+  display: block;
+  width: 355px;
+  height: 72px;
+  background: url(img/logo-title.svg);
+}
+.header__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.header__menu_hidden {
+  display: none;
+}
+.header__tel {
+  /* todo flex */
+  position: relative;
+  /* todo global */
+  /* font-family: HelveticaNeueCyr; */
+  font-family: var(--text-font);
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-text);
+  
+}
+.header__tel:hover {
+  opacity: .6;
+}
+.header__tel:focus {
+  outline: 1px solid var(--orange-text);
+}
+
+.header__tel::before {
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("img/call.svg");
+}
+
+.header__title {
+  /* border: 11px solid magenta; */
+}
+
+
