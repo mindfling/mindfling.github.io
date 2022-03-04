@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- предзагрузка шрифтов -->
+  <link rel="preload" href="fonts/Comfortaa-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueCyr-Roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- главный файл стилей -->
+  <link rel="stylesheet" href="style/style.css">
+  <!-- <title>Friendly House - О приюте About Our shelter BEM Module2 Lesson10 FH</title> -->
+  <!-- <title>Friendly House - О приюте About Our shelter - BEM M2L11 </title> -->
+  <title>Friendly House - О приюте - About Our shelter - BEM Flex CSS Module03 Lesson04 FH</title>
+</head>
+
+
+
+
+<body class="page">
+
+  <!-- *header* -->
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="header__burger">
+        <button class="header__burger-btn header__burger-btn_close" tabindex="1"><!-- menu-burger-btn svg --></button>
+        <!-- todo бургер меню -->
+        <ul class="header__menu header__menu_hidden aside-menu visually-hidden">
+          <li class="aside-menu__item">
+            <a href="#about" class="aside-menu__link">About</a>
+          </li>
+          <li class="aside-menu__item">
+            <a href="#help" class="aside-menu__link">Help</a>
+          </li>
+          <li class="aside-menu__item">
+            <a href="#callback" class="aside-menu__link">Callback Form</a>
+          </li>
+        </ul>
+      </div>      
+      <!-- <img class="header__logo" alt="logo title site friendly house" href="logo.svg"></img> -->
+      <div class="header__logo"></div>
+      <!-- :before call -->
+      <a class="header__tel" href="tel:8(849)300-39-57" target="_blank" rel="noopener noreferrer" tabindex="1">8&nbsp;(849)&nbsp;300&nbsp;-&nbsp;39&nbsp;-&nbsp;57</a>
+
+    </div>
+  </header>
+
+
+
+  <!-- *banner* -->
+  <section class="banner">
+    <div class="container banner__container">
+
+      <div class="banner__inner">
+        <h2 class="banner__title">
+          <span class="banner__text banner__text_orange">Сара ждет,</span><br>
+          <span class="banner__text banner__text_grey">когда найдется <br>её человек</span>
+        </h2>
+
+        <button class="banner__help-button"></button>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <main class="page__main">
+    <!-- *about* -->
+    <setion class="about">
+      <div class="container about__container">
+
+        <div class="about__content">
+          <div class="about__text-content">
+            <h2 class="about__page-title">О приюте</h2>
+            <p class="about__text">Приют "Friendly House" - это целый комплекс для бездомных и брошенных животных.</p>
+            <p class="about__text">В приюте работает сплочённая команда, которая занимается помощью бездомным животным в течении многих лет. Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.</p>
+          </div>
+          <div class="about__image"></div>
+        </div>
+
+        <a href="#smi" class="about__link">СМИ о нас</a> <!-- :after arrow -->
+          
+      </div><!-- /.about__container -->
+    </setion>
+
+
+    <!-- *help-us* -->
+    <section class="help-us">
+      <div class="container help-us__container">
+
+        <h2 class="help-us__question">Как ты можешь нам помочь?</h2>
+
+        <ol class="help-us__list">
+          
+          <li class="help-us__item">
+            <article class="help-us__article">
+              <div class="help-us__text-content help-us__text-content_left">
+                <h3 class="help-us__title">Финансово</h3>
+                <p class="help-us__text">Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+              </div>
+              <div class="help-us__image help-us__image_right help-us__image_first"></div>
+            </article>
+          </li>
+          <li class="help-us__item">
+            <h3 class="help-us__title">Стать волонером</h3>
+            <article class="help-us__article">
+              <div class="help-us__image help-us__image_left help-us__image_second"></div>
+              <div class="help-us__text-content help-us__text-content_right">
+                <p class="help-us__text">Наш приют <i class="help-us__text help-us__text_italic">"Friendly House"</i> привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.</p>
+                <p class="help-us__text">Нам всегда нужна помощь с выгулом подопечных, уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой животных в клиники, забрать и привезти вещи и много всего другого. Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+              </div>
+            </article>
+          </li>
+          <li class="help-us__item">
+            <article class="help-us__article">
+              <div class="help-us__text-content help-us__text-content_left">
+                <h3 class="help-us__title">Стать опекуном</h3>
+                <p class="help-us__text"><strong class="help-us__text help-us__text_strong">Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!</strong></p>
+                <p class="help-us__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по каким-либо причинам.</p>
+              </div>
+              <div class="help-us__image help-us__image_right help-us__image_third"></div>
+            </article>
+          </li>
+        </ol>
+
+        <!-- todo -->
+        <button class="banner__help-button help-us__help-button"></button>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- форма обратной связи -->
+  <section class="callback">
+    <div class="container callback__container">
+
+      <h2 class="callback__title callback__title_orange">Ты можешь помочь нам!</h2>
+      <p class="callback__text">Хочешь забрать питомца, стать волонтером, или опекуном?</p>
+      <p class="callback__text callback__text_orange">Свяжись с нами!</p>
+
+      <div class="callback__contacts">
+        <div class="callback__contact-item callback__contact-item_tel">
+          <a class="callback__contact-link callback__contact-link_tel" href="tel:8(849)300-39-57">
+            8 (849) 300 - 39 - 57
+          </a>
+        </div>
+        <div class="callback__contact-item callback__contact-item_email">
+          <a class="callback__contact-link callback__contact-link_email" href="mailto:FriendlyHouse@gmail.com?subject=Хочу помочь стать волонтером">
+            FriendlyHouse@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <form action="https://httpbin.org/post" class="callback__form form" method="post">
+        <fieldset class="form__fieldset" aria-required="true">
+          <legend class="form__legend">Или оставь свои контакты и мы сами свяжемся с тобой!</legend>
+          <label for="tel" class="form__label">
+            <p class="form__label-text">Номер телефона</p>
+            <input type="tel" class="form__input form__input_tel" id="tel" name="tel" required>
+          </label>
+          <label for="email" class="form__label">
+            <p class="form__label-text">E-mail</p>
+            <input type="email" class="form__input form__input_email" id="email" name="email" required>
+          </label>
+          <button type="submit" class="form__submit-button"></button>
+        </fieldset>
+      </form>
+
+    </div> <!-- callback__container -->
+  </section>
+
+
+
+</body>
+</html>
+
+
+
+
+      
+      <!-- :after paws 
+      <h1 class="header__title visually-hidden">Friendly House</h1>
+      <div class="header__logo visually-hidden">
+        <p class="header__description">Приют для Животных</p>
+      </div>-->
