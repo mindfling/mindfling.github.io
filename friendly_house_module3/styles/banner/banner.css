@@ -1,0 +1,70 @@
+/* *banner* */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px; /* ? */
+  padding-bottom: 90px;
+}
+
+.banner__container {
+  /* border: 1px solid green; */
+  display: flex;
+  width: 1240px;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(img/sara-bulldog.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.banner__help-button {
+  /* border: 1px solid orange; */
+  display: block;
+  width: 180px;
+  height: 155px;
+  border: none;
+  outline: none;
+  background: url(img/lapa-with-let.svg) no-repeat center;
+}
+.banner__help-button:hover {
+  opacity: var(--hover-opacity);
+}
+.banner__help-button:focus {
+  outline: 1px solid var(--orange-text);;
+}
+
+.banner__inner {
+  /* border: 1px solid magenta; */
+  display: flex;
+  width: 980px;
+  height: 580px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding-top: 137px;
+  padding-bottom: 25px;
+}
+.banner__text {
+  /* todo global */
+  font-style: 300;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 60px;
+}
+.banner__text_orange {
+  font-style: normal;
+  font-size: 60px;
+  /* color: #FF8A00; */
+  color: var(--orange-text);
+}
+.banner__text_grey {
+  color: var(--dark-text);
+}
+.banner__title {
+  /* font-family: Comfortaa; */
+  font-family: var(--font-family-title);
+  font-weight: normal;
+}
