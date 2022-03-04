@@ -1,0 +1,42 @@
+
+/* * {
+  box-sizing: border-box;
+} */
+
+
+:root {
+  /* *colors* */
+  --white: #FFFFFF;
+  --grey:  #F2F0F1;
+  --black: #282626;
+  --orange: #FF8A00;
+
+  
+  /* background */
+  --white-bg: var(--white);
+  --grey-bg: var(--grey);
+
+  /* text */
+  --white-text: var(--white);
+  --orange-text: var(--orange);
+  --dark-text: var(--black);
+
+
+  /* *fonts* */
+  --font-family-text: HelveticaNeueCyr;
+  --font-family-title: Comfortaa;
+  
+  --text-font: HelveticaNeueCyr;
+  --title-font: Comfortaa;
+
+
+  /* *hover* */
+  --hover-opacity: 0.6;
+
+
+
+  /* *selection* */
+  --bg-orange-select: var(--orange);
+  --text-white-select: var(--grey);
+}
+
