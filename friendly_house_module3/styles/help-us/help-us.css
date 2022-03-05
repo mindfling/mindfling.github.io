@@ -1,0 +1,107 @@
+/* *help* */
+
+.help-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey-bg);
+}
+
+.help-us__container {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.help-us__article {
+  /* border: 1px solid orangered; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+}
+.help-us__help-button {
+}
+.help-us__image {
+  display: flex;
+  width: 580px;
+}
+.help-us__image_first {
+  height: 300px;
+  background: url(img/rabbit-dog-bulldog.png) no-repeat center;
+}
+.help-us__image_second {
+  height: 350px;
+  background: url(img/girl-with-dog.png) no-repeat center;
+}
+.help-us__image_third {
+  height: 380px;
+  background: url(img/cat-cat-man-and-dog.png) no-repeat center;
+}
+
+.help-us__image_left {
+}
+.help-us__image_right {
+}
+
+.help-us__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 30px;
+}
+.help-us__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.help-us__question {
+  font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 50px;
+line-height: 60px;
+/* text-align: center; */
+/* color: #FF8A00; */
+color: var(--orange-text);
+}
+.help-us__text {
+}
+.help-us__text-content {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  row-gap: 20px;
+}
+.help-us__text-content_left {
+}
+.help-us__text-content_right {
+}
+.help-us__text_italic {
+}
+.help-us__text_strong {
+}
+.help-us__title {
+  font-family: HelveticaNeueCyr;
+font-style: normal;
+font-weight: 550;
+font-size: 30px;
+line-height: 40px;
+color: var(--dark-text);
+}
+.help-us__text {
+  font-family: HelveticaNeueCyr;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 30px;
+color: var(--dark-text);
+}
