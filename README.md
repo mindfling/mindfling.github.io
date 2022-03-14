@@ -1,4 +1,4 @@
-### Hello! This is GitHub Pages for
+﻿### Hello! This is GitHub Pages for
 ## [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
 ## [mindfling.github.io/game_over](https://mindfling.github.io/game_over)
 ## [mindfling.github.io/game_over_flex](https://mindfling.github.io/game_over_flex)
@@ -16,6 +16,23 @@
 **Friendly House:**
 - Friendly House project code [github.com/mindfling/mindfling.github.io/tree/main/friendly_house](https://github.com/mindfling/mindfling.github.io/tree/main/friendly_house)
 - Friendly House git page [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
+
+
+
+
+**Friendly House:**
+- Friendly House project code [github.com/mindfling/mindfling.github.io/tree/main/friendly_house](https://github.com/mindfling/mindfling.github.io/tree/main/friendly_house)
+- Friendly House git page [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
+
+
+
+
+**Friendly House:**
+- Friendly House project code [github.com/mindfling/mindfling.github.io/tree/main/friendly_house_module3](https://github.com/mindfling/mindfling.github.io/tree/main/friendly_house_module3)
+- Friendly House git page [mindfling.github.io/friendly_house_module3](https://mindfling.github.io/friendly_house_module3)
+
+
+
 
 
 **Game Over:**
