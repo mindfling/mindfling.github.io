@@ -1,0 +1,92 @@
+/* *advantages преимущества компании* */
+
+.advantages {
+  /* border: 1px solid orange; */
+  display: flex;
+  min-height: 596px;
+  padding: 70px 0;
+  /* todo */
+  background: linear-gradient(var(--white), var(--light));
+}
+
+.advantages__features {
+  /* border: 1px solid lawngreen; */
+  display: flex;
+}
+
+.advantages__item {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-basis: 196px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.advantages__item-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 122px;
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 100%;
+  border-radius: 50%;
+  border: 1px solid var(--sky-blue);
+  background-color: var(--sky-blue);
+  color: var(--white);
+}
+
+.advantages__item-name {
+  display: flex;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--dark);
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.advantages__subtitle {
+  text-align: center;
+}
+
+.advantages__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.advantages__text {
+  /* font-family: "Roboto"; */
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  /* color: #383A4C; */
+}
+
+.advantages__title {
+  text-align: center;
+}
+
+.container_advantages {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+

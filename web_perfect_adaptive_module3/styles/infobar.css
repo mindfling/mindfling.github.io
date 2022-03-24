@@ -1,0 +1,91 @@
+/* *infobar at header and footer* */
+
+/* .header__header-top, */
+/* .header__infobar, */
+.infobar {
+  /* border: 1px solid orange; */
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infobar__designer {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--white);
+}
+
+/* .header__callback, */
+.infobar__callback {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .header__callback-tel, */
+.infobar__callback-tel {
+  display: flex;
+  font-weight: 400;
+  font-size: 23.85px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--white);
+}
+/* .header__callback-link, */
+.infobar__callback-link {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--white);
+}
+
+.infobar__copy {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--white);
+}
+
+
+/* footer__company */
+/* .header__company, */
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+}
+
+.company__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__logo-image {
+  display: block;
+}
+
+.company__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background-color: var(--sky-blue);
+  color: var(--white);
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 27px;
+  text-transform: capitalize;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 0px 6px 2px;
+}

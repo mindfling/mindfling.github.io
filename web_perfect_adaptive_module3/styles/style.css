@@ -1,0 +1,15 @@
+@import url(variables.css);
+@import url(font.css);
+@import url(normalize.css);
+@import url(global.css);
+
+@import url(button.css);
+
+@import url(header.css);
+/* header and footer infobar */
+@import url(infobar.css);
+/* @import url(homescreen.css); */
+@import url(advantages.css);
+@import url(contact.css);
+/* @import url(contactscreen.css); */
+@import url(footer.css);
