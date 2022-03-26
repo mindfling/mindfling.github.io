@@ -1,0 +1,211 @@
+/* *contacts form* */
+
+.contact {
+  display: flex;
+  min-height: 621px;
+  background: url(../img/background-contact-screen.jpg) no-repeat center;
+  background-size: cover;
+  color: var(--white);
+  padding: 70px 0;
+}
+
+.contact__text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 17px;
+}
+
+.contact__form {
+}
+
+.contact__subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact__title {
+  /* todo */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.container_contact {
+  /* border: 1px solid orange; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.form__fields {
+  /* border: 1px solid skyblue; */
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 21px;
+}
+
+/* * скрываем поумолчанию checkbox
+.form__agree-check {
+  appearance: none;
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 11px;
+  background-color: transparent;
+  border: 2px solid #ffffff59;
+} */
+/* *контейнер */
+.form__agree {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+/* *скрываем чекбокс */
+.form__agree-check {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  cursor: pointer;
+}
+/* *псевдоэлемент чекбокс */
+.form__agree-check + .form__label::before {
+  content: "";
+  /* appearance: none; */
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  /* margin-right: 11px; */
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  opacity: 0.6;
+  transition: opacity 400ms ease;
+  cursor: pointer;
+}
+.form__agree-check:checked + .form__label::before {
+  opacity: 1;
+}
+/* *галочка */
+/* пустая */
+.form__agree-check + .form__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  display: block;
+  width: 8px;
+  height: 14px;
+  background-color: transparent;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: rotate(10deg) scale(250%);
+  opacity: 0;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+/* чекнутая */
+.form__agree-check:checked + .form__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  display: block;
+  width: 8px;
+  height: 14px;
+  background-color: transparent;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  opacity: 1;
+  transform: rotate(33deg);
+}
+
+.form__label {
+  /* border: 1px solid magenta; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form__button {
+}
+
+.form__input {
+  display: flex;
+  min-width: 423px;
+  height: 44px;
+
+  border: 1.38235px solid var(--white);
+  border-radius: 50px;
+  background: transparent;
+
+  color: var(--white);
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.form__email {
+}
+
+.form__label_link {
+  color: var(--dark-blue);
+}
+
+.form__name {
+}
+
+.form__tel {
+}
+
+.subtitle {
+}
+
+.subtitle_white {
+}
+
+.title {
+  /* todo global */
+}
+
+.title_white {
+  /* color: var(--white); */
+}

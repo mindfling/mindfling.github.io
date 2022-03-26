@@ -1,0 +1,185 @@
+/* *GLOBAL STYLE* */
+html {
+  box-sizing: border-box;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+.page {
+  /* todo body flex */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  /* align-items: center; */
+  width: 1400px;
+  /* width: 100%; */
+  min-width: 320px;
+  min-height: 100vh;
+  /* стандартный шрифт без засечек */
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  /* todo */
+  /* list-style: none; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+fieldset,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* специальный класс для скрытого блока 
+   скрыть но оставить в DOM-дереве */
+.visually-hidden {
+  display: block;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+}
+
+/*
+У секции добавляю вертикальные паддинги,
+это половина от расстояния между блоками
+*/
+header,
+footer,
+section {
+  /* border: 1px solid green;   */
+  display: flex;
+  padding: 0 0;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+/*
+Пример контейнера с отступами
+Если контейнер 1080px по макету,
+то для max-width прибавляем паддинги 30px*2, 
+в итоге 1240px
+Чтобы контент не прижимался к краям экрана
+*/
+.container {
+  /* border: 1px solid magenta; */
+  display: flex;
+  flex-direction: column;
+  /* 30 + 1200 + 30 */
+  width: 1260px;
+  height: 100%;
+  max-width: 1260px;
+  padding: 0 30px;
+  /* margin: 0 auto; */
+}
+
+::selection {
+  /* color: var(--grey-bg); */
+  /* background-color: var(--dark-text); */
+  color: var(--white);
+  background-color: var(--sky-blue);
+}
+
+
+/* todo to global TITLES */
+.title {
+  /* font-family: "Roboto"; */
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.title_dark {
+  /* color: #383A4C; */
+  color: var(--dark);
+}
+
+
+/* todo to global SUBTITLES */
+.subtitle {
+  flex-direction: row;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subtitle_dark {
+  /* color: #383A4C; */
+  color: var(--dark);
+}
+
+.subtitle_dashed {
+  /* border: 1px solid lawngreen; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.subtitle_dashed::before,
+.subtitle_dashed::after {
+  display: flex;
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: var(--dark);
+}
+
+

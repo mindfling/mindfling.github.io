@@ -1,0 +1,56 @@
+/* *header* */
+
+
+.header {
+  display: flex;
+  min-height: 732px;
+  background: url(../img/background-contact-screen.jpg) no-repeat center;
+  background-size: cover;
+  color: var(--white);
+  padding: 40px 0;
+}
+
+.container_header {
+}
+
+.header__button {
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 120px;
+}
+
+.header__home-content {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 990px;
+  height: 384px;
+}
+
+.header__page-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 61px;
+  text-align: center;
+  /* color: rgba(255, 255, 255, 0.86); */
+  color: var(--white);
+  opacity: 0.86;
+}
+
+.header__text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  /* color: rgba(255, 255, 255, 0.75); */
+  color: var(--white);
+  opacity: 0.75;
+}
