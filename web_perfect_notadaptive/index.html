@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M03L05 Web adaptive project</title>
+  
+  <!-- предзагрузка шрифтов -->
+  <link rel="preload" href="fonts/Pacifico-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Pacifico-v21-latin-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/400-Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- файл основных стилей -->
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- фавиконка -->
+  <link rel="icon" type="image/svg+xml" href="icon/favicon.svg" />
+</head>
+<body class="page">
+
+  <header class="header">
+    <div class="container container_header header__container">
+      
+      <div class="header__infobar infobar">
+
+        <!-- <div class="company header__company infobar__company">
+          <div class="company__logo infobar__logo">
+            <a class="company__logo-link" href="#" alt="logo" title="company logo link">logo</a>
+          </div>
+        </div> -->
+        <div class="company header__company infobar__company">
+          <div class="company__logo infobar__logo">
+            <img class="company__logo-image" src="img/logo-round.svg" alt="logo" title="company round logo">
+          </div>
+        </div>
+        <div class="callback header__callback infobar__callback">
+          <span class="header__callback-tel infobar__callback-tel">+7&nbsp;(962)&nbsp;556&nbsp;-&nbsp;1234</span>
+          <a href="#" class="header__callback-link infobar__callback-link">Перезвоните мне</a>
+        </div>
+      </div>
+
+      <div class="header__home-content">
+        <h1 class="header__page-title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+        <p class="header__text">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
+        <button class="header__button button button_more-detailed">Подробнее</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="advantages">
+    <div class="container container_advantages">
+
+      <div class="advantages__text-content">
+        <h2 class="advantages__title title title_dark">Уникальный заголовок для преимущества компании</h2>
+        <p class="advantages__subtitle subtitle subtitle_dark subtitle_dashed">О нас</p>
+        <p class="advantages__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать <br> несколько абзацев более менее осмысленного текста рыбы на русском языке, а <br> начинающему оратору отточить.</p>
+      </div>
+
+
+      <div class="advantages__features">
+        <ol class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__item-marker">1</div>
+            <div class="advantages__item-name">Первое целевое преимущество</div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-marker">2</div>
+            <div class="advantages__item-name">Второе целевое преимущество</div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-marker">3</div>
+            <div class="advantages__item-name">Третье целевое преимущество</div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages__item-marker">4</div>
+            <div class="advantages__item-name">Четвертое целевое преимущество</div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container container_contact">
+      <div class="contact__text-content">
+        <h2 class="contact__title title title_white">Остались вопросы?</h2>
+        <p class="contact__subtitle subtitle subtitle_white">Оставьте номер телефона, и мы перезвоним вам</p>
+      </div>
+      <form id="contact-form" class="contact__form form" action="https://httpbin.org/post" method="post">
+        <fieldset class="form__fields">
+          <input id="form-name" name="name" class="form__input form__input_name" type="text" placeholder="Ваше имя" required>
+          <input id="form-tel" name="tel" class="form__input form__input_tel" type="text" placeholder="Телефон" required>
+          <input id="form-email" name="email" class="form__input form__input_email" type="text" placeholder="E-mail" required>
+        </fieldset>
+        <button id="form-submit" name="submit" class="form__button button button_form button_submit" type="submit">Перезвоните мне</button>
+
+        <div class="form__agree">
+          <input id="form-agree-check" name="agree-check" class="form__agree-check" type="checkbox" required value="ok">
+          <label class="form__label" for="form-agree-check">
+            Я даю своё 
+            &nbsp;<a href="#" class="form__label form__label_link">согласие</a>&nbsp;
+            на обработку моих персональных данных.
+          </label>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container container_footer">
+
+      <div class="footer__inner infobar">
+
+        <!-- <div class="footer__company infobar__company company">
+          <div class="company__logo infobar__logo">
+            <a class="company__logo-link" href="#" alt="logo" title="company logo link">logo</a>
+          </div>
+          <div class="company__copy infobar__copy">
+            &copy;2022&nbsp;X-Company.<br>Все&nbsp;права&nbsp;защищены.
+          </div>
+        </div> -->
+
+        <div class="company footer__company infobar__company">
+          <div class="company__logo">
+            <img class="company__logo-image" src="img/logo-round.svg" alt="logo" title="company logo">
+          </div>
+          <div class="company__copy infobar__copy">
+            &copy;2022&nbsp;X-Company.<br>Все&nbsp;права&nbsp;защищены.
+          </div>
+        </div>
+
+        <div class="footer__designer infobar__designer">Сделано Ивановыи Иваном</div>
+
+        <div class="callback footer__callback infobar__callback">
+          <span class="footer__callback-tel infobar__callback-tel">+7&nbsp;(962)&nbsp;556&nbsp;-&nbsp;1234</span>
+          <a href="#" class="footer__callback-link infobar__callback-link">Перезвоните мне</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

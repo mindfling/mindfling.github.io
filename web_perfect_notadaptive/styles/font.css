@@ -1,0 +1,59 @@
+/* *css fonts of this project* */
+
+/* *font-face for Logo* */
+/* Pacifico Regular 400 */
+@font-face {
+  font-family: "Pacifico";
+  src: local("Pacifico Regular"),
+        local("Pacifico-Regular"),
+        url("../fonts/Pacifico-v21-latin-regular.woff2") format("woff2"),
+        url("../fonts/Pacifico-v21-latin-regular.woff") format("woff"),
+        url("../fonts/Pacifico-v21-latin-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+
+/* *fonts for text* */
+/* Roboto Regular 400 */
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+        local("Roboto Regular"),
+        local("Roboto-Regular"),
+        url("../fonts/400-Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Roboto Medium 500 */
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Medium"),
+        local("Roboto-Medium"),
+        url("../fonts/500-Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+
+/* Roboto Bold 700 */
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Bold"),
+        local("Roboto-Bold"),
+        url("../fonts/700-Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+
+/* Roboto Black 900 */
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto Black"),
+        local("Roboto-Black"),
+        url("../fonts/900-Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-display: swap;
+}
