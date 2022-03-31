@@ -8,48 +8,111 @@
 }
 
 .banner__container {
-  /* border: 1px solid green; */
+  border: 1px solid var(--dark-text);
   display: flex;
-  width: 1240px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  width: 1240px;
   /* background-image: url(img/dog-sarah-white.png); */
-  background-image: url(img/dog-sarah-transp.png); /* прозрачн */
-  background-repeat: no-repeat;
+  /* background-image: url(img/dog-sarah-transp.png); прозрачн */
+  /* background-repeat: no-repeat; */
   /* background-position: 100% 0; */
-  background-position: 60% 0;
+  /* background-position: 60% 0; */
+}
+
+
+.banner__inner {
+  border: 1px solid var(--orange);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* width: 980px; */
+  width: 1180px;
+  height: 580px;
+  padding-top: 137px;
+  padding-bottom: 25px;
+}
+.banner__inner_dog-sarah {
+  /* border: 1px solid magenta; */
+  /* background: url(img/dog-sarah-white.png) no-repeat 60% 0; */
+  background: url(img/dog-sarah-transp.png) no-repeat 50% 0;
+}
+.banner__inner_cat-boris {
+  /* border: 1px solid magenta; */
+  background: url(img/cat-boris.png) no-repeat 50% 0;
+}
+.banner__inner_puppy-louis {
+  /* border: 1px solid blueviolet; */
+  background: url(img/puppy-louis.png) no-repeat 50% 0;
+}
+.banner__inner_rabbit-peter {
+  /* border: 1px solid magenta; */
+  background: url(img/rabbit-peter.png) no-repeat 50% 0;
+}
+.banner__inner_cat-kenny {
+  /* border: 1px solid magenta; */
+  background: url(img/cat-ginger-kenny.png) no-repeat 50% 0;
+}
+
+
+.banner__content {
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  align-items: start;
+  min-width: 450px;
+  gap: 81px;
+}
+
+
+/* *orange paw button* */
+.banner__button-block {
+  /* border: 1px solid orangered; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 180px;
+  height: 155px;
 }
 
 .banner__help-button {
   /* border: 1px solid orange; */
-  display: block;
-  width: 180px;
-  height: 155px;
   border: none;
   outline: none;
-  /* background: url(img/lapa-with-let.svg) no-repeat center; */
-  background: url(img/button-paw-with-letters.svg) no-repeat center; /* фон лапа с буквами */
+  display: flex;
+  width: 111px;
+  height: 101px;
+  background: url(img/button-big-paw.svg) no-repeat center;
 }
 .banner__help-button:hover {
-  opacity: var(--hover-opacity);
+  /* opacity: var(--hover-opacity); */
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
 }
 .banner__help-button:focus {
-  outline: 1px solid var(--orange-text);;
+  /* opacity: var(--hover-opacity); */
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+  outline: 1px solid var(--orange);
 }
 
-.banner__inner {
-  /* border: 1px solid magenta; */
-  display: flex;
-  width: 980px;
-  height: 580px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  padding-top: 137px;
-  padding-bottom: 25px;
+.banner__button-text {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--orange-text, #FF8A00);
 }
+
+
+
 .banner__text {
   /* todo global */
   font-style: 300;
@@ -61,13 +124,53 @@
   font-style: normal;
   font-size: 60px;
   /* color: #FF8A00; */
-  color: var(--orange-text);
+  color: var(--orange-text, #FF8A00);
 }
 .banner__text_grey {
   color: var(--dark-text);
 }
 .banner__title {
+  align-self: flex-start;
   /* font-family: Comfortaa; */
   font-family: var(--font-family-title);
   font-weight: normal;
 }
+
+
+
+
+/* кнопки выбора животных */
+.animal-selector{
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 280px;
+  min-height: 410px;
+}
+.animal-selector__button{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+  min-width: 180px;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.animal-selector__button:hover {
+  /* color: orange; */
+  border: 1px solid transparent;
+  outline: 1px solid var(--orange, #FF8A00);
+}
+.animal-selector__button:focus {
+  color: var(--orange-text, #FF8A00);
+  border: 1px solid transparent;
+  outline: 1px solid var(--orange, #FF8A00);
+}
+
+
+
+
+
