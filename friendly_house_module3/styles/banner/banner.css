@@ -8,23 +8,18 @@
 }
 
 .banner__container {
-  border: 1px solid var(--dark-text);
+  /* border: 1px solid var(--dark-text); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 1240px;
-  /* background-image: url(img/dog-sarah-white.png); */
-  /* background-image: url(img/dog-sarah-transp.png); прозрачн */
-  /* background-repeat: no-repeat; */
-  /* background-position: 100% 0; */
-  /* background-position: 60% 0; */
 }
 
 
 .banner__inner {
-  border: 1px solid var(--orange);
-  display: flex;
+  /* border: 1px solid var(--orange); */
+  /* display: flex; */
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
@@ -33,6 +28,12 @@
   height: 580px;
   padding-top: 137px;
   padding-bottom: 25px;
+}
+.banner__inner_hidden {
+  display: none;
+}
+.banner__inner_active {
+  display: flex;
 }
 .banner__inner_dog-sarah {
   /* border: 1px solid magenta; */
