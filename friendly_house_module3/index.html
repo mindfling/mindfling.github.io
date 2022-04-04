@@ -16,6 +16,7 @@
 
 
   <link rel="stylesheet" href="styles/banner/banner.css">
+  <link rel="stylesheet" href="styles/help-us/help-us.css">
 
   <!-- <title>Friendly House - О приюте About Our shelter BEM Module2 Lesson10 FH</title> -->
   <!-- <title>Friendly House - О приюте About Our shelter - BEM M2L11 </title> -->
@@ -281,6 +282,9 @@
       <div class="container help-us__container">
         <h2 class="help-us__question">Как ты можешь нам помочь?</h2>
         <ol class="help-us__list">
+
+
+          <!-- the first -->
           <li class="help-us__item">
             <article class="help-us__article">
               <div class="help-us__text-content help-us__text-content_left">
@@ -288,20 +292,22 @@
                 <p class="help-us__text">Мы будем рады любым пожертвованиям. Деньги пойдут на корм, лечение и уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
               </div>
 
-              <div class="help-us__image help-us__image_right help-us__image_first">
-                <!-- todo little pics blocks -->
-                <div class="help-us__image"></div>
-                <div class="help-us__image"></div>
-                <div class="help-us__image"></div>
+              <div class="help-us__images-block help-us__images-block_first">
+                <div class="help-us__image help-us__image_first_one"></div>
+                <div class="help-us__image help-us__image_first_two"></div>
+                <div class="help-us__image help-us__image_first_three"></div>
               </div>
 
             </article>
           </li>
+          
+
+          <!-- the second -->
           <li class="help-us__item">
             <h3 class="help-us__title">Стать волонером</h3>
             <article class="help-us__article">
-              <div class="help-us__image help-us__image_left help-us__image_second">
-                <div class="help-us__image"></div>                
+              <div class="help-us__images-block help-us__images-block_second">
+                <div class="help-us__image help-us__image_second"></div>                
               </div>
               <div class="help-us__text-content help-us__text-content_right">
                 <p class="help-us__text">Наш приют <i class="help-us__text help-us__text_italic">"Friendly House"</i> привлекает волонтеров для оказания помощи в самых разных форматах! От финансовой помощи и набирающего популярность интеллектуального волонтерства до помощи руками.</p>
@@ -309,6 +315,9 @@
               </div>
             </article>
           </li>
+
+
+          <!-- the third -->
           <li class="help-us__item">
             <article class="help-us__article">
               <div class="help-us__text-content help-us__text-content_left">
@@ -316,16 +325,24 @@
                 <p class="help-us__text"><strong class="help-us__text help-us__text_strong">Хотите друга, но не можете взять домой? Проект опеки - идеальное решение!</strong></p>
                 <p class="help-us__text">Взять под опеку животное, у которого еще нет опекуна, – это как завести питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по каким-либо причинам.</p>
               </div>
-              <div class="help-us__image help-us__image_right help-us__image_third">
-                <div class="help-us__image"></div>
-                <div class="help-us__image"></div>
-                <div class="help-us__image"></div>                
+
+              <div class="help-us__images-block help-us__images-block_third">
+                <div class="help-us__image help-us__image_third_one"></div>
+                <div class="help-us__image help-us__image_third_three"></div>
+                <div class="help-us__image help-us__image_third_two"></div>
               </div>
+
             </article>
           </li>
         </ol>
+
+
         <!-- todo -->
-        <button class="banner__help-button help-us__help-button"></button>
+        <!-- <button class="banner__help-button help-us__help-button"></button> -->
+        <div class="banner__button-block">
+          <button class="banner__help-button"></button>
+          <p class="banner__button-text">Жми на лапку, чтобы <br>помочь!</p>
+        </div>      
       </div>
     </section>
   </main>
@@ -365,6 +382,16 @@
       </form>
     </div> <!-- callback__container -->
   </section>
+
+
+  <!-- todo focus for safari -->
+  <script>
+    document.addEventListener('click', event => {
+        if (event.target.matches('button')) {
+            event.target.focus();
+        }
+    });
+  </script>
 
 </body>
 </html>

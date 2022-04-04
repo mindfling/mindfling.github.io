@@ -1,5 +1,4 @@
 /* *help* */
-
 .help-us {
   display: flex;
   flex-direction: column;
@@ -27,27 +26,98 @@
 }
 .help-us__help-button {
 }
-.help-us__image {
-  display: flex;
-  width: 580px;
-}
-.help-us__image_first {
+
+
+.help-us__images-block_first {
   height: 300px;
-  background: url(img/first-image-rabbit-dog-bulldog.png) no-repeat center;
+  /* background: url(img/first-image-rabbit-dog-bulldog.png) no-repeat center; */
 }
-.help-us__image_second {
+.help-us__images-block_second {
   height: 350px;
-  background: url(img/second-image-girl-with-dog.png) no-repeat center;
+  /* background: url(img/second-image-girl-with-dog.png) no-repeat center; */
 }
-.help-us__image_third {
+.help-us__images-block_third {
   height: 380px;
-  background: url(img/third-image-cat-cat-man-and-dog.png) no-repeat center;
+  /* background: url(img/third-image-cat-cat-man-and-dog.png) no-repeat center; */
 }
 
-.help-us__image_left {
+
+
+.help-us__images-block_left {
+  display: flex;
 }
-.help-us__image_right {
+.help-us__images-block_right {
+  display: flex;
 }
+
+
+
+/* images block */
+.help-us__images-block {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+  height: 382px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* one plate image first */
+.help-us__image_first_one {
+  width: 180px;
+  height: 139px;
+  background: url(img/first-image-white-rabbit.png) no-repeat center;
+}
+.help-us__image_first_two {
+  width: 180px;
+  height: 139px;
+  background: url(img/first-image-brown-dog.png) no-repeat center;
+}
+.help-us__image_first_three {
+  width: 380px;
+  height: 298px;
+  background: url(img/first-image-black-bulldog.png) no-repeat center;
+}
+
+
+/* one plate image second */
+.help-us__image_second {
+  display: flex;
+  width: 580px;
+  height: 349px;
+  background: url(img/second-image-girl-with-dog.png) no-repeat center;
+}
+
+/* one plate image third */
+.help-us__image_third_one {
+  display: flex;
+  width: 280px;
+  height: 382px;
+  background: url(img/third-image-cat-meow.png) no-repeat center;
+}
+.help-us__image_third_two {
+  display: flex;
+  width: 280px;
+  height: 181px;
+  background: url(img/third-image-black-cat-with-hand.png) no-repeat center;
+}
+.help-us__image_third_three {
+  display: flex;
+  width: 280px;
+  height: 181px;
+  background: url(img/third-image-man-with-dog.png) no-repeat center;
+}
+
+
+.help-us__image {
+  display: flex;
+  background-size: 100%;
+  transition: all 200ms ease-out;
+}
+.help-us__image:hover {
+  background-size: 110%;
+}
+
 
 .help-us__item {
   display: flex;
@@ -65,13 +135,13 @@
 }
 .help-us__question {
   font-family: Comfortaa;
-font-style: normal;
-font-weight: normal;
-font-size: 50px;
-line-height: 60px;
-/* text-align: center; */
-/* color: #FF8A00; */
-color: var(--orange-text);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 60px;
+  /* text-align: center; */
+  /* color: #FF8A00; */
+  color: var(--orange-text, #FF8A00);
 }
 .help-us__text {
 }
@@ -91,17 +161,17 @@ color: var(--orange-text);
 }
 .help-us__title {
   font-family: HelveticaNeueCyr;
-font-style: normal;
-font-weight: 550;
-font-size: 30px;
-line-height: 40px;
-color: var(--dark-text);
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--dark-text, #282626);
 }
 .help-us__text {
   font-family: HelveticaNeueCyr;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 30px;
-color: var(--dark-text);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--dark-text, #282626);
 }

@@ -204,9 +204,10 @@
   opacity: 1;
 }
 .form__submit-button:hover {
-  opacity: var(--hover-opacity);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
 }
 .form__submit-button:focus {
-  outline: 1px solid var(--orange);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+  outline: 1px solid var(--orange, #FF8A00);
 }
 
