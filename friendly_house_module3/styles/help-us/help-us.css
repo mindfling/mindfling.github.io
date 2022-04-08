@@ -42,14 +42,12 @@
 }
 
 
-
 .help-us__images-block_left {
   display: flex;
 }
 .help-us__images-block_right {
   display: flex;
 }
-
 
 
 /* images block */
@@ -88,6 +86,7 @@
   background: url(img/second-image-girl-with-dog.png) no-repeat center;
 }
 
+
 /* one plate image third */
 .help-us__image_third_one {
   display: flex;
@@ -114,9 +113,10 @@
   background-size: 100%;
   transition: all 200ms ease-out;
 }
+/* todo 
 .help-us__image:hover {
   background-size: 110%;
-}
+} */
 
 
 .help-us__item {
@@ -156,8 +156,10 @@
 .help-us__text-content_right {
 }
 .help-us__text_italic {
+  font-style: italic;
 }
 .help-us__text_strong {
+  font-weight: bold;
 }
 .help-us__title {
   font-family: HelveticaNeueCyr;

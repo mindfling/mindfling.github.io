@@ -112,8 +112,6 @@
   color: var(--orange-text, #FF8A00);
 }
 
-
-
 .banner__text {
   font-style: 300;
   font-weight: normal;
@@ -138,7 +136,6 @@
 
 
 
-
 /* *кнопки выбора животных* */
 .animal-selector{
   /* border: 1px solid orange; */
@@ -149,6 +146,7 @@
   min-width: 280px;
   min-height: 410px;
 }
+
 .animal-selector__button{
   display: flex;
   flex-direction: row;
@@ -158,6 +156,7 @@
   min-width: 180px;
   background-color: transparent;
   border: 1px solid transparent;
+  outline: none;
 }
 .animal-selector__button:hover {
   /* color: orange; */
@@ -165,12 +164,13 @@
   outline: 1px solid var(--orange, #FF8A00);
 }
 .animal-selector__button:focus {
+  /* color: var(--orange-text, #FF8A00); */
+  border: 1px solid transparent;
+  outline: 1px solid var(--orange, #FF8A00);
+}
+.animal-selector__button:active {
   color: var(--orange-text, #FF8A00);
   border: 1px solid transparent;
   outline: 1px solid var(--orange, #FF8A00);
 }
-
-
-
-
 

@@ -5,10 +5,8 @@
   height: 510px;
   justify-content: center;
   align-items: center;
-
   padding-top: 90px;
   padding-bottom: 34px;
-
   background-color: var(--grey-bg);
 }
 
@@ -39,10 +37,12 @@
   background: url(img/white-french-bulldog.png) no-repeat center;
 }
 .about__link {
-  position: relative;
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* align-items: center; */
+  /* border: 1px solid orange; */
+  /* position: relative; */
+  display: flex;
+  width: 158px;
+  justify-content: space-between;
+  align-items: center;
   align-self: flex-end;
   font-family: var(--text-font);
   font-style: normal;
@@ -50,22 +50,11 @@
   font-size: 20px;
   line-height: 26px;
   /* color: #FF8A00; */
-  padding-right: 50px;
+  /* padding-right: 50px; */
   color: var(--orange-text);
   outline: none;
   opacity: 1;
-}
-.about__link::after {
-  display: flex;
-  position: absolute;
-  /* todo */
-  top: -2px;
-  right: 0;
-  font-size: 30px;
-  /* content: "-->"; */
-  /* content: "&rarr;"; */
-  /* content: "&#8594;"; */
-  content: "\2192";
+  gap: 20px;
 }
 .about__link:hover {
   /* opacity: 0.6; */
@@ -74,8 +63,31 @@
 .about__link:focus {
   outline: 1px solid var(--orange);
 }
+/* todo content: "-->"; */
+/* 
+.about__link::after {
+  display: flex;
+  position: absolute;
+  top: -2px;
+  right: 0;
+  font-size: 30px;
+  content: "&rarr;";
+  content: "&#8594;";
+  content: "\2192";
+}
+ */
+.about__link::after {
+  display: block;
+  content: "";
+  width: 29px;
+  height: 29px;
+  background-color: var(--orange);
+  /* background: url(img/arrow-right.svg) no-repeat center; */
+  background: url(img/big_arrow-right.svg) no-repeat center;
+}
 
-.about__page-title {
+
+ .about__page-title {
   font-family: Comfortaa;
   font-style: normal;
   font-weight: normal;
@@ -83,6 +95,7 @@
   line-height: 60px;
   color: var(--dark-text);
 }
+
 .about__text {
   font-family: HelveticaNeueCyr;
   font-style: normal;
@@ -91,6 +104,7 @@
   line-height: 30px;
   color: var(--dark-text);
 }
+
 .about__text-content {
   display: flex;
   width: 480px;

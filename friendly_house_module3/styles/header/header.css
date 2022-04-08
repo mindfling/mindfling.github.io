@@ -17,6 +17,7 @@
 }
 
 .header__burger {
+  /* todo burger menu */
   /* border: 1px solid red; */
 }
 .header__burger-btn {
@@ -37,8 +38,14 @@
 .header__burger-btn:focus {
   outline: 1px solid var(--orange-text);
 }
+.header__burger-btn:active {
+  /* outline: 1px solid var(--orange-text); */
+  outline: none;
+  opacity: 1;
+}
 
 .header__burger-btn_close {
+  /* todo button close  */
 }
 .header__description {
 }
@@ -76,6 +83,10 @@
 }
 .header__tel:focus {
   outline: 1px solid var(--orange-text);
+}
+.header__tel:active {
+  outline: none;
+  opacity: 1;
 }
 
 .header__tel::before {

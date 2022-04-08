@@ -29,30 +29,31 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__burger">
-        <button class="header__burger-btn header__burger-btn_close" tabindex="1"><!-- menu-burger-btn svg --></button>
+        <button class="header__burger-btn header__burger-btn_close" tabindex="1" title="Открыть бургер меню"><!-- menu-burger-btn svg --></button>
         <!-- todo бургер меню -->
         <ul class="header__menu header__menu_hidden aside-menu visually-hidden">
           <li class="aside-menu__item">
-            <a href="#about" class="aside-menu__link">About</a>
+            <a href="#about" class="aside-menu__link">О приюте</a>
           </li>
           <li class="aside-menu__item">
-            <a href="#help" class="aside-menu__link">Help</a>
+            <a href="#help" class="aside-menu__link">Как ты можешь нам помочь?</a>
           </li>
           <li class="aside-menu__item">
-            <a href="#callback" class="aside-menu__link">Callback Form</a>
+            <a href="#callback" class="aside-menu__link">Ты можешь помочь нам!</a>
           </li>
         </ul>
       </div>      
       <!-- <img class="header__logo" alt="logo title site friendly house" href="logo.svg"></img> -->
             
-      <!-- :after paws 
+      <div class="header__logo visually-show"></div>
       <h1 class="header__title visually-hidden">Friendly House</h1>
       <div class="header__logo visually-hidden">
         <p class="header__description">Приют для Животных</p>
-      </div>-->
-      <div class="header__logo"></div>
+      </div>
       <!-- :before call -->
-      <a class="header__tel" href="tel:8(849)300-39-57" target="_blank" rel="noopener noreferrer" tabindex="1">8&nbsp;(849)&nbsp;300&nbsp;-&nbsp;39&nbsp;-&nbsp;57</a>
+      <a class="header__tel" href="tel:8(849)300-39-57" target="_blank" rel="noopener noreferrer" tabindex="1">
+        8&nbsp;(849)&nbsp;300&nbsp;-&nbsp;39&nbsp;-&nbsp;57
+      </a>
     </div>
   </header>
 
@@ -337,7 +338,6 @@
         </ol>
 
 
-        <!-- todo -->
         <!-- <button class="banner__help-button help-us__help-button"></button> -->
         <div class="banner__button-block">
           <button class="banner__help-button"></button>
@@ -356,12 +356,12 @@
       <p class="callback__text callback__text_orange">Свяжись с нами!</p>
       <div class="callback__contacts">
         <div class="callback__contact-item callback__contact-item_tel">
-          <a class="callback__contact-link callback__contact-link_tel" href="tel:8(849)300-39-57">
+          <a class="callback__contact-link callback__contact-link_tel" target="_blank" rel="noopener noreferrer" href="tel:8(849)300-39-57" title="Позвонить нам на бесплатный номер телефона 8(849)300-39-57">
             8&nbsp;(849)&nbsp;300&nbsp;-&nbsp;39&nbsp;-&nbsp;57
           </a>
         </div>
         <div class="callback__contact-item callback__contact-item_email">
-          <a class="callback__contact-link callback__contact-link_email" href="mailto:FriendlyHouse@gmail.com?subject=Хочу помочь стать волонтером">
+          <a class="callback__contact-link callback__contact-link_email" href="mailto:FriendlyHouse@gmail.com?subject=Хочу помочь стать волонтером" title="Отправить нам сообщение на e-mail FriendlyHouse@gmail.com">
             FriendlyHouse@gmail.com
           </a>
         </div>
@@ -377,7 +377,7 @@
             <p class="form__label-text">E-mail</p>
             <input type="email" class="form__input form__input_email" id="email" name="email" required>
           </label>
-          <button type="submit" class="form__submit-button"></button>
+          <button type="submit" class="form__submit-button" title="Отправить нам свой номер телефона и e-mail"></button>
         </fieldset>
       </form>
     </div> <!-- callback__container -->
