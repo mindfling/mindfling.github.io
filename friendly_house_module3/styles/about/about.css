@@ -63,6 +63,12 @@
 .about__link:focus {
   outline: 1px solid var(--orange);
 }
+.about__link:active {
+  opacity: 1;
+  /* outline: 1px solid var(--orange); */
+  outline: none;
+}
+
 /* todo content: "-->"; */
 /* 
 .about__link::after {
@@ -81,9 +87,9 @@
   content: "";
   width: 29px;
   height: 29px;
-  background-color: var(--orange);
-  /* background: url(img/arrow-right.svg) no-repeat center; */
+  /* background-color: var(--orange); */
   background: url(img/big_arrow-right.svg) no-repeat center;
+  background-position: 0 -2px;
 }
 
 
