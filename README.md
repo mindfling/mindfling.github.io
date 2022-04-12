@@ -1,5 +1,6 @@
 ﻿### Hello! This is GitHub Pages for
 ## [mindfling.github.io/friendly_house](https://mindfling.github.io/friendly_house)
+## [mindfling.github.io/friendly_house_module3](https://mindfling.github.io/friendly_house_module3)
 ## [mindfling.github.io/game_over](https://mindfling.github.io/game_over)
 ## [mindfling.github.io/game_over_flex](https://mindfling.github.io/game_over_flex)
 ## [mindfling.github.io/module2-cur2-indentation](https://mindfling.github.io/module2-cur2-indentation/)
@@ -50,20 +51,18 @@
 - Course2 gitpage [mindfling.github.io/module2-cur2-indentation](https://mindfling.github.io/module2-cur2-indentation)
 
 
-
 this repository web-perfect-adaptive 
-### https://github.com/mindfling/web-perfect-adaptive
-### https://mindfling.github.io/web_perfect_adaptive_module3/
-
+Adaptive github ### [https://github.com/mindfling/web-perfect-adaptive](https://github.com/mindfling/web-perfect-adaptive)
+Adaptive gitpages ### [https://mindfling.github.io/web_perfect_adaptive_module3](https://mindfling.github.io/web_perfect_adaptive_module3)
 
 
 # all repositories
-## https://github.com/mindfling?tab=repositories
-## https://github.com/mindfling
+## [https://github.com/mindfling?tab=repositories](https://github.com/mindfling?tab=repositories)
+## [https://github.com/mindfling](https://github.com/mindfling)
 
 
-all github pages
-## https://mindfling.github.io/
+# all github pages
+## [https://mindfling.github.io](https://mindfling.github.io)
 
 
 
