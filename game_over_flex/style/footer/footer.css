@@ -2,7 +2,8 @@
 
 .footer {
   /* border: 1px solid green; */
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  padding-top: 20px;
 }
 .footer__container {
   display: flex;
@@ -34,7 +35,6 @@
   /* border: 1px solid lawngreen; */
 }
 
-
 .copy__design-info {
   font-size: 14px;
   line-height: 16px;
@@ -54,4 +54,8 @@
 .copy__link:focus {
   outline: 1px solid #cd06ff;
   color: #eadeed;
+}
+.copy__link:active {
+  outline: none;
+  color: #fff;
 }

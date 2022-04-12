@@ -27,8 +27,9 @@
 }
 
 .navigation__link:active {
-  outline: 1px solid #CD06FF;
-  color: #d0d0d0;
+  /* outline: 1px solid #CD06FF; */
+  outline: none;
+  color: #fff;
 }
 
 .navigation__menu {

@@ -43,6 +43,10 @@
 .social__link:focus {
   outline: 1px solid #cd06ff;
 }
+.social__link:active {
+  outline: none;
+}
+
 /* заливка картики внутри */
 .social__link:focus .social__svg {
   fill: #eadeed;

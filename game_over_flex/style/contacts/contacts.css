@@ -59,6 +59,11 @@
   color: #eadeed;
   outline: 1px solid #CD06FF;  
 }
+.contacts__link:active {
+  outline: none;
+  color: #fff;
+}
+
 
 .contacts__address::before {
 	display: block;
