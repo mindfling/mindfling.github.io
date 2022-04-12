@@ -48,6 +48,9 @@
   cursor: pointer;
 }
 
+.features__card-item_down {
+  transform: translateY(70px);
+}
 
 .features__card-image {
   display: flex;
