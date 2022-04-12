@@ -16,7 +16,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-
   transition: all 500ms ease;
 }
 
@@ -26,7 +25,6 @@
   position: relative;
   justify-content: center;
   align-items: center;
-
   transition: all 5500ms ease;
 }
 
@@ -44,22 +42,26 @@
 
 .halls__item_80s-vibes {
   background: url(img/halls_80s-vibers.jpg) no-repeat center;
-  background-size: contain;
+  background-size: 100%;
+  /* background-size: contain; */
 }
 
 .halls__item_star-wars {
   background: url(img/halls-star-wars.jpg) no-repeat center;
-  background-size: contain;
+  background-size: 100%;
+  /* background-size: contain; */
 }
 
 .halls__item_wild-west {
   background: url(img/halls-wild-wild-west.jpg) no-repeat center;
-  background-size: contain;
+  background-size: 100%;
+  /* background-size: contain; */
 }
 
 .halls__item_neon-style {
   background: url(img/halls-neon-styles.jpg) no-repeat center;
-  background-size: contain;
+  background-size: 100%;
+  /* background-size: contain; */
 }
 
 
@@ -68,10 +70,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   position: absolute;
-  width: 80%;
-  height: 70%;
+  width: 70%;
+  height: 60%;
   text-align: center;
 
   font-family: Arial, sans-serif;
@@ -94,10 +95,10 @@
 }
 
 /* *hover* */
-.halls__text:hover {
+/* .halls__text:hover { */
   /* background-color: rgba(87, 0, 87, 0.592); */
-  transition: all 500ms ease;
-}
+  /* transition: all 500ms ease; */
+/* } */
 
 .halls__text:hover ~ .halls__item {
   background-size: 120%;
@@ -106,6 +107,6 @@
 
 .halls__item:hover {
   /* сам фон */
-  background-size: 100%;
+  background-size: 110%;
   transition: all 500ms ease;
 }
