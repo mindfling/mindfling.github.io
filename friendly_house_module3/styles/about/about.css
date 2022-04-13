@@ -90,6 +90,16 @@
   /* background-color: var(--orange); */
   background: url(img/big_arrow-right.svg) no-repeat center;
   background-position: 0 -2px;
+  transition: 300ms;
+}
+.about__link:hover::after,
+.about__link:focus::after {
+  background: url(img/big_arrow-right.svg) no-repeat center;
+  background-position: -3px -2px;
+}
+.about__link:active::after {
+  background: url(img/big_arrow-right.svg) no-repeat center;
+  background-position: 0px -2px;
 }
 
 
