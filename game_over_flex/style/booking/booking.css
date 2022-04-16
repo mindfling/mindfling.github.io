@@ -1,4 +1,5 @@
 /* *BOOKING SECTION* */
+
 .booking {
   display: flex;
   padding: 80px 0 50px 0;
@@ -34,20 +35,18 @@
   line-height: 28px;
   color: #ffffff;
 }
-/* todo left */
 .booking__legend_align_left {
   text-align: left;
 }
-/* todo center */
 .booking__legend_align_center {
   text-align: center;
   margin: 0 auto;
 }
 
 
-
-
 /* *BOOKING__HALL* */
+/* 4 Big Hall RadioButtons */
+/* 80S_VIBES STAR_WARS WILD_WEST NEON_STYLE */
 .booking__hall {
   display: flex;
   flex-direction: row;
@@ -61,18 +60,15 @@
   gap: 50px;
 }
 
-
 .booking__radio-label_hall {
   /* контейнер */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  
   width: 250px;
   height: 55px;
   border-radius: 8px;
-  
   text-align: center;
   background-color: transparent;
   border: none;
@@ -84,25 +80,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
   width: 250px;
   height: 55px;
-  
   font-size: 30px;
   line-height: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  
   color: #000000;
   background-color: #ffffff;
-
-  border-radius: 8px;
   border: 3px solid #ffffff;
+  border-radius: 8px;
   cursor: pointer;
-  /* -webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
-
+  appearance: none;
   /* transition: all 100ms ease-out; */
   transition: all 200ms ease-out;
 }
@@ -141,19 +132,21 @@
 }
 
 
-
 /* *booking__inner* */
 .booking__inner {
-  width: 980px;
+  /* border: 1px solid lawngreen; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 1px solid lawngreen; */
+  width: 980px;
 }
+
 
 
 /* *BOOKING__GAME*/
 .booking__game {
+  border: none;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -161,14 +154,16 @@
   min-height: 287px;
   padding-top: 40px;
   margin-bottom: 60px;
-  border: none;
-  /* border: 1px solid orange; */
 }
 
 
-.booking__video-game,
-.booking__desktop-game,
-.booking__optional-game {
+/* *Собери набор развелечений* */
+.booking__video-game,  /*fieldset Приставка */
+.booking__desktop-game, /*fieldset Настольные игры */
+.booking__optional-game /*fieldset Дополнительно */
+{
+  border: none;
+  /* border: 1px solid #CD06FF; */
   display: flex;
   position: relative;
   flex-direction: column;
@@ -178,31 +173,65 @@
   row-gap: 20px;
   padding-top: 24px;
   font-size: 22px;
-  border: none;
 }
 
 
-
-.booking__radio-video-game,        /* radio box */
-.booking__checkbox-table-game,     /* checkbox */
-.booking__checkbox-optional-game { /* checkbox */
+/* radio box */
+.booking__radio-video-game {
   display: block;
   width: 25px;
   height: 25px;
-  /* position: absolute; */
-  /* top: 1px;
-  left: -28px; */
-  background: white;
-  /* border: 2px solid magenta; */
-  border: 2px solid white;
-  appearance: none;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+  /* position: absolute; */
+  /* top: 1px; */
+  /* left: -28px; */
+  /* background: white; */
+  /* border: 2px solid magenta; */
 }
+
+
+.booking__checkbox-table-game
+{ /* checkbox */
+  display: block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+}
+.booking__checkbox-table-game::after {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+}
+.booking__checkbox-table-game:checked:after {
+  display: block;
+  /* checked символ галочки 2714 */
+  content: "\2714";
+  width: 25px;
+  height: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  /* color: #440f51; */
+  color: #2F2F2F;
+  background-color: #ffffff;
+}
+
+
+/* круглый radio */
 .booking__radio-video-game {
   position: relative;
   display: flex;
-  border: 2px solid white;
-  background: white;  
+  border: 2px solid #FFFFFF;
+  background: #FFFFFF;
   border-radius: 50%;
 }
 
@@ -214,8 +243,8 @@
 }
 
 .booking__radio-video-game:checked {
-  border: 3px solid linen;
-  background: linen;
+  border: 3px solid #FFFFFF;
+  background: #FFFFFF;
 }
 /* .booking__radio-video-game:checked:after {
   content: '';
@@ -234,27 +263,41 @@
   /* position: absolute; */
   display: flex;
   margin: auto;
-  /* top: 0.13em; */
-  /* left: 0.13em; */
   width: 0.5em;
   height: 0.5em;
   border-radius: 50%;
   background-color: #440f51;
 }
 
-.booking__checkbox-table-game:checked:after,
-.booking__checkbox-optional-game:checked::after {
-  /* ?check mark character? */
-  content: "\2714";
-  display: block;
-  width: 21px;
-  height: 21px;
-  background-color: linen;
-  font-weight: 700;
-  font-size: 21px;
-  color: #440f51;
-}
 
+.booking__checkbox-optional-game {
+  display: block;
+  width: 25px;
+  height: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+  cursor: pointer;
+}
+.booking__checkbox-optional-game::after {
+  display: block;
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  /* background: url(img/white-unchecked.svg) no-repeat center; */
+  background-size: 100%;
+  /* background-size: contain; */
+  cursor: pointer;
+  /* transition: all 400ms ease; */
+}
+.booking__checkbox-optional-game:checked:after {
+  background: url(img/white-checked4.svg) no-repeat center;
+  background-size: 100%;
+  /* background-size: contain; */
+  /* transition: all 400ms ease; */
+}
 
 
 .booking__label {
@@ -265,6 +308,7 @@
 }
 
 .booking__game-label {
+  /* border: 1px solid orange; */
   display: flex;
   column-gap: 12px;
   justify-content: start;
@@ -275,8 +319,6 @@
   color: #FFFFFF;
   cursor: pointer;
 }
-
-
 
 
 /* *BOOKING__DATE*/
@@ -361,8 +403,8 @@
 }
 .booking__input:focus {
     background: #FFFFFF;
-    border: 1px solid #CD06FF;  
-    outline: 1px solid #CD06FF;  
+    /* border: 1px solid #CD06FF;   */
+    outline: 2px solid #CD06FF;  
 }
 
 .booking__input::-webkit-input-placeholder,
@@ -386,7 +428,6 @@
 .booking__input_email {
   width: 300px;
 }
-
 
 
 .booking__template,
