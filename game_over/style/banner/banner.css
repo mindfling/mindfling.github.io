@@ -12,7 +12,15 @@
   display: block;
   min-width: 1180px;
   min-height: 862px;
-  /* * gradiental text GameOver *
+  /* * gradiental text GameOver */
+  background: url(img/banner_man_vr.png) no-repeat 100% 100%,
+            url(img/GAME_OVER_stroke_text-orig.svg) no-repeat 0px 183px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 333px, 
+            url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 483px, 
+            url(img/GAME_OVER_copy_dark_inside_DarkViolet.svg) no-repeat 0px 633px, 
+            url(img/GAME_OVER_very_bright_CD06FF_magenta.svg) no-repeat 0px 783px;
+
+/*
   background: url(img/banner_man_vr.png) no-repeat 100% 100%,
             url(img/GAME_OVER_stroke_text-orig.svg) no-repeat 0px 183px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 333px, 
@@ -20,12 +28,15 @@
             url(img/GAME_OVER_copy_dark_inside_DarkViolet.svg) no-repeat 0px 633px, 
             url(img/GAME_OVER_very_bright_CD06FF_magenta.svg) no-repeat 0px 783px;
             */
+
+/* 
   background: url(img/banner_man_vr.png) no-repeat 100% 100%,
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 185px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 335px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 485px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 635px, 
             url(img/GAME_OVER_pale_bright_3F1649.svg) no-repeat 0px 785px;
+ */
 }
 
 .banner__description {
