@@ -3,6 +3,7 @@
 
 .header {
   display: flex;
+  display: none;
   min-height: 732px;
   background: url(../img/background-contact-screen.jpg) no-repeat center;
   background-size: cover;

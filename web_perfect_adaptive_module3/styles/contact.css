@@ -82,30 +82,43 @@
   background-color: transparent;
   border: 2px solid #ffffff59;
 } */
+
 /* *контейнер */
 .form__agree {
-  position: relative;
+  /* border: 1px solid orange; */
+  /* position: relative; */
   display: block;
   cursor: pointer;
+  /* padding-left: 24px; */
 }
 /* *скрываем чекбокс */
 .form__agree-check {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
+  position: absolute; 
+  display: block;
+  width: 22px;
+  height: 22px;
+  appearance: none;
+  z-index: 1; /* todo */
+  opacity: 0.5;
   cursor: pointer;
 }
+.form__agree-check:focus {
+  outline: 2px solid var(--dark-blue);
+}
+.form__agree-check:active {
+  outline: 1px solid var(--sky-blue);
+}
+
 /* *псевдоэлемент чекбокс */
 .form__agree-check + .form__label::before {
   content: "";
   /* appearance: none; */
   position: absolute;
   top: 0px;
-  left: -30px;
+  left: 0px;
   display: block;
   width: 22px;
   height: 22px;
-  /* margin-right: 11px; */
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 5px;
@@ -116,13 +129,13 @@
 .form__agree-check:checked + .form__label::before {
   opacity: 1;
 }
-/* *галочка */
+/* *псевдоэлемент галочка внутри чекбокса* */
 /* пустая */
 .form__agree-check + .form__label::after {
   content: "";
   position: absolute;
   top: 2px;
-  left: -23px;
+  left: 7px;
   display: block;
   width: 8px;
   height: 14px;
@@ -134,12 +147,12 @@
   transition: all 200ms ease;
   cursor: pointer;
 }
-/* чекнутая */
+/* checked чекнутая галочка с переходами */
 .form__agree-check:checked + .form__label::after {
   content: "";
   position: absolute;
   top: 2px;
-  left: -23px;
+  left: 7px;
   display: block;
   width: 8px;
   height: 14px;
@@ -151,12 +164,11 @@
 }
 
 .form__label {
-  /* border: 1px solid magenta; */
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -166,28 +178,65 @@
   color: #ffffff;
 }
 
-.form__button {
+.form__label-text {
+  padding-left: 24px;
 }
 
+.form__button {
+  outline: none;
+}
+.form__button:focus {
+  outline: 2px solid var(--sky-blue);
+}
+.form__button:active {
+  outline: 1px solid var(--sky-blue);
+}
+
+/* input поле ввода */
 .form__input {
   display: flex;
   min-width: 423px;
   height: 44px;
-
-  border: 1.38235px solid var(--white);
   border-radius: 50px;
   background: transparent;
-
   color: var(--white);
   padding-left: 26px;
   padding-right: 26px;
+  border: 1.38235px solid var(--white);
+}
+
+.form__input:focus {
+  border: 1.38235px solid var(--whitea, #959595);
+  outline: 1px solid var(--dark-blue);
+}
+.form__input:active {
+  outline: 2px solid var(--dark-blue);
 }
 
 .form__email {
 }
 
-.form__label_link {
+/* ссылка внутри текста */
+.form__label-link {
+/* 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+ */
   color: var(--dark-blue);
+}
+.form__label-link:focus {
+  outline: 1px solid var(--dark-blue);
+}
+.form__label-link:active {
+  outline: 1px solid var(--sky-blue);
 }
 
 .form__name {

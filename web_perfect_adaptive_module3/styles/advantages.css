@@ -2,7 +2,8 @@
 
 .advantages {
   /* border: 1px solid orange; */
-  display: flex;
+  /* display: flex; */
+  display: none;
   min-height: 596px;
   padding: 70px 0;
   /* todo */
