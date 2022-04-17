@@ -2,7 +2,8 @@
 
 .about {
   display: block;
-  padding-top: 50px;
+  padding-top: 100px;
+  /* padding-top: 50px; */
   padding-bottom: 45px;
 }
 
@@ -30,12 +31,49 @@
   min-width: 600px;
 }
 .about__image {
+  /* border: 1px solid magenta; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+.about__image_girl-view-in-vr {
+  width: 300px;
+  height: 206px;
+  background: url(img/about-girl-view-in-vr_300-206.jpg);
+}
+.about__image_bawling-game {
+  width: 300px;
+  height: 206px;
+  background: url(img/about-bawling-game_300-206.jpg);
+}
+.about__image_fifa21-sp-game {
+  width: 164px;
+  height: 224px;
+  background: url(img/about-fifa21-sp-game_164-224.jpg);
+}
+.about__image_game-boy-color {
+  width: 180px;
+  height: 224px;
+  background: url(img/about-game-boy-color_180-224.jpg);
+}
+.about__image_gamepad-ps4 {
+  width: 256px;
+  height: 224px;
+  background: url(img/about-gamepad-ps4_256-224.jpg);
+}
+.about__image_man-mic-rep {
+  width: 380px;
+  height: 166px;
+  background: url(img/about-man-mic-rep_380-166.jpg);
+}
+.about__image_man-view-in-vr {
+  width: 220px;
+  height: 166px;
+  background: url(img/about-man-view-in-vr_220-166.jpg);
+}
 
 .about__big-illustration {
+  /* ? one big picture illustration */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +143,7 @@
   width: 50px;
   height: 50px;
   color: #6c0287;
-  font-family: Arial, sans-serif;
+  font-family: "Arial Black", Arial, sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -114,17 +152,18 @@
 }
 
 .about__blockquote-text::before {
-  content: "“";
+  /* content: "“"; */
+  content: "\201c";
   position: absolute;
-  top: -10px;
+  top: -9px;
   left: -45px;
 }
-
 .about__blockquote-text::after {
-  content: "”";
+  /* content: "”"; */
+  content: "\201d";
   position: absolute;
-  bottom: 0;
-  right: 45px;
+  bottom: 1px;
+  right: 52px;
 }
 
 .about__blockquote-author {
