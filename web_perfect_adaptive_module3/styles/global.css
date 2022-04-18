@@ -14,6 +14,7 @@ body,
 .page {
   /* todo body flex */
   display: flex;
+  margin: auto;
   flex-direction: column;
   /* justify-content: start; */
   /* align-items: center; */

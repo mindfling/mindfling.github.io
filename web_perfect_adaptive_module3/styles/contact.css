@@ -4,6 +4,9 @@
   display: flex;
   min-height: 621px;
   background: url(../img/background-contact-screen.jpg) no-repeat center;
+  background: linear-gradient( rgba(47, 50, 75, 0.35),
+                rgba(47, 50, 75, 0.85)), 
+                  url(../img/background-contact-screen-orig.jpg) no-repeat center;
   background-size: cover;
   color: var(--white);
   padding: 70px 0;
@@ -38,13 +41,11 @@
   font-size: 35px;
   line-height: 41px;
   text-align: center;
-
-  color: #ffffff;
+  color: var(--white, #ffffff);
 }
 
 .container_contact {
   /* border: 1px solid orange; */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,6 +98,8 @@
   display: block;
   width: 22px;
   height: 22px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   z-index: 1; /* todo */
   opacity: 0.5;
@@ -112,7 +115,7 @@
 /* *псевдоэлемент чекбокс */
 .form__agree-check + .form__label::before {
   content: "";
-  /* appearance: none; */
+  appearance: none;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -179,7 +182,7 @@
 }
 
 .form__label-text {
-  padding-left: 24px;
+  padding-left: 32px;
 }
 
 .form__button {
