@@ -14,6 +14,8 @@ html {
 body {
   display: block;
   width: 100%;
+  /* width: 1440px; */
+  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
   /* стандартный шрифт без засечек */
@@ -25,9 +27,6 @@ body {
   /* темный сайт */
   color: #fff;
   background-color: #1b1a1b;
-  /* светлый сайт 
-  color: #000; 
-  background-color: #fff; */
 }
 
 img {
