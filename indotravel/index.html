@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/merriweather-v28-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-v20-latin_cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-v20-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/timer.css">
+  <!-- <script src="js/preloader.js" defer></script> -->
+  <script src="js/index.js" type="module"></script>
+  <title>Indonesia Indo Travel Group</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <img src="img/logo.svg" class="logo header__logo" alt="Логотип компании Indo Travel">
+
+      <button class="header__menu-button" aria-label="Кнопка вызова меню"></button>
+
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#about" class="header__link">Индонезия</a>
+          </li>
+          <li class="header__item">
+            <a href="#travel" class="header__link">Путешествие</a>
+          </li>
+          <li class="header__item">
+            <a href="#tour" class="header__link">Тур 14 дней</a>
+          </li>
+          <li class="header__item">
+            <a href="#why" class="header__link">Почему мы?</a>
+          </li>
+          <li class="header__item">
+            <a href="#album" class="header__link">Фотоальбом</a>
+          </li>
+          <li class="header__item">
+            <a href="#reservation" class="header__link">Бронирование</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section hero" id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__wrapper-title">
+            <p class="hero__subtitle">Открой для себя</p>
+            <h1 class="hero__title">Indonesia</h1>
+          </div>
+
+          <p class="hero__text">Действует скидка 20% на туры от 6&nbsp;человек</p>
+
+          <div class="hero__timer timer" data-deadline="25/12/2022 0:00">
+            <p class="timer__title">До конца акции осталось:</p>
+            <p class="timer__item timer__item_days">
+              <span class="timer__count timer__count_days">00</span>
+              <span class="timer__units timer__units_days">дней</span></p>
+            <p class="timer__item timer__item_hours">
+              <span class="timer__count timer__count_hours">00</span>
+              <span class="timer__units timer__units_hours">часов</span></p>
+            <p class="timer__item timer__item_minutes">
+              <span class="timer__count timer__count_minutes">00</span>
+              <span class="timer__units timer__units_minutes">мин</span></p>
+            <p class="timer__item timer__item_seconds">
+              <span class="timer__count timer__count_seconds">00</span>
+              <span class="timer__units timer__units_seconds">сек</span></p>
+          </div>
+
+          <button class="button hero__button">Забронировать</button>
+        </div>
+      </div>
+    </section>
+    <section class="section about" id="about">
+      <div class="container about__container about__content">
+        <div class="about__grid-item about__grid-item_a">
+          <h2 class="section__title">Индонезия</h2>
+          <p class="section__text about__text about__text_big about__text_a">Незабываемая, чистая красота островов восхищает своей нетронутой природой и культурными традициями.</p>
+        </div>
+
+        <p class="section__text section__text_small about__text about__text_small about__grid-item about__grid-item_b">Величественная Индонезия — квинтэссенция экзотики: первозданная природа Бали и пляжи с черным песком острова Суматра, дворцы и батик Явы и дождевые леса Калимантана.</p>
+
+        <div class="about__pics about__grid-item">
+          <div class="about__list">
+            <img src="img/about/fields.jpg" alt="Поля" class="about__item about__item_a about__image">
+            <img src="img/about/palm.jpg" alt="Пальмы" class="about__item about__item_b about__image">
+            <img src="img/about/monkey.jpg" alt="Обезьяна" class="about__item about__item_c about__image">
+            <img src="img/about/gazebo.jpg" alt="Беседка" class="about__item about__item_d about__image">
+            <img src="img/about/sunshine.jpg" alt="Солнечные лучи" class="about__item about__item_e about__image"></div>
+        </div>
+
+        <p class="section__text section__text_small about__text about__text_small about__grid-item about__grid-item_c">Индонезия расположилась на&nbsp;легендарных и известных своей довольно непохожей историей островах Юго-Восточной Азии – на&nbsp;Суматре, Яве, Сулавеси, Бали, отчасти на&nbsp;Борнео и на&nbsp;Новой Гвинее, а также на&nbsp;множестве более мелких островов Малайского архипелага.</p>
+      </div>
+    </section>
+    <section class="section travel" id="travel">
+      <div class="container travel__container">
+        <h2 class="section__title travel__title">Путешествие</h2>
+        <p class="section__text section__text_big travel__text travel__text_big">Посети это удивительное место, а мы покажем самые фантастические места.</p>
+        <div class="travel__content">
+          <ul class="travel__accordion" id="accordion">
+            <li class="travel__item travel__item_active">
+              <button class="travel__item-title">День 1-2: Прибытие в Джаккарту (о. Ява)</button>
+              <div class="travel__item-text-wrapper">
+                <p class="travel__item-text">Свое путешествие мы начнем со столицы Индонезии – города Джаккарты. Она огромная, многоликая, многоголосая. В Центральном муниципалитете ждут известные достопримечательности, а в Северном — рестораны и рынки с морепродуктами. Западные районы хранят память о голландских колонизаторах, а в восточных кипит современная промышленность.</p>
+              </div>
+            </li>
+            <li class="travel__item">
+              <button class="travel__item-title">День 3-5: О. Бали</button>
+              <div class="travel__item-text-wrapper">
+                <p class="travel__item-text">Природа острова поражает экзотичностью лесов, величием гор и до сих пор действующих вулканов, среди которых самыми живописными считаются Гунунг-Батур и Гунунг-Агунг. Именно сочетание необычной природы и старинных индуистских храмов – прекрасная и уникальная особенность Бали, выделяющая его из других островов Индонезии.</p>
+              </div>
+            </li>
+            <li class="travel__item">
+              <button class="travel__item-title">День 6-8: О. Сулавеси</button>
+              <div class="travel__item-text-wrapper">
+                <p class="travel__item-text">Сулавеси — настоящий заповедник культур и традиций, а к тому же ещё и просто очень красивый и зелёный остров. Пещерные захоронения, экзотическая природа, заповедник острова Бутон, дайвинг среди коралловых рифов в районе залива Манадо, горные озёра, пышные народные церемонии — всё это привлекает сюда тысячи туристов каждый год.</p>
+              </div>
+            </li>
+            <li class="travel__item">
+              <button class="travel__item-title">День 9-11: О. Калимантан</button>
+              <div class="travel__item-text-wrapper">
+                <p class="travel__item-text">Калимантан (Борнео)— третий по величине остров в мире; единственный морской остров, разделённый между тремя государствами: Индонезией, Малайзией и Брунеем.</p>
+              </div>
+            </li>
+            <li class="travel__item">
+              <button class="travel__item-title">День 12-14: О. Суматра</button>
+              <div class="travel__item-text-wrapper">
+                <p class="travel__item-text">Суматра — один из крупнейших островов Индонезии, известный своими протяженными пляжами с темным песком, руинами древних храмовых комплексов и дворцов и нетронутой природой. Вдоль западного побережья Суматры раскинулись горы Барисан, самый высокий пик которых — гора Керинчи (3800 м).</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tour" id="tour">
+      <div class="container tour__container">
+        <div class="tour__info">
+          <h2 class="section__title tour__title">Тур 14 дней</h2>
+          <p class="section__text section__text_big">Думаем, показать тебе Индонезию лучше, чем рассказывать о ней.</p>
+          <p class="section__text tour__text">Выбери удобные даты, укажи количество людей, и выбери дополнительные опции.</p>
+        </div>
+        <div class="tour__content">
+          <form action="#" class="tour__form">
+            <label class="tour__select-wrapper tour__select-wrapper_date">
+              <select name="dates" id="tour__date" class="tour__select">
+                <option value="" class="tour__option">Выбери дату</option>
+                <option value="4.02 - 18.02" class="tour__option">4.02 - 18.02</option>
+                <option value="7.02 - 21.02" class="tour__option">7.02 - 21.02</option>
+                <option value="12.02 - 26.02" class="tour__option">12.02 - 26.02</option>
+                <option value="20.02 - 6.03" class="tour__option">20.02 - 6.03</option>
+              </select>
+            </label>
+            <label class="tour__select-wrapper tour__select-wrapper_people">
+              <select name="people" id="tour__people" class="tour__select">
+                <option value="" class="tour__option">Количество человек</option>
+                <option value="" class="tour__option">1</option>
+                <option value="" class="tour__option">2</option>
+                <option value="" class="tour__option">3</option>
+                <option value="" class="tour__option">4</option>
+                <option value="" class="tour__option">5</option>
+                <option value="" class="tour__option">6</option>
+              </select>
+            </label>
+            <button class="button tour__button">Узнать цену</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="section why" id="why">
+      <div class="container why__container">
+        <h2 class="section__title why__title">Почему мы?</h2>
+        <p class="section__text section__text_big why__text why__text_big">Мы знаем, как сделать ваше путешествие незабываемым.</p>
+        <div class="why__content">
+          <ul class="why__list">
+            <li class="why__item">
+              <h3 class="why__item-title">Эксперты по Индонезии с 2006 года.</h3>
+              <p class="why__item-text">Уже 15 лет мы открываем для всех желающих великолепные и загадочные острова Индонезии.</p>
+            </li>
+            <li class="why__item">
+              <h3 class="why__item-title">У нас цена = качество.</h3>
+              <p class="why__item-text">Ценность наших туров невозможно переоценить. Мы показываем то, о чем другие могут только мечтать.</p>
+            </li>
+            <li class="why__item">
+              <h3 class="why__item-title">Поддержка 24/7.</h3>
+              <p class="why__item-text">Мы не бросаем наших туристов одних в диких местах, мы помогаем справляться со всеми сложностями, которые могут у вас возникнуть.</p>
+            </li>
+            <li class="why__item">
+              <h3 class="why__item-title">Медицинская помощь.</h3>
+              <p class="why__item-text">Вместе с нами в путешествие отправляются специалисты по оказанию экстренной медицинской помощи.</p>
+            </li>
+            <li class="why__item">
+              <h3 class="why__item-title">Помощь с детьми.</h3>
+              <p class="why__item-text">Мы предоставим вам профессиональную няню, которая присмотрит за вашим чадом в часы вашего отсутствия.</p>
+            </li>
+            <li class="why__item">
+              <h3 class="why__item-title">Национальная кухня.</h3>
+              <p class="why__item-text">Вы узнаете на вкус чем отличается тумпенг от наси горенга и попробуете настоящий индонезийский суп бунтут.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="section album" id="album">
+      <div class="container album__container">
+        <h2 class="section__title album__title">Фотоальбом</h2>
+        <p class="section__text section__text_big album__text">За годы поездок у нас накопилось много фотографий из Индонезии. Представляем их вам.</p>
+      </div>
+      <div class="album__slider">
+        <ul class="album__list">
+          <li class="album__item">
+            <picture>
+              <source srcset="img/album/1.avif" type="image/avif">
+              <source srcset="img/album/1.webp" type="image/webp">
+              <img src="img/album/1.jpg" alt="Остров" class="album__image"></picture>
+          </li>
+          <li class="album__item">
+            <picture>
+              <source srcset="img/album/2.avif" type="image/avif">
+              <source srcset="img/album/2.webp" type="image/webp">
+              <img src="img/album/2.jpg" alt="Горы" class="album__image"></picture>
+          </li>
+          <li class="album__item">
+            <picture>
+              <source srcset="img/album/3.avif" type="image/avif">
+              <source srcset="img/album/3.webp" type="image/webp">
+              <img src="img/album/3.jpg" alt="Лодки" class="album__image"></picture>
+          </li>
+          <li class="album__item">
+            <picture>
+              <source srcset="img/album/4.avif" type="image/avif">
+              <source srcset="img/album/4.webp" type="image/webp">
+              <img src="img/album/4.jpg" alt="Закат" class="album__image"></picture>
+          </li>
+          <li class="album__item">
+            <picture>
+              <source srcset="img/album/5.avif" type="image/avif">
+              <source srcset="img/album/5.webp" type="image/webp">
+              <img src="img/album/5.jpg" alt="Волны" class="album__image"></picture>
+          </li>
+          <li class="album__item">
+            <picture>
+              <source srcset="img/album/6.avif" type="image/avif">
+              <source srcset="img/album/6.webp" type="image/webp">
+              <img src="img/album/6.jpg" alt="Лагуна" class="album__image"></picture>
+          </li>
+        </ul>
+        <div class="album__left"></div>
+        <div class="album__right"></div>
+      </div>
+    </section>
+    <section class="section reservation" id="reservation">
+      <div class="container reservation__container">
+        <form action="#" class="reservation__form">
+          <h2 class="reservation__title">Бронирование тура</h2>
+          <div class="reservation__inputs">
+            <div class="reservation__selects">
+              <label class="reservation__select-wrapper reservation__select-wrapper_date">
+                <select name="dates" id="reservation__date" class="reservation__select">
+                  <option value="" class="tour__option">Дата путешествия</option>
+                  <option value="4.02 - 18.02" class="tour__option reservation__option">4.02 - 18.02</option>
+                  <option value="7.02 - 21.02" class="tour__option reservation__option">7.02 - 21.02</option>
+                  <option value="12.02 - 26.02" class="tour__option reservation__option">12.02 - 26.02</option>
+                  <option value="20.02 - 6.03" class="tour__option reservation__option">20.02 - 6.03</option>
+                </select>
+              </label>
+              <label class="reservation__select-wrapper reservation__select-wrapper_people">
+                <select name="people" id="reservation__people" class="reservation__select">
+                  <option value="" class="tour__option reservation__option">Количество человек</option>
+                  <option value="" class="tour__option reservation__option">1</option>
+                  <option value="" class="tour__option reservation__option">2</option>
+                  <option value="" class="tour__option reservation__option">3</option>
+                  <option value="" class="tour__option reservation__option">4</option>
+                  <option value="" class="tour__option reservation__option">5</option>
+                  <option value="" class="tour__option reservation__option">6</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="reservation__contacts">
+            <div class="reservation__input-wrap">
+              <label for="reservation__name" class="reservation__label">ФИО</label>
+              <input required type="text" class="reservation__input reservation__input_name" id="reservation__name" placeholder="Введите ваше ФИО">
+            </div>
+            <div class="reservation__input-wrap">
+              <label for="reservation__phone" class="reservation__label">Телефон</label>
+              <input required type="text" class="reservation__input" id="reservation__phone" placeholder="Введите номер телефона">
+            </div>
+          </div>
+          <div class="reservation__bottom">
+            <div class="reservation__info">
+              <p class="reservation__data">24 ноября - 7 декабря, 4 человека</p>
+              <p class="reservation__price">459 590₽</p>
+            </div>
+            <button class="button reservation__button">Забронировать</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__content">
+        <img src="img/logo.svg" class="logo footer__logo" alt="Логотип компании Indo Travel">
+        <div class="footer__menu">
+          <h3 class="footer__title">Меню</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#about" class="footer__link">Индонезия</a></li>
+            <li class="footer__item"><a href="#travel" class="footer__link">Путешествие</a></li>
+            <li class="footer__item"><a href="#tour" class="footer__link">Тур 14 дней</a></li>
+            <li class="footer__item"><a href="#why" class="footer__link">Почему мы?</a></li>
+            <li class="footer__item"><a href="#album" class="footer__link">Фотоальбом</a></li>
+            <li class="footer__item"><a href="#reservation" class="footer__link">Бронирование</a></li>
+            <li class="footer__item"><a href="#contacts" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts">
+          <h2 class="footer__title">Контакты</h2>
+          <p class="footer__contacts-text">Тел:<a href="tel:+79378392361" class="footer__link">+7 937 839 23-61</a></p>
+          <p class="footer__contacts-text">Email:<a href="mailto:IndoTravel@gmail.com" class="footer__link">IndoTravel@gmail.com</a>
+          </p>
+          <ul class="footer__socials">
+            <li class="footer__link">
+              <a href="#" class="footer__socials-link footer__socials-link_wa" aria-label="ссылка на whats app"></a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__socials-link footer__socials-link_inst" aria-label="ссылка на instagram"></a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__socials-link footer__socials-link_youtube" aria-label="ссылка на youtube"></a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__socials-link footer__socials-link_facebook" aria-label="ссылка на facebook"></a>
+            </li>
+            <li class="footer__link">
+              <a href="#" class="footer__socials-link footer__socials-link_tg" aria-label="ссылка на telegram"></a></li>
+          </ul>
+        </div>
+        <form action="#" class="footer__form">
+          <h2 class="footer__title footer__form-title">Есть вопросы по туру?</h2>
+          <p class="footer__text">Введите свой Email и мы свяжемся с вами в течении 3 рабочих дней</p>
+          <div class="footer__input-wrap">
+            <input required type="text" class="footer__input" placeholder="Введите адрес электронной почты">
+            <button type="submit" class="button footer__button" aria-label="Кнопка отправки данных формы"></button>
+          </div>
+        </form>
+      </div>
+      <div class="footer__info">
+        <p class="footer__copy footer__info-text">© Indo Travel, 2021</p>
+        <div class="footer__design">
+          <p class="footer__author footer__info-text">Design by Anastasia Ilina</p>
+          <p class="footer__tg footer__info-text"><a href="https://tlgg.ru/@Mrshmallowww">Tg: @Mrshmallowww</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

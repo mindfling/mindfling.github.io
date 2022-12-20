@@ -1,0 +1,105 @@
+.timer {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-columns: (1fr) [ 3 ];
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas: "title title title title" "days hours minutes seconds";
+}
+
+.timer__title {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+		-ms-grid-column-span: 4;
+		grid-area: title;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 150%;
+		text-align: center;
+}
+
+.timer__days {
+		-ms-grid-row: 2;
+		-ms-grid-column: 1;
+		grid-area: days;
+}
+
+.timer__hours {
+		-ms-grid-row: 2;
+		-ms-grid-column: 2;
+		grid-area: hours;
+}
+
+.timer__minutes {
+		-ms-grid-row: 2;
+		-ms-grid-column: 3;
+		grid-area: minutes;
+}
+
+.timer__seconds {
+		-ms-grid-row: 2;
+		-ms-grid-column: 4;
+		grid-area: seconds;
+}
+
+.timer__item {
+		-ms-grid-column-align: center;
+		justify-self: center;
+		display: flex;
+		align-items: baseline;
+}
+
+.timer__count {
+		font-family: Merriweather, serif;
+		font-size: 60px;
+		line-height: 130%;
+		letter-spacing: 0.02em;
+}
+
+.timer__units {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 150%;
+}
+
+@media (max-width: 1200px) {
+		.timer__title {
+				font-size: 18px;
+		}
+
+		.timer__count {
+				font-size: 50px;
+		}
+
+		.timer__units {
+				font-size: 18px;
+		}
+
+}
+
+@media (max-width: 1000px) {
+		.timer__title {
+				font-size: 14px;
+		}
+
+		.timer__count {
+				font-size: 32px;
+		}
+
+		.timer__units {
+				font-size: 12px;
+		}
+}
+
+@media (max-width: 760px) {
+		.timer__title {
+				font-size: 12px;
+		}
+
+		.timer__count {
+				font-size: 26px;
+		}
+
+		.timer__units {
+				font-size: 12px;
+		}
+}
