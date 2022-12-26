@@ -5,15 +5,13 @@ export const menuControl = () => {
   const menuBtn = document.querySelector('.header__menu-button');
   const headerMenu = document.querySelector('.header__menu');
 
-  console.log('menuBtn: ', menuBtn);
-  console.log('headerMenu: ', headerMenu);
-
-  console.log('headerMenu.style.transform: ', headerMenu.style.transform);
-  console.log(headerMenu.clientHeight);
+  // console.log('menuBtn: ', menuBtn, 'headerMenu: ', headerMenu);
+  // console.log('headerMenu.style.transform: ', headerMenu.style.transform);
+  // console.log(headerMenu.clientHeight);
 
   // headerMenu.style.transform = `translateX(${-headerMenu.clientHeight})px`;
-  headerMenu.style.transform = `translateY(${-headerMenu.clientHeight - 90}px)`;
   // headerMenu.style.transform = `translateY(-54-34-339px)`;
+  headerMenu.style.transform = `translateY(${-headerMenu.clientHeight - 90}px)`;
 
   // навешиваем нажатие на клавишу Escape закрыть меню
   const escapeHandle = (event) => {
@@ -21,11 +19,11 @@ export const menuControl = () => {
     if (key === 'Escape') {
       console.log('Escaped');
       headerMenu.classList.remove('header__menu_active');
+      headerMenu.style.transform =
+          `translateY(${-headerMenu.clientHeight - 90}px)`;
       document.removeEventListener('keydown', escapeHandle);
       document.removeEventListener('click', clickHandle);
-      return;
     }
-    console.log(key);
     return;
   };
 
@@ -37,34 +35,30 @@ export const menuControl = () => {
     const stepAnimation = () => {
       // todo timestamp and progress %%
       down += 25;
-      console.log('down: ', down);
       headerMenu.style.transform = `translateY(${down}px)`;
       if (down < 0) {
         requestAnimationFrame(stepAnimation);
       } else {
-        console.log('raf menu done');
+        // console.log('raf menu done');
         return;
       }
     };
 
     if (target === menuBtn) {
       if (headerMenu.classList.contains('header__menu_active')) {
-        console.log('menuBtnHandle close');
-        // * simple close by remove active class
+        // console.log('menuBtnHandle close');
+        // * simple close by remove active class headerMenuClose()
         headerMenu.classList.remove('header__menu_active');
         headerMenu.style.transform =
             `translateY(${-headerMenu.clientHeight - 90}px)`;
         document.removeEventListener('keydown', escapeHandle);
         document.removeEventListener('click', clickHandle);
-
         return;
       } else {
-        console.log('menuBtnHandle open');
+        // console.log('menuBtnHandle open');
         headerMenu.classList.add('header__menu_active');
-
-        // * make raf animate open
+        // * make raf animate open headerMenuOpen()
         requestAnimationFrame(stepAnimation);
-
         document.addEventListener('keydown', escapeHandle);
         document.addEventListener('click', clickHandle);
         return;
@@ -94,7 +88,7 @@ export const menuControl = () => {
       console.log('smooth scroll to block: ', block);
       // закрываем меню
       headerMenu.classList.remove('header__menu_active');
-      console.log('link menu'); //
+      // console.log('link menu'); //
       headerMenu.style.transform =
           `translateY(${-headerMenu.clientHeight - 90}px)`;
       document.removeEventListener('keydown', escapeHandle);
@@ -102,6 +96,7 @@ export const menuControl = () => {
       return;
     }
 
+    // todo closest
     if (target === headerMenu ||
           target.classList.contains('header__item')) {
       console.log('header menu or menu__item');

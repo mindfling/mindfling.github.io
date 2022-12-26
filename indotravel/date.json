@@ -1,0 +1,38 @@
+[
+  {
+    "date": "04.11 - 18.11",
+    "min-people": 3,
+    "max-people": 12,
+    "price": 58900
+  },
+  {
+    "date": "07.11 - 21.11",
+    "min-people": 2,
+    "max-people": 10,
+    "price": 62700
+  },
+  {
+    "date": "12.11 - 26.11",
+    "min-people": 1,
+    "max-people": 10,
+    "price": 62700
+  },
+  {
+    "date": "15.11 - 05.12",
+    "min-people": 3,
+    "max-people": 8,
+    "price": 73900
+  },
+  {
+    "date": "20.11 - 05.12",
+    "min-people": 3,
+    "max-people": 8,
+    "price": 59500
+  },
+  {
+    "date": "23.11 - 10.12",
+    "min-people": 1,
+    "max-people": 12,
+    "price": 75200
+  }
+]

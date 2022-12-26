@@ -24,8 +24,6 @@ export const accordionControl = (accordion) => {
   travelBtns.forEach((btn, i) => {
     // клик по каждой btn
     btn.addEventListener('click', event => {
-      const target = event.target;
-      console.log('target: ', target);
       travelItems.forEach((item, j) => {
         // if (target === travelBtns[j]) {
         if (i === j) {
