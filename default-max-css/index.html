@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>global default css styles - Maks Leskin</title>
+  <link href="normalize.css" rel="stylesheet">
+  <link href="default.css" rel="stylesheet">
+<style>
+  body {
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 20px !important;
+  }
+
+  h1 {
+    font-size: 28px !important;
+    margin-bottom: 24px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+    margin-bottom: 16px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+    margin-bottom: 25px !important;
+  }
+
+  code {
+    white-space: pre-wrap;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+    font-family: monospace;
+  }
+  a:hover {
+    opacity: .8;
+  }
+</style>
+</head>
+<body class="page">
+
+  <h1>Базовые стили CSS</h1>
+
+  <div class="block">
+    <p class="page__text">
+      ссылка на оригинал codepen Quper24
+      <a class="page__link" href="https://codepen.io/Quper/pen/GRRZzWy" target="_blank">https://codepen.io/Quper/pen/GRRZzWy</a>
+    </p>
+  </div>
+
+  <h2>Стили для :root (html)</h2>
+  <p>Эти стили задают базовые параметры для корневого элемента html.</p>
+  <code>
+:root {
+  position: relative;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+    </code>
+
+  <h3>подробнее</h3>
+  <code>
+    /* Сглаживает шрифт для улучшения читаемости на экранах с высоким разрешением. */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Оптимизирует качество отображения текста для лучшей читаемости. */
+    text-rendering: optimizeLegibility;
+
+    /* Устанавливает цвет выделения при нажатии на элементы на странице. */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+  </code>
+
+  <h2>Универсальный селектор</h2>
+  <p>Универсальный селектор применяется ко всем элементам на странице, + псевдоэлементы.</p>
+  <code>
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+    </code>
+
+  <h2>Стили для body</h2>
+  <p>Эти стили определяют основные параметры для тела документа, такие как шрифт, цвет текста и фон.</p>
+  <code>body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+  }</code>
+
+
+  <h3>подробнее</h3>
+<code>body {
+  /* Задает базовую позицию для элементов внутри тела документа. */
+  position: relative;
+
+  /* Запрещает горизонтальную прокрутку страницы. */
+  overflow-x: hidden;
+
+  /* Задает минимальную ширину для тела документа, чтобы контент не сжимался слишком сильно на узких экранах. */
+  min-width: 320px;
+
+  /* Задает минимальную высоту для тела документа, чтобы оно занимало всю видимую высоту экрана. */
+  min-height: 100vh;
+
+  /* Задает шрифт для текста на странице. */
+  font-family: Arial, sans-serif;
+
+  /* Задает базовый размер шрифта для текста на странице. */
+  font-size: 16px;
+
+  /* Задает цвет текста на странице. */
+  color: #000;
+
+  /* Задает цвет фона для тела документа. */
+  background-color: #fff;
+}</code>
+
+  <h2>Стили для изображений и SVG</h2>
+  <p>Эти стили обеспечивают корректное отображение изображений и векторной графики на странице.</p>
+<code>
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg {
+    max-height: 100%;
+  }
+</code>
+
+  <h2>Стили для кнопок</h2>
+  <p>Эти стили определяют внешний вид кнопок, убирая отступы, рамки и задавая прозрачный фон.</p>
+<code>button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}</code>
+
+  <h2>Стили для ссылок</h2>
+  <p>Эти стили удаляют подчеркивание у ссылок и наследуют цвет текста.</p>
+<code>a {
+  text-decoration: none;
+  color: inherit;
+}</code>
+
+  <h2>Стили для списков</h2>
+  <p>Эти стили убирают маркеры и отступы у списков.</p>
+<code>ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}</code>
+
+  <h2>Стили для текстовых элементов</h2>
+  <p>Эти стили устанавливают нулевые отступы для заголовков, абзацев и других текстовых элементов.</p>
+<code>h1, h2, h3, p, figure, fieldset {
+  margin: 0;
+}</code>
+
+  <h2>Стили для iframe</h2>
+  <p>Эти стили убирают рамку у встроенных фреймов.</p>
+<code>iframe {
+  border: none;
+}</code>
+
+  <h2>Скрытые элементы</h2>
+  <p>Этот класс используется для скрытия элементов из видимой области экрана, сохраняя при этом их доступность для
+    скринридеров и поисковых систем.</p>
+<code>
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}</code>
+
+  <h2>Пример контейнера</h2>
+  <p>Эти стили применяются к контейнеру, который содержит основной контент страницы, чтобы ограничить его ширину и
+    центрировать на экране.</p>
+  <code>
+.container {
+  max-width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+  </code>
+
+</body>
+</html>
